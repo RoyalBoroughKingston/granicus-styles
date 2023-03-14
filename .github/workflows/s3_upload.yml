@@ -12,15 +12,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
-      - name: upload to dev
+      - uses: shallwefootball/s3-upload-action@master
         if: ${{ github.ref == 'refs/heads/dev' }}
-        run: echo Hello, world from dev!
-
-      - name: upload to test
-        if: ${{ github.ref == 'refs/heads/test' }}
-        run: echo Hello, world from test!
-
-      - name: upload to prod
-        if: ${{ github.ref == 'refs/heads/main' }}
-        run: echo Hello, world from prod!
+        name: Upload S3 Dev
+        id: S3
+        with:
+          aws_key_id: AKIA6IXIZ3DAL3I4CY26
+          aws_secret_access_key: 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
+          aws_bucket: fs-filestore-eu/rbkingston/birol/dev
+          source_dir: css
