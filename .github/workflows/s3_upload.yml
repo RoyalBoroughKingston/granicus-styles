@@ -1,0 +1,28 @@
+name: Upload to S3
+
+on:
+  push:
+    branches: [ "main", "test", "dev" ]
+  pull_request:
+    branches: [ "main", "test", "dev" ]
+
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: upload to dev
+        if: ${{ github.ref == 'refs/heads/dev' }}
+        run: echo Hello, world from dev!
+
+      - name: upload to test
+        if: ${{ github.ref == 'refs/heads/test' }}
+        run: echo Hello, world from test!
+
+      - name: upload to prod
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: echo Hello, world from prod!
