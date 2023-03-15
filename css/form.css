@@ -807,9 +807,9 @@ span.form-link-color {
         display: block !important;
     }
 
-    /*.cancelbutton {*/
-    /*    margin-top: 3.5px !important;*/
-    /*}*/
+    .cancelbutton {
+        margin-top: 3.5px !important;
+    }
 }
 
 
