@@ -1,7 +1,7 @@
 /*==============GLOBAL-SELF UI======================================*/
 
 body, html {
-/*	overflow-x: hidden !important; - do not do this as it breaks jump to top when changing sections */
+	overflow-x: hidden !important;
 	font-family: 'Noto Sans', sans-serif !important;
 }
 
@@ -53,14 +53,9 @@ div#header {
     position: unset !important;  
   }
   
-  
   .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
     background-color: #3c3c3c !important;
     color: #fff !important;
-  }
-  
-  .navbar-inverse .navbar-nav>li>a  {
-	  color: #000 !important;
   }
   
   /*Updated by Merizza 04/03/2021 to fix dropdown menu styles on focus*/
@@ -888,13 +883,6 @@ width: 100%;
 
 @media (max-width: 768px) {
 	
-.visible-xs {
-    display: none !important; 
-}
-
-.hidden-xs {
-    display: block !important;
-}
 	.navbar-session {
 		position: relative !important;
 		margin-top: 115px !important;
@@ -928,10 +916,6 @@ width: 100%;
 		transform: translateX(-50%);
 		top: 10px !important;
 	}
-	
-	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-     color: #000;
-    }
 	
 	.navbar-nav .open .dropdown-menu {
 		float: left !important;
