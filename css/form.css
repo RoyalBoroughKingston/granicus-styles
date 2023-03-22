@@ -459,11 +459,17 @@ section.sectionsHead.navbar-default.render {
 	background: #fff;
 }
 
+
+
+
+
 /*Remove the form sections border*/
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper .sectionNameTab {
     border: none;
     background-color: white !important;
 }
+
+
 
 /*Added by Merizza on 31/12/2020*/
 li.sectionNameWrapper {
@@ -489,7 +495,7 @@ li.sectionNameWrapper a::before {
 
 li.sectionNameWrapper.active {
 	border-bottom: 3px solid #09509d;
-}
+	}
 
 li.sectionNameWrapper.active.valid {
 	border-bottom: 3px solid #22a473;
@@ -781,12 +787,24 @@ span.form-link-color {
 	
 }
 
+
+.sectionNameWrapper {
+    width: auto !important;
+    margin: 0px 5px !important;
+    height: 47px;
+
+}
+
+
 @media (max-width: 767px)
 {
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper {
     width: auto !important;
-    margin: 0px 5px !important; 
+    margin: 0px 5px !important;
+
 }
+
+
 
 .sections-toggle-wrapper {display:block !important;}
 }
@@ -879,6 +897,7 @@ li.sectionNameWrapper.active.valid a::before {
     width: auto !important;
     /* margin: 0px 5px !important; */
 }
+
 
 
 li.sectionNameWrapper a::before {

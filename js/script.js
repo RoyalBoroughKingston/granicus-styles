@@ -1,20 +1,6 @@
-
-
-/* script below includes the styles for service*/
-if (window.location.href.indexOf("fillform") > -1) {
-
-    $('<link href="https://fs-filestore-eu.s3-eu-west-1.amazonaws.com/rbkingston/Branding/live/css/core.css" rel="stylesheet">').appendTo("head");
-	$('<link href="https://fs-filestore-eu.s3-eu-west-1.amazonaws.com/rbkingston/Branding/live/css/form.css" rel="stylesheet">').appendTo("head");
-}
-
-
-
-
-
-// Include .char-counter class to input fields and set the char limit:important
 $('.char-counter').after("<div class='char-count'></div>");
 
-
+// Include .char-counter class to input fields and set the char limit:important
 
 $('.char-counter').keyup(function () {
 var max = $(this).attr('maxlength');

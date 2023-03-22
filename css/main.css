@@ -10332,6 +10332,7 @@ li.sectionNameWrapper a {
   color: #959595 !important;
   font-family: 'Noto Sans', Arial, Helvetica !important;
   font-size: 17px !important;
+  height: 50px;
 }
 
 /*li.sectionNameWrapper.active:before {
@@ -10349,10 +10350,12 @@ li.sectionNameWrapper.active a::before {
   content: "\f00c";
   padding: 16px 20px;
   font-family: FontAwesome;
+  height: 50px;
 }
 
 li.sectionNameWrapper.active a {
   color: #162755 !important;
+  height:50px;
 }
 /* green colour on form navigation circle button */
 li.sectionNameWrapper.valid a::before {
