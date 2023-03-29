@@ -10043,7 +10043,7 @@ input[type='text']:focus {
 .nextbutton:hover,
 .savebutton:hover {
 	/*border: 2px solid #162755 !important;
-	
+
 }*/
 
 
@@ -10170,7 +10170,7 @@ display: none;
 
 /* subforms icons need to show */
 div.repeatable-table-wrapper .fa:before,
-div.repeatable-table-wrapper .fa-chevron-left:before 
+div.repeatable-table-wrapper .fa-chevron-left:before
 {
 display:block !important;
 }
@@ -10245,7 +10245,8 @@ display: none;
     /*border: 2px solid #162755 !important;
     background: #FFF !important;*/
     color: #fff !important;
-    /*width: 100%*/;
+    width: 100% !important;
+    margin-top: 3px !important;
   }
 }
 
