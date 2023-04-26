@@ -1316,6 +1316,10 @@ border:2px solid #000 !important;}
 	padding-left: 20px !important;
 }
 
+.hide-fileCount .fileCount {
+    display: none;
+}
+
 label.prefix, span.prefix {
     border: none important;
 }
@@ -1328,4 +1332,16 @@ label.prefix, span.prefix {
     padding: 10px 25px!important;
     color: #FFF!important;
     border: 0!important;
+}
+
+.achieveforms-container .resumable-list i.remove-upload {
+    float: left;
+    margin: 4px 10px 0 0;
+}
+
+.achieveforms-container .imagePreview {
+    display: none;
+}
+.achieveforms-container .resumable-file .resumable-file-name {
+    max-width: 70% !important;
 }
