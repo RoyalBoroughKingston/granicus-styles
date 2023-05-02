@@ -10043,7 +10043,7 @@ input[type='text']:focus {
 .nextbutton:hover,
 .savebutton:hover {
 	/*border: 2px solid #162755 !important;
-	
+
 }*/
 
 
@@ -10170,7 +10170,7 @@ display: none;
 
 /* subforms icons need to show */
 div.repeatable-table-wrapper .fa:before,
-div.repeatable-table-wrapper .fa-chevron-left:before 
+div.repeatable-table-wrapper .fa-chevron-left:before
 {
 display:block !important;
 }
@@ -10241,12 +10241,13 @@ display: none;
 .nextbutton,
 .savebutton,
 .submitbutton {
-    display: block;
-    /*border: 2px solid #162755 !important;
-    background: #FFF !important;*/
-    color: #fff !important;
-    /*width: 100%*/;
-  }
+  display: block;
+  /*border: 2px solid #162755 !important;
+  background: #FFF !important;*/
+  color: #fff !important;
+  width: 100% !important;
+  margin-top: 3px !important;
+}
 }
 
 #myCarousel-outer a.btn {
@@ -10332,6 +10333,7 @@ li.sectionNameWrapper a {
   color: #959595 !important;
   font-family: 'Noto Sans', Arial, Helvetica !important;
   font-size: 17px !important;
+  height: 50px;
 }
 
 /*li.sectionNameWrapper.active:before {
@@ -10349,10 +10351,12 @@ li.sectionNameWrapper.active a::before {
   content: "\f00c";
   padding: 16px 20px;
   font-family: FontAwesome;
+  height: 50px;
 }
 
 li.sectionNameWrapper.active a {
   color: #162755 !important;
+  height:50px;
 }
 /* green colour on form navigation circle button */
 li.sectionNameWrapper.valid a::before {
