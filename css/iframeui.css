@@ -11416,11 +11416,24 @@ a:focus {
 
 
 /*Submission message*/
-.achieveforms-container .submission-message .submission-message-btn-wrapper .btn.save,
-.achieveforms-container .submission-message .submission-message-btn-wrapper .btn.finish {
-    margin-right: 1em;
-    padding: 10px !important;
-    color: #fff !important;
+.achieveforms-container {
+    .submission-message {
+        .submission-message-btn-wrapper {
+            @media (max-width: 767px) {
+                margin-top: 0 !important;
+            }
+            .btn.save, .btn.finish {
+                margin-right: 1em;
+                padding: 10px !important;
+                color: #fff !important;
+            }
+            .btn.finish {
+                @media (max-width: 525px) {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
 }
 
 .help-text span {
