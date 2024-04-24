@@ -11643,8 +11643,7 @@ fieldset.valid input[type=checkbox] + label:before {
 }
 
 fieldset.valid input[type=radio] + label:before {
-    border-color: #060 !important;
-    border: 0px !important;
+    border: 2px solid #000 !important;
 }
 
 .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .check2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .radio2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .check2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .radio2:focus + label:before {
@@ -11677,7 +11676,7 @@ fieldset.valid input[type=radio] + label:before {
 
 }
 
-.gds-select [type=checkbox] + label::before, .gds-select [type=radio] + label::before {
+.gds-select [type=checkbox] + label::before {
     border-radius: 0px;
     content: "";
     border: 2px solid #000 !important;
@@ -11691,11 +11690,10 @@ fieldset.valid input[type=radio] + label:before {
 
 .gds-select [type=radio] + label::before {
     content: "";
-    border: 2px solid #000;
+    border: 2px solid #000 !important;
     background: transparent;
-    width: 35px;
-    height: 35px;
-    /* position: absolute;*/
+    width: 25px;
+    height: 25px;
     top: 5px;
     left: 0;
     border-radius: 50%;
