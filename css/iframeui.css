@@ -11721,6 +11721,26 @@ fieldset.valid input[type=radio] + label:before {
     opacity: 0;
 }
 
+.gds-select [type=radio] + label::after {
+    content: "";
+    border: 10px solid #000;
+    background: #fff !important;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    border-radius: 50%;
+}
+
 .gds-select:checked + label::after {
     zoom: 1;
     filter: alpha(opacity=100);
