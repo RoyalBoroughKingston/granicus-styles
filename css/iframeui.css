@@ -11721,21 +11721,6 @@ fieldset.valid input[type=radio] + label:before {
     opacity: 0;
 }
 
-.gds-select [type=radio] + label::after {
-    content: "";
-    border: 10px solid #000;
-    position: absolute;
-    top: 10px;
-    left: 2.5px;
-    zoom: 1;
-    opacity: 0;
-    border-radius: 50%;
-}
-
-span.lookup-option.radio-wrapper [type=radio] + label.radio-label::after {
-    content: unset;
-}
-
 .gds-select:checked + label::after {
     zoom: 1;
     filter: alpha(opacity=100);
