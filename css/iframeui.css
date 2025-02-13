@@ -10280,6 +10280,10 @@ body {
     line-height: 2.3125em !important;
 }
 
+.field .fieldContent .fieldInput.hasCurrencyPrefix {
+    padding-left: 24px !important;
+}
+
 /** end prefix fix**/
 
 
