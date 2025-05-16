@@ -908,7 +908,7 @@ p.lead {
 /* ========== Desktop View ========== */
 @media (min-width: 1024px) {
     .rbk-nav {
-        padding: 1rem 3rem;
+        padding: 1rem 1.5rem;
     }
 
 
@@ -966,6 +966,10 @@ p.lead {
 }
 
 /*---------------LOGO---------------*/
+#rbk-footer .rbk-logo-wrapper {
+    padding: 0 1.5rem;
+}
+
 #rbk-footer a.rbk-logo_link {
     box-sizing: border-box;
     width: 100%;
