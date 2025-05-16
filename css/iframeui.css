@@ -11376,14 +11376,25 @@ a:focus {
     border-radius: 8px;
 }
 /* Sido add new button styles 16th May 2025 */
-._AF .btn-af, .achieveforms-container .btn-af.cancelbutton {
-    background-color: var(--color-grey-light);
-    box-shadow: 0px 4px var(--color-grey-dark);
+.achieveforms-container .btn-af.previousbutton {
+    color: #0B0C0C !important;
+    background-color: var(--color-grey-light) !important;
+    box-shadow: 0px 4px var(--color-grey-dark) !important;
+    border-radius: 8px !important;
+
 }
 
-._AF .btn-af, .achieveforms-container .btn-af.submitbutton {
+.achieveforms-container .btn-af.cancelbutton {
+    color: #0B0C0C !important;
+    background-color: var(--color-grey-light) !important;
+    box-shadow: 0px 4px var(--color-grey-dark) !important;
+    border-radius: 8px !important;
+}
+
+.achieveforms-container .btn-af.submitbutton {
     background-color: var(--color-success);
     box-shadow: 0px 4pX var(--color-success-hover);
+    border-radius: 8px !important;
 }
 
 /*._AF .btn-af.active, ._AF .btn-af:active, ._AF .btn-af:focus, ._AF .btn-af:hover, .achieveforms-container .btn-af.active, .achieveforms-container .btn-af:active, .achieveforms-container .btn-af:focus, .achieveforms-container .btn-af:hover, .open .dropdown-toggle._AF .btn-af, .open .dropdown-toggle.achieveforms-container .btn-af {
