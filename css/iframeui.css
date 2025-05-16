@@ -2,18 +2,79 @@
 
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
-/*html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}*/
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:root {
+    /* Primary brand colours */
+    --color-primary: #162655;
+    --color-primary-light: #0060AC;
+    --color-primary-dark: #003078;
+
+    /* Secondary and utility colours */
+    --color-secondary: #475054;
+    --color-text-primary: #0B0C0C;
+    --color-text-secondary: #505A5F;
+    --color-text-disabled: #B1B4B6;
+
+    /* UI/UX feedback colours */
+    --color-success: #00681F;
+    --color-success-hover: #004E17;
+    --color-success-disabled: #99B8A2;
+
+    --color-warning: #EC6719;
+    --color-warning-light: #FDF0E8;
+
+    --color-error: #AD0000;
+    --color-error-hover: #7A0000;
+    --color-error-disabled: #FFADAD;
+
+    /* Focus and selection */
+    --color-focus: #FFDD00;
+
+    /* Teal shades */
+    --color-teal: #5EBEBF;
+    --color-teal-light: #EFF8F9;
+
+    /* Neutrals */
+    --color-white: #ffffff;
+    --color-grey-light: #F3F2F1;
+    --color-grey-mid: #B1B4B6;
+    --color-grey-dark: #505A5F;
+
+    --color-black: #000000;
+
+    /* Typography */
+    --font-main: 'Open Sans', sans-serif;
+
+    --color-border-light: #B1B4B6;
+}
+
+
 
 body {
     margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 
 audio, canvas, progress, video {
     display: inline-block;
@@ -182,105 +243,10 @@ td, th {
     padding: 0;
 }
 
-@media print {
-    *, :before, :after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
 
-    a, a:visited {
-        text-decoration: underline;
-    }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
 
-    a[href^="#"]:after, a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre, blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr, img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2, h3 {
-        page-break-after: avoid;
-    }
-
-    .navbar {
-        display: none;
-    }
-
-    .btn > .caret, .dropup > .btn > .caret {
-        border-top-color: #000 !important;
-    }
-
-    .label {
-        border: 1px solid #000;
-    }
-
-    .table {
-        border-collapse: collapse !important;
-    }
-
-    .table td, .table th {
-        background-color: #fff !important;
-    }
-
-    .table-bordered th, .table-bordered td {
-        border: 1px solid #ddd !important;
-    }
-}
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-:before, :after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 10px;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #fff;
-}
 
 input, button, select, textarea {
     font-family: inherit;
@@ -2327,6 +2293,10 @@ textarea.input-lg, select[multiple].input-lg {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    /* Sido add 16th May 2025 */
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
@@ -6038,6 +6008,82 @@ button.close {
     }
 }
 
+@media print {
+    *, :before, :after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a, a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " ("attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " ("attr(title) ")";
+    }
+
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr, img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2, h3 {
+        page-break-after: avoid;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .btn > .caret, .dropup > .btn > .caret {
+        border-top-color: #000 !important;
+    }
+
+    .label {
+        border: 1px solid #000;
+    }
+
+    .table {
+        border-collapse: collapse !important;
+    }
+
+    .table td, .table th {
+        background-color: #fff !important;
+    }
+
+    .table-bordered th, .table-bordered td {
+        border: 1px solid #ddd !important;
+    }
+}
+
+
 .visible-print {
     display: none !important;
 }
@@ -6096,6 +6142,7 @@ button.close {
     }
 }
 
+/* Custom css from here? */
 html.overlay-open .navbar-fixed-top {
     z-index: 400;
 }
@@ -10000,9 +10047,10 @@ label,
     font-size: 19px !important;
 }
 
+/* Sido remove !important 16th May 2025 */
 input[type='text'] {
-    border: 1px solid #CCC !important;
-    border-radius: 0 !important;
+    border: 1px solid #CCC;
+    border-radius: 0;
 }
 
 input[type='text']:focus {
@@ -11207,7 +11255,8 @@ color:#fff !important;}*/
 ._AF input[type=date].error:focus, ._AF input[type=date]:focus, ._AF input[type=datetime-local].error:focus, ._AF input[type=datetime-local]:focus, ._AF input[type=datetime].error:focus, ._AF input[type=datetime]:focus, ._AF input[type=email].error:focus, ._AF input[type=email]:focus, ._AF input[type=month].error:focus, ._AF input[type=month]:focus, ._AF input[type=number].error:focus, ._AF input[type=number]:focus, ._AF input[type=password].error:focus, ._AF input[type=password]:focus, ._AF input[type=search].error:focus, ._AF input[type=search]:focus, ._AF input[type=tel].error:focus, ._AF input[type=tel]:focus, ._AF input[type=text].error:focus, ._AF input[type=text]:focus, ._AF input[type=time].error:focus, ._AF input[type=time]:focus, ._AF input[type=url].error:focus, ._AF input[type=url]:focus, ._AF input[type=week].error:focus, ._AF input[type=week]:focus, ._AF select.error:focus, ._AF select:focus, ._AF textarea.error:focus, ._AF textarea:focus, .achieveforms-container input[type=date].error:focus, .achieveforms-container input[type=date]:focus, .achieveforms-container input[type=datetime-local].error:focus, .achieveforms-container input[type=datetime-local]:focus, .achieveforms-container input[type=datetime].error:focus, .achieveforms-container input[type=datetime]:focus, .achieveforms-container input[type=email].error:focus, .achieveforms-container input[type=email]:focus, .achieveforms-container input[type=month].error:focus, .achieveforms-container input[type=month]:focus, .achieveforms-container input[type=number].error:focus, .achieveforms-container input[type=number]:focus, .achieveforms-container input[type=password].error:focus, .achieveforms-container input[type=password]:focus, .achieveforms-container input[type=search].error:focus, .achieveforms-container input[type=search]:focus, .achieveforms-container input[type=tel].error:focus, .achieveforms-container input[type=tel]:focus, .achieveforms-container input[type=text].error:focus, .achieveforms-container input[type=text]:focus, .achieveforms-container input[type=time].error:focus, .achieveforms-container input[type=time]:focus, .achieveforms-container input[type=url].error:focus, .achieveforms-container input[type=url]:focus, .achieveforms-container input[type=week].error:focus, .achieveforms-container input[type=week]:focus, .achieveforms-container select.error:focus, .achieveforms-container select:focus, .achieveforms-container textarea.error:focus, .achieveforms-container textarea:focus {
 
     box-shadow: none;
-    outline: 0.2rem solid #488EF8;
+    /* Sido change focus colour 16th May 2025 */
+    outline: 0.2rem solid var(--color-focus);
     border: 3px solid #0b0c0c !important;
 }
 
@@ -11222,8 +11271,9 @@ _AF input[type=date], ._AF input[type=datetime-local], ._AF input[type=datetime]
 }
 
 input[type='text'], input[type='number'] {
-    border: 2px solid #0b0c0c !important;
-    border-radius: 0 !important;
+    /* Sido remove !important 16th May 2025 */
+    border: 2px solid #0b0c0c;
+    border-radius: 0;
 }
 
 .achieveforms-container .all-sections .field .fieldContent textarea.fieldInput {
@@ -11278,7 +11328,9 @@ a:focus {
 
 /*=================Error warning====================*/
 ._AF .postfix-wrapper.error .postfix, ._AF .prefix-wrapper.error .prefix, ._AF input.error, ._AF select.error, ._AF textarea.error, .achieveforms-container .postfix-wrapper.error .postfix, .achieveforms-container .prefix-wrapper.error .prefix, .achieveforms-container input.error, .achieveforms-container select.error, .achieveforms-container textarea.error {
-    border: 2px solid #b33;
+    /* Sido change border colour 16th May 2025 */
+    border: 2px solid var(--color-error);
+    border-color: #AD0000;
 }
 
 ._AF div.error-wrapper, .achieveforms-container div.error-wrapper {
@@ -11288,7 +11340,8 @@ a:focus {
 }
 
 ._AF label.error, .achieveforms-container label.error {
-    color: #ad0000;
+    /* Sido change colour */
+    color: var(--color-error);
     font-weight: 400;
     margin-bottom: 0;
     font-size: 16px !important;
@@ -11310,17 +11363,27 @@ a:focus {
 }
 
 /*=======Buttons======*/
-
+/* Sido add box-shadow and change colour 16th May 2025 */
 ._AF .btn-af, .achieveforms-container .btn-af {
     border-radius: 0;
     box-shadow: none;
     text-shadow: none;
     border: 0;
-    /*background-color: #00823b;*/
-    background-color: #162755;
-    box-shadow: 0 2px 0 #003518;
+    background-color: var(--color-primary-light);
+    box-shadow: 0px 4px var(--color-primary);
     padding: 6px 12px !important;
     color: #fff;
+    border-radius: 8px;
+}
+/* Sido add new button styles 16th May 2025 */
+._AF .btn-af, .achieveforms-container .btn-af.cancelbutton {
+    background-color: var(--color-grey-light);
+    box-shadow: 0px 4px var(--color-grey-dark);
+}
+
+._AF .btn-af, .achieveforms-container .btn-af.submitbutton {
+    background-color: var(--color-success);
+    box-shadow: 0px 4pX var(--color-success-hover);
 }
 
 /*._AF .btn-af.active, ._AF .btn-af:active, ._AF .btn-af:focus, ._AF .btn-af:hover, .achieveforms-container .btn-af.active, .achieveforms-container .btn-af:active, .achieveforms-container .btn-af:focus, .achieveforms-container .btn-af:hover, .open .dropdown-toggle._AF .btn-af, .open .dropdown-toggle.achieveforms-container .btn-af {
@@ -11446,18 +11509,19 @@ a:focus {
 
 
 .inset-text {
+    /* Sido change bgc, padding and border colour 16th May 2025 */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 1.25;
     color: #0b0c0c;
-    padding: 15px;
+    padding: 1.6rem 2.4rem 1.6rem 3.2rem;
     margin-top: 20px;
     margin-bottom: 20px;
     clear: both;
-    border-left: 10px solid #b1b4b6;
+    border-left: 10px solid #0060AC;
+    background: #E8F1F8;
 }
 
 .inset-text h3 {
@@ -11473,10 +11537,13 @@ a:focus {
     margin-bottom: 15px;
     border: 5px solid #1d70b8;
     background-color: #1d70b8;
+    /* Sido add radius 16th May 2025 */
+    border-radius: 8px;
 }
 
 .notification-banner__header {
-    padding: 2px 10px 5px;
+    /* Sido change padding 16th May 2025 */
+    padding: 0.8rem 2.4rem;
     border-bottom: 1px solid transparent;
 }
 
@@ -11493,16 +11560,20 @@ a:focus {
 }
 
 .notification-banner__content {
+    /* Sido change padding, add radius */
     color: #0b0c0c;
-    padding: 10px;
+    padding: 2.4rem;
     background-color: #fff;
+    border-radius: 0 0 6px 6px;
 }
 
 /*Confirmation panel*/
-
 .confirmation-panel-container {
+    /* Sido change bgc add radius */
     color: #fff;
-    background: #0A4F8A;
+    background-color: var(--color-success);
+    background: #00681F;
+    border-radius: 8px;
 }
 
 .confirmation-panel {
@@ -11544,13 +11615,15 @@ a:focus {
 
 
 /*Warning text*/
-
 .error-info-container {
+    /* Sido change style 16th May 2025 */
     font-size: 19px;
-    font-weight: 700;
-    padding: 10px;
-    border: 4px solid #d4351c;
-    color: #b10e1e !important;
+    font-weight: 400;
+    padding: 2.4rem;
+    border: 4px solid var(--color-error);
+    color: var(--color-error) !important;
+    color: #AD0000;
+    border-radius: 8px;
 }
 
 .warning-text {
@@ -11653,7 +11726,8 @@ fieldset.valid input[type=radio] + label:before {
 
 .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .check2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .radio2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .check2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .radio2:focus + label:before {
     color: #064d84;
-    box-shadow: 0 0 0 0.2rem #488EF8;
+    /* Sido change focus colour 16th May 2025 */
+    box-shadow: 0 0 0 0.2rem var(--color-focus);
     border: 3px solid black;
 }
 
@@ -12715,8 +12789,6 @@ submission-message-content h4 {
 }
 
 /* red link button*/
-
-
 .link-button a {
     background-color: #A0505C;
     border: 4px solid #A0505C;
@@ -12729,7 +12801,8 @@ submission-message-content h4 {
     padding: .625rem .75rem !important;
     text-align: center;
     text-decoration: none !important;
-    transition: all 200ms ease = out;
+    /* Sido fix syntax error 16th May 2025 */
+    transition: all 200ms ease-out;
 }
 
 .link-button-link:hover {
@@ -12737,6 +12810,57 @@ submission-message-content h4 {
     background-color: #fff;
 }
 
+/* Sido added 16th May 2025 */
+a.rbk-link-button--primary-inverse {
+    color: #162655 !important;
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: 1.2rem 2.4rem !important;
+    text-align: center;
+    text-decoration: none !important;
+    line-height: 26px;
+    transition: all 200ms ease-out;
+}
+
+#rbk-footer a.rbk-link-button--primary-inverse,
+#rbk-header a.rbk-link-button--primary-inverse,
+a.rbk-link-button--primary-inverse {
+    width: 100%;
+}
+
+a.rbk-link-button--primary-inverse:hover {
+    color: #fff !important;
+    background-color: #0060AC;
+    outline-color: #0B0C0C;
+    box-shadow: none;
+    border: 2px solid var(--color-text-primary);
+
+}
+
+a.rbk-link-button--primary-inverse:focus:not(:hover) {
+    color: #162655 !important;
+    background-color: #fff;
+    outline-color: var(--color-focus);
+    box-shadow: none;
+}
+
+@media (min-width: 40em) {
+    a.rbk-link-button--primary-inverse {
+        font-size: 1.6rem;
+        padding: 0.8rem 1.6rem !important;
+    }
+
+    #rbk-footer a.rbk-link-button--primary-inverse {
+        max-width: 240px;
+    }
+
+}
 
 /*Map box border*/
 #mapIframe {
@@ -12803,6 +12927,208 @@ label.prefix, span.prefix {
     max-width: 70% !important;
 }
 
+/* Sido add GOVUK STYLES 16th May 2025 */
+.govuk-grid-row {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.govuk-grid-row::after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+
+.govuk-grid-column-one-quarter {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px
+}
+
+@media(min-width: 40.0625em) {
+    .govuk-grid-column-one-quarter {
+        width: 25%;
+        float: left
+    }
+}
+
+.govuk-grid-column-one-third {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px
+}
+
+@media(min-width: 40.0625em) {
+    .govuk-grid-column-one-third {
+        width: 33.3333333333%;
+        float: left
+    }
+}
+
+.govuk-grid-column-one-half {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px
+}
+
+@media(min-width: 40.0625em) {
+    .govuk-grid-column-one-half {
+        width: 50%;
+        float: left
+    }
+}
+
+.govuk-grid-column-two-thirds {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px
+}
+
+@media(min-width: 40.0625em) {
+    .govuk-grid-column-two-thirds {
+        width: 66.6666666667%;
+        float: left
+    }
+}
+
+.govuk-grid-column-three-quarters {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px
+}
+
+@media(min-width: 40.0625em) {
+    .govuk-grid-column-three-quarters {
+        width: 75%;
+        float: left
+    }
+}
+
+.govuk-grid-column-full {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px
+}
+
+@media(min-width: 40.0625em) {
+    .govuk-grid-column-full {
+        width: 100%;
+        float: left
+    }
+}
+
+.govuk-grid-column-one-quarter-from-desktop {
+    box-sizing: border-box;
+    padding: 0 15px
+}
+
+@media(min-width: 77.5em) {
+    .govuk-grid-column-one-quarter-from-desktop {
+        width: 25%;
+        float: left
+    }
+}
+
+.govuk-grid-column-one-third-from-desktop {
+    box-sizing: border-box;
+    padding: 0 15px
+}
+
+@media(min-width: 77.5em) {
+    .govuk-grid-column-one-third-from-desktop {
+        width: 33.3333333333%;
+        float: left
+    }
+}
+
+.govuk-grid-column-one-half-from-desktop {
+    box-sizing: border-box;
+    padding: 0 15px
+}
+
+@media(min-width: 77.5em) {
+    .govuk-grid-column-one-half-from-desktop {
+        width: 50%;
+        float: left
+    }
+}
+
+.govuk-grid-column-two-thirds-from-desktop {
+    box-sizing: border-box;
+    padding: 0 15px
+}
+
+@media(min-width: 77.5em) {
+    .govuk-grid-column-two-thirds-from-desktop {
+        width: 66.6666666667%;
+        float: left
+    }
+}
+
+.govuk-grid-column-three-quarters-from-desktop {
+    box-sizing: border-box;
+    padding: 0 15px
+}
+
+@media(min-width: 77.5em) {
+    .govuk-grid-column-three-quarters-from-desktop {
+        width: 75%;
+        float: left
+    }
+}
+
+.govuk-grid-column-full-from-desktop {
+    box-sizing: border-box;
+    padding: 0 15px
+}
+
+@media(min-width: 77.5em) {
+    .govuk-grid-column-full-from-desktop {
+        width: 100%;
+        float: left
+    }
+}
+
+
+
+
+
+@supports(margin: max(calc(0px))) {
+    .govuk-width-container {
+        margin-right: max(15px, calc(15px  +  env(safe-area-inset-right)));
+        margin-left: max(15px, calc(15px  +  env(safe-area-inset-left)))
+    }
+}
+
+@media(min-width: 40.0625em) {
+    .govuk-width-container {
+        margin-right: 30px;
+        margin-left: 30px
+    }
+
+    @supports(margin: max(calc(0px))) {
+        .govuk-width-container {
+            margin-right: max(30px, calc(15px  +  env(safe-area-inset-right)));
+            margin-left: max(30px, calc(15px  +  env(safe-area-inset-left)))
+        }
+    }
+}
+
+@media(min-width: 1020px) {
+    .govuk-width-container {
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    @supports(margin: max(calc(0px))) {
+        .govuk-width-container {
+            margin-right: auto;
+            margin-left: auto
+        }
+    }
+}
+
 .govuk-details__summary {
     cursor: pointer;
 }
@@ -12812,4 +13138,46 @@ label.prefix, span.prefix {
     outline: 3px solid rgba(0,0,0,0);
     box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
     text-decoration: none;
+}
+
+.govuk-visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    border: 0 !important;
+    white-space: nowrap !important;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.govuk-visually-hidden::before {
+    content: " "
+}
+
+.govuk-visually-hidden::after {
+    content: " "
+}
+
+.govuk-visually-hidden-focusable:not(:active):not(:focus) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    border: 0 !important;
+    white-space: nowrap !important;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
 }
