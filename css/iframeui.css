@@ -11378,8 +11378,8 @@ a:focus {
 /* Sido add new button styles 16th May 2025 */
 .achieveforms-container .btn-af.previousbutton {
     color: #0B0C0C !important;
-    background-color: var(--color-grey-light) !important;
-    box-shadow: 0px 4px var(--color-grey-dark) !important;
+    background-color: var(--color-primary-light) !important;
+    box-shadow: 0px 4px var(--color-primary) !important;
     border-radius: 8px !important;
 
 }
