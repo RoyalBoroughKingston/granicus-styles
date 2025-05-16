@@ -1,3 +1,47 @@
+/* Sido add root colour 16th May 2025 */
+:root {
+    /* Primary brand colours */
+    --color-primary: #162655;
+    --color-primary-light: #0060AC;
+    --color-primary-dark: #003078;
+
+    /* Secondary and utility colours */
+    --color-secondary: #475054;
+    --color-text-primary: #0B0C0C;
+    --color-text-secondary: #505A5F;
+    --color-text-disabled: #B1B4B6;
+
+    /* UI/UX feedback colours */
+    --color-success: #00681F;
+    --color-success-hover: #004E17;
+    --color-success-disabled: #99B8A2;
+
+    --color-warning: #EC6719;
+    --color-warning-light: #FDF0E8;
+
+    --color-error: #AD0000;
+    --color-error-hover: #7A0000;
+    --color-error-disabled: #FFADAD;
+
+    /* Focus and selection */
+    --color-focus: #FFDD00;
+
+    /* Teal shades */
+    --color-teal: #5EBEBF;
+    --color-teal-light: #EFF8F9;
+
+    /* Neutrals */
+    --color-white: #ffffff;
+    --color-grey-light: #F3F2F1;
+    --color-grey-mid: #B1B4B6;
+    --color-black: #000000;
+
+    /* Typography */
+    --font-main: 'Open Sans', sans-serif;
+
+    --color-border-light: #B1B4B6;
+}
+
 
 ._AF input[type=date].error:focus, ._AF input[type=date]:focus, ._AF input[type=datetime-local].error:focus, ._AF input[type=datetime-local]:focus, ._AF input[type=datetime].error:focus, ._AF input[type=datetime]:focus, ._AF input[type=email].error:focus, ._AF input[type=email]:focus, ._AF input[type=month].error:focus, ._AF input[type=month]:focus, ._AF input[type=number].error:focus, ._AF input[type=number]:focus, ._AF input[type=password].error:focus, ._AF input[type=password]:focus, ._AF input[type=search].error:focus, ._AF input[type=search]:focus, ._AF input[type=tel].error:focus, ._AF input[type=tel]:focus, ._AF input[type=text].error:focus, ._AF input[type=text]:focus, ._AF input[type=time].error:focus, ._AF input[type=time]:focus, ._AF input[type=url].error:focus, ._AF input[type=url]:focus, ._AF input[type=week].error:focus, ._AF input[type=week]:focus, ._AF select.error:focus, ._AF select:focus, ._AF textarea.error:focus, ._AF textarea:focus, .achieveforms-container input[type=date].error:focus, .achieveforms-container input[type=date]:focus, .achieveforms-container input[type=datetime-local].error:focus, .achieveforms-container input[type=datetime-local]:focus, .achieveforms-container input[type=datetime].error:focus, .achieveforms-container input[type=datetime]:focus, .achieveforms-container input[type=email].error:focus, .achieveforms-container input[type=email]:focus, .achieveforms-container input[type=month].error:focus, .achieveforms-container input[type=month]:focus, .achieveforms-container input[type=number].error:focus, .achieveforms-container input[type=number]:focus, .achieveforms-container input[type=password].error:focus, .achieveforms-container input[type=password]:focus, .achieveforms-container input[type=search].error:focus, .achieveforms-container input[type=search]:focus, .achieveforms-container input[type=tel].error:focus, .achieveforms-container input[type=tel]:focus, .achieveforms-container input[type=text].error:focus, .achieveforms-container input[type=text]:focus, .achieveforms-container input[type=time].error:focus, .achieveforms-container input[type=time]:focus, .achieveforms-container input[type=url].error:focus, .achieveforms-container input[type=url]:focus, .achieveforms-container input[type=week].error:focus, .achieveforms-container input[type=week]:focus, .achieveforms-container select.error:focus, .achieveforms-container select:focus, .achieveforms-container textarea.error:focus, .achieveforms-container textarea:focus {
 
@@ -239,8 +283,9 @@ a, a:visited {
 }
 
 /*-----Change the main contain background color-----*/
+/* Sido remove bgc 16th May 2025  */
 #main-content {
-    background: #eef1e6 !important;
+    /* background: #eef1e6 !important; */
     margin-bottom: 0px;
 }
 
@@ -292,8 +337,9 @@ div#header {
 }
 
 /*Updated by Merizza 04/03/2021 to fix dropdown menu styles on focus*/
+/* Sido fix syntax 16th May 2025  */
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #3c3c3c !important
+    color: #3c3c3c !important;
     background-color: #fff;
 }
 
@@ -381,9 +427,10 @@ a.dropdown-toggle:hover {
 
 }
 
+/* Sido change margin 16th May 2025 */
 ul#session-badge {
-    margin-top: 15px;
-    margin-right: 15.5%;
+    margin-top: 0;
+    margin-right: 0;
 }
 
 ul#session-badge > li {
@@ -436,7 +483,8 @@ a.btn.btn-lg.btn-primary.top:hover {
     color: #2b8cc4 !important;
 }
 
-a.btn.btn-lg.btn-primary.top:before {
+/* Sido comment out 16th May 2025  */
+/* a.btn.btn-lg.btn-primary.top:before {
     content: '\00a0';
     margin-top: -2px;
     left: 0;
@@ -444,9 +492,10 @@ a.btn.btn-lg.btn-primary.top:before {
     width: 2px;
     height: 30px;
     background: #eef1e6;
-}
+} */
+/* Sido comment out 16th May 2025  */
 
-a.btn.btn-lg.btn-primary.top:after {
+/* a.btn.btn-lg.btn-primary.top:after {
     content: '\00a0';
     margin-top: -2px;
     right: 0;
@@ -454,7 +503,7 @@ a.btn.btn-lg.btn-primary.top:after {
     width: 2px;
     height: 30px;
     background: #eef1e6;
-}
+} */
 
 /*Adding by Merizza 29/01/21 to fix the focus styles issue*/
 a.btn.btn-lg.btn-primary.top:focus {
@@ -648,7 +697,8 @@ p.lead {
     margin: 0 -15px;
     padding: 2rem;
     height: auto;
-    background-color: #eef1e6;
+    /* Sido remove bgc 16th May 2025 */
+    /* background-color: none; */
     font-size: 16px;
 }
 
@@ -668,32 +718,279 @@ p.lead {
     font-weight: bold;
 }
 
+/* Sido added new hader 16th May 2025  */
+/* ========== Header Navigation ========== */
 
-/*==============================MAIN FOOTER================================*/
+#rbk-header .dropdown {
+    border-radius: 8px;
+}
+
+#rbk-header {
+    box-shadow: 0 2px 4px rgba(22, 38, 85, 0.25);
+}
+
+#rbk-header ul {
+    padding: 0;
+}
+
+.rbk-nav {
+    background: var(--color-white);
+    padding: 2rem 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.dark.rbk-nav {
+    background-color: var(--color-primary);
+    box-shadow: none;
+    display: none;
+}
+
+.dark .rbk-nav__section-wrapper {
+    display: flex;
+    width: 100%;
+    padding-bottom: 1.6rem;
+}
+
+.rbk-nav__logo-link {
+    display: block;
+    margin-right: auto;
+}
+
+.rbk-nav__logo {
+    width: 86px;
+    height: 100px;
+}
+
+.rbk-nav__menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rbk-nav__item {
+    margin-bottom: 1.25rem;
+}
+
+@media(min-width: 767px) {
+    .rbk-nav__item {
+        margin-bottom: 0;
+    }
+
+}
+
+.rbk-nav__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.rbk-nav__item {
+    display: none;
+    color: var(--color-primary);
+}
+
+.open > .rbk-nav__item {
+    display: block;
+}
+
+.open .rbk-nav__item > .rbk-nav__item--link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar.main.navbar-static-top.rbk-nav__item.rbk-nav__item--tablet {
+    width: auto;
+}
+
+/* ========== Navigation Buttons ========== */
+.rbk-nav__button {
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.rbk-nav__button:focus {
+    outline-color: var(--color-focus);
+    outline-width: 4px;
+}
+
+.dark .rbk-nav__button {
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
+.rbk-nav__button-icon {
+    width: 16.25px;
+    height: 12.5px;
+    background: var(--color-white);
+    mask: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80" > <rect width="100" height="10"/ > <rect y="30" width="100" height="10"/ > <rect y="60" width="100" height="10"/ > </svg > ') no-repeat center / contain;
+}
+
+.dark .rbk-nav__button-icon {
+    background: var(--color-primary);
+}
+
+/* ========== Mobile Toggle Logic ========== */
+#rbk-nav-toggle:checked~.rbk-nav--default {
+    display: none;
+}
+
+#rbk-nav-toggle:checked~.rbk-nav--opened {
+    display: block;
+}
+
+/* ========== Responsive Accessibility + Utilities ========== */
+.rbk-nav__item--mobile-up {
+    display: inline-block;
+}
+
+
+
+/* ========== Tablet View ========== */
+@media (min-width: 767px) {
+    .rbk-nav__logo {
+        width: 97px;
+        height: 112px;
+    }
+
+    .rbk-nav__menu-wrapper > .rbk-nav__button {
+        display: none;
+    }
+
+    .rbk-nav__item--tablet-up {
+        display: inline-block;
+    }
+
+    .rbk-nav__item--tablet {
+        display: inline-block;
+    }
+
+    .dark .rbk-nav__list--up-to-mobile {
+        display: none;
+    }
+
+    .rbk-nav__item:not(:last-child) {
+        border-right: 1px solid var(--color-border-light);
+        padding-right: 1.6rem;
+    }
+
+    .rbk-nav__list > .rbk-nav__item > a {
+        color: var(--color-primary);
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    .dark .rbk-nav__list > .rbk-nav__item > a {
+        color: var(--color-white);
+        text-decoration: none;
+    }
+
+}
+
+/* ========== Desktop View ========== */
+@media (min-width: 1024px) {
+    .rbk-nav {
+        padding: 1rem 3rem;
+    }
+
+
+
+    .dark .rbk-nav__list.open .rbk-nav__item--link {
+        color: var(--color-white);
+        font-size: 2rem;
+    }
+
+}
+
+/* ========== Screen Reader Utility ========== */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+/* ========== END Header Navigation ========== */
+
+/*===============MAIN FOOTER===================*/
 
 .container.container-footer {
     max-width: 100% !important;
 }
 
-#footer {
+.container {
+    max-width: 1440px;
+    width: 100%;
+}
+
+#rbk-footer {
     box-sizing: border-box;
-    padding: 48px;
+    padding: 1.6rem 2rem;
     width: 100%;
     height: auto;
-    background-color: #3c3c3c !important;
+    background-color: #162755;
     color: #fff;
+    font-size: 1.6rem;
+}
+
+#rbk-footer p {
+    font-weight: 400 !important;
+    font-size: 1.6rem !important;
+}
+
+@media(min-width: 40.0625em) {
+    #rbk-footer {
+        padding: 1.1rem 5rem 3.2rem 5rem;
+    }
 }
 
 /*---------------LOGO---------------*/
-/*#footer>div.councilLogo {
-    text-align: center !important;
-}*/
+#rbk-footer a.rbk-logo-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 15px;
+    cursor: pointer;
+}
 
-#footer_logo {
+@media(min-width: 40.0625em) {
+    #rbk-footer a.rbk-logo-wrapper {
+        width: 96px;
+        float: left;
+    }
+}
+
+@media(min-width: 77.5em) {
+    #rbk-footer a.rbk-logo-wrapper {
+        margin-right: 45px;
+    }
+}
+
+
+
+#rbk-footer_logo {
     display: block;
-    margin: 0 auto;
     width: fit-content;
     height: fit-content;
+    margin-top: 27px;
 }
 
 .RBKLogo {
@@ -704,79 +1001,124 @@ p.lead {
 
 /*---------------USEFUL LINKS---------------*/
 
-.usefulLinks_nav {
-    margin: 20px auto;
-    padding: 0;
-    height: auto;
-    width: auto;
-    text-align: center;
-}
-
-ul.usefulLinks {
+ul.rbk-useful-links__list {
     padding-left: 0;
     list-style: none;
 }
 
-.usefulLinks li {
+.rbk-useful-links__list li {
     display: inline-block;
-    font-size: 19px;
+    font-size: 1.6rem;
     line-height: 1em;
-    margin: 1em;
 }
 
-.usefulLinks > li:first-child {
-    margin-left: -40px;
+.rbk-useful-links__list li:not(:last-child) {
+    margin-right: 1.6rem;
+    margin-bottom: 1.6rem;
 }
 
-.usefulLinks li a {
+.rbk-useful-links__list > li > a {
     color: #fff;
+    text-decoration: underline !important;
+}
+
+.rbk-useful-links__list > li > a:focus {
+    color: #333 !important;
+    background-color: var(--color-focus);
+    text-decoration: underline !important;
+    box-shadow: none;
+}
+
+.rbk-useful-links__list > li > a:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+    text-decoration-thickness: 1px;
+}
+
+.rbk-useful-links__list > li > a:hover:focus {
+    color: #333 !important;
+    text-decoration: none !important;
+    text-decoration-thickness: 1px;
 }
 
 /*---------------SOCIAL MEDIA ICONS---------------*/
 
-.socialMedia_nav {
-    margin: 0 auto;
-    padding: 0;
-    height: auto;
-    width: auto;
-    text-align: center;
+.rbk-socials > p {
+    margin: 3rem 0 1.5rem 0;
 }
 
-.socialMedia_icons li {
+
+.rbk-social-nav {
+    padding: 0;
+}
+
+.rbk-social-icons {
+    display: flex;
+    gap: 2rem;
+    padding: 0px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+.rbk-social-icons li {
     display: inline-block;
     list-style: none;
-    font-size: 1.25em;
-    border-radius: 50%;
-    background-color: #fff;
-    margin: 15px;
+    font-size: 2rem;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
 }
 
-.socialMedia_icons {
-    padding: 0px;
-}
-
-.socialMedia_icons li a {
-    color: #3c3c3c;
+.rbk-social-icons li a {
+    color: #fff;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    width: 30px;
-    height: 30px;
+    outline-color: #fff;
+    outline-style: solid;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
 }
 
-.socialMedia_icons li:hover {
-    background-color: #09509D;
-    transition: all 300ms ease-in-out;
+.rbk-social-icons li a:focus i {
+    color: var(--color-focus);
 }
 
-.socialMedia_icons li a:hover {
+.rbk-social-icons li a:focus {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    outline-color: var(--color-focus);
+    background-color: transparent;
+    outline-width: 4px;
+}
+
+.rbk-social-icons li a:hover {
+    outline-color: #fff;
+    outline-width: 6px;
+    outline-style: double;
+    background-color: transparent;
+}
+
+.rbk-social-icons li a:hover i {
     color: #fff;
+}
+
+.govuk-grid-row.align-bottom {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .copyrightText {
     width: 100%;
     text-align: center;
 }
+/*=============== END MAIN FOOTER===================*/
 
 /*=======================REGISTRATION PROCESS===============*/
 
@@ -1047,7 +1389,8 @@ ul.registerList > li::before {
     }
 
     .main-grid {
-        -ms-grid-columns: (1fr) [ 2 ] !important;
+        /* Sido syntax error, removed style 16th May 2025 */
+        /* -ms-grid-columns: (1fr) [ 2 ] !important; */
         grid-template-columns: repeat(2, 1fr) !important;
         grid-auto-rows: 120px !important;
     }
@@ -1113,7 +1456,8 @@ ul.registerList > li::before {
 
     #navigation.container {
         width: 1170px !important;
-        background: #eef1e6;
+        /* Sido remove bgc 16th May 2025 */
+        /* background: #eef1e6; */
     }
 
     .environment-banner > div {
@@ -1150,7 +1494,8 @@ ul.registerList > li::before {
     }
 
     ul#session-badge > li:hover {
-        color: #3c3c3c # !important;
+        /* Sido syntax error fix 16th May 2025 */
+        color: #3c3c3c !important;
     }
 
     a#loginLink, a#registerLink {
@@ -1259,15 +1604,15 @@ ul.registerList > li::before {
     }
 
 
-    ul.usefulLinks {
+    ul.rbk-useful-links__list {
         padding-left: 0;
     }
 
-    .usefulLinks > li:first-child {
+    .rbk-useful-links__list > li:first-child {
         margin-left: 14px;
     }
 
-    .usefulLinks > li {
+    .rbk-useful-links__list > li {
         display: block;
     }
 
