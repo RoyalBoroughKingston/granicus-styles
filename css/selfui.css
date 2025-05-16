@@ -427,8 +427,10 @@ a.dropdown-toggle:hover {
 
 }
 
-/* Sido change margin 16th May 2025 */
+/* Comment out by Sido */
 ul#session-badge {
+    /* margin-top: 15px;
+    margin-right: 15.5%; */
     margin-top: 0;
     margin-right: 0;
 }
@@ -964,7 +966,7 @@ p.lead {
 }
 
 /*---------------LOGO---------------*/
-#rbk-footer a.rbk-logo-wrapper {
+#rbk-footer a.rbk-logo_link {
     box-sizing: border-box;
     width: 100%;
     margin: 0 15px;
@@ -972,14 +974,14 @@ p.lead {
 }
 
 @media(min-width: 40.0625em) {
-    #rbk-footer a.rbk-logo-wrapper {
+    #rbk-footer a.rbk-logo_link {
         width: 96px;
         float: left;
     }
 }
 
 @media(min-width: 77.5em) {
-    #rbk-footer a.rbk-logo-wrapper {
+    #rbk-footer a.rbk-logo_link {
         margin-right: 45px;
     }
 }
@@ -1389,8 +1391,6 @@ ul.registerList > li::before {
     }
 
     .main-grid {
-        /* Sido syntax error, removed style 16th May 2025 */
-        /* -ms-grid-columns: (1fr) [ 2 ] !important; */
         grid-template-columns: repeat(2, 1fr) !important;
         grid-auto-rows: 120px !important;
     }
@@ -1608,9 +1608,10 @@ ul.registerList > li::before {
         padding-left: 0;
     }
 
-    .rbk-useful-links__list > li:first-child {
+    /* Sido comment out 16th May 2025 */
+    /* .rbk-useful-links__list > li:first-child {
         margin-left: 14px;
-    }
+    } */
 
     .rbk-useful-links__list > li {
         display: block;
