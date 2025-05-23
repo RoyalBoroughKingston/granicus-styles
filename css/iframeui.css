@@ -277,8 +277,8 @@ a:hover, a:focus {
 }
 
 a:focus {
-    outline: none !important;
-    outline-offset: -2px;
+    outline: 4px solid var(--color-focus) !important;
+    outline-offset: 0;
 }
 
 figure {
