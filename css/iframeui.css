@@ -10540,19 +10540,19 @@ html._AF .achieveform a:focus {
     background-color: var(--color-success);
 }
 
-.achieveforms-container .fillinButtons .btn-af.upload-button {
+.achieveforms-container .btn-af.upload-button {
     color: var(--color-text-primary);
     background: var(--color-grey-light);
     border: 1px solid var(--color-grey-dark);
     box-shadow: 0px 4px var(--color-grey-dark);
 }
 
-.achieveforms-container .fillinButtons .btn-af.upload-button:hover {
+.achieveforms-container .btn-af.upload-button:hover {
     background: var(--color-grey-mid);
     border: 1px solid var(--color-grey-mid);
 }
 
-.achieveforms-container .fillinButtons .btn-af.upload-button:focus {
+.achieveforms-container .btn-af.upload-button:focus {
     color: var(--color-white);
     background: var(--color-grey-dark);
 }
