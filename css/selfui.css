@@ -898,6 +898,15 @@ p.lead {
         font-size: 2rem;
     }
 
+      .rbk-nav__list > .rbk-nav__item > a:hover {
+        color: var(--color-primary-light); 
+    }
+
+    .rbk-nav__list > .rbk-nav__item > a:focus {
+        color: var(--color-primary-dark); 
+        background-color: var(--color-focus);
+    }
+
     .dark .rbk-nav__list > .rbk-nav__item > a {
         color: var(--color-white);
         text-decoration: none;
