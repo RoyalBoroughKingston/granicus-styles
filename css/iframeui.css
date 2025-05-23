@@ -11381,29 +11381,38 @@ a:focus {
     background-color: var(--color-primary-light) !important;
     box-shadow: 0px 4px var(--color-primary) !important;
     border-radius: 8px !important;
+}
 
+.achieveforms-container .btn-af.previousbutton:hover {
+    background-color: var(--color-primary) !important;
+    box-shadow: 0px 4px var(--color-primary-light) !important;
 }
 
 .achieveforms-container .btn-af.cancelbutton {
     color: #0B0C0C !important;
     background-color: var(--color-grey-light) !important;
     box-shadow: 0px 4px var(--color-grey-dark) !important;
+    border: 1px solid var(--color-grey-dark);
     border-radius: 8px !important;
 }
 
-.achieveforms-container .btn-af.nextButton {
+.achieveforms-container .btn-af.cancelbutton:hover {
+    background-color: var(--color-grey-mid) !important;
+    box-shadow: 0px 4px var(--color-grey-dark) !important;
+}
+
+.achieveforms-container .btn-af.nextbutton, 
+.achieveforms-container .btn-af.submitbutton {
     color: #fff !important;
     background-color: var(--color-success) !important;
     box-shadow: 0px 4px var(--color-success-hover) !important;
     border-radius: 8px !important;
 }
 
-
-.achieveforms-container .btn-af.submitbutton {
-    color: #fff !important;
-    background-color: var(--color-success) !important;
-    box-shadow: 0px 4pX var(--color-success-hover) !important;
-    border-radius: 8px !important;
+.achieveforms-container .btn-af.nextbutton:hover, 
+.achieveforms-container .btn-af.submitbutton:hover {
+    background-color: var(--color-success-hover) !important;
+    box-shadow: 0px 4px var(--color-success) !important;
 }
 
 /*._AF .btn-af.active, ._AF .btn-af:active, ._AF .btn-af:focus, ._AF .btn-af:hover, .achieveforms-container .btn-af.active, .achieveforms-container .btn-af:active, .achieveforms-container .btn-af:focus, .achieveforms-container .btn-af:hover, .open .dropdown-toggle._AF .btn-af, .open .dropdown-toggle.achieveforms-container .btn-af {
