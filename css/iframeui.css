@@ -10828,14 +10828,15 @@ fieldset.valid input[type=checkbox] + label:before {
 
 fieldset.valid input[type=radio] + label:before {
     border-color: #060 !important;
-    border: 0px !important;
+    border: 0px;
 }
 
 .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .check2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .radio2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .check2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .radio2:focus + label:before {
     color: #064d84;
     /* Sido change focus colour 16th May 2025 */
-    box-shadow: 0 0 0 0.2rem var(--color-focus);
-    border: 3px solid black;
+    box-shadow: 0 0 0 4px var(--color-focus);
+    border: 4px solid black;
+    margin-right: 8px;
 }
 
 
@@ -10863,7 +10864,7 @@ fieldset.valid input[type=radio] + label:before {
 .gds-select [type=checkbox] + label::before, .gds-select [type=radio] + label::before {
     border-radius: 0px;
     content: "";
-    border: 2px solid #000 !important;
+    border: 4px solid #000;
     background: transparent;
     width: 35px;
     height: 35px;
@@ -10911,7 +10912,7 @@ fieldset.valid input[type=radio] + label:before {
     width: 0px;
     height: 0px;
     position: absolute;
-    top: 12px;
+    top: 13px;
     left: 8px;
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -10932,8 +10933,7 @@ fieldset.valid input[type=radio] + label:before {
 
 /*Below styles replace the green color on this fields*/
 fieldset.valid .gds-select[type=checkbox] + label:before, fieldset.valid .gds-select[type=radio] + label:before {
-    border-color: #000 !important;
-    border: 2px solid #000 !important;
+    border: 2px solid #000;
 }
 
 .gds-select[type=checkbox].checked + label:before, .gds-select[type=checkbox]:checked + label:before {
