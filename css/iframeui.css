@@ -10203,7 +10203,6 @@ a#printButton {
     .savebutton,
     .submitbutton {
         display: block;
-        color: #fff !important;
         width: 100% !important;
         margin-top: 3px !important;
     }
