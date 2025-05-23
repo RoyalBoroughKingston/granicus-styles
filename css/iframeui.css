@@ -10063,7 +10063,7 @@ input[type='text']:focus {
     /*box-shadow: none!important;*/
     /*background-color: #162755!important;*/
     padding: 10px 25px !important;
-    color: #FFF !important;
+    color: #FFF;
     border: 0;
 }
 
@@ -11364,55 +11364,55 @@ a:focus {
 
 /*=======Buttons======*/
 /* Sido add box-shadow and change colour 16th May 2025 */
-._AF .btn-af, .achieveforms-container .btn-af {
+._AF .btn-af, .achieveforms-container .fillinButtons .btn-af {
     border-radius: 0;
     box-shadow: none;
     text-shadow: none;
     border: 0;
     background-color: var(--color-primary-light);
     box-shadow: 0px 4px var(--color-primary);
-    padding: 6px 12px !important;
+    padding: 6px 12px;
     color: #fff;
     border-radius: 8px;
 }
 /* Sido add new button styles 16th May 2025 */
-.achieveforms-container .btn-af.previousbutton {
-    color: #fff !important;
-    background-color: var(--color-primary-light) !important;
-    box-shadow: 0px 4px var(--color-primary) !important;
-    border-radius: 8px !important;
+.achieveforms-container .fillinButtons .btn-af.previousbutton {
+    color: #fff;
+    background-color: var(--color-primary-light);
+    box-shadow: 0px 4px var(--color-primary);
+    border-radius: 8px;
 }
 
-.achieveforms-container .btn-af.previousbutton:hover {
-    background-color: var(--color-primary) !important;
-    box-shadow: 0px 4px var(--color-primary-light) !important;
+.achieveforms-container .fillinButtons .btn-af.previousbutton:hover {
+    background-color: var(--color-primary);
+    box-shadow: 0px 4px var(--color-primary-light);
 }
 
-.achieveforms-container .btn-af.cancelbutton {
-    color: #0B0C0C !important;
-    background-color: var(--color-grey-light) !important;
-    box-shadow: 0px 4px var(--color-grey-dark) !important;
+.achieveforms-container .fillinButtons .btn-af.cancelbutton {
+    color: #0B0C0C;
+    background-color: var(--color-grey-light);
+    box-shadow: 0px 4px var(--color-grey-dark);
     border: 1px solid var(--color-grey-dark);
-    border-radius: 8px !important;
+    border-radius: 8px;
 }
 
-.achieveforms-container .btn-af.cancelbutton:hover {
-    background-color: var(--color-grey-mid) !important;
-    box-shadow: 0px 4px var(--color-grey-dark) !important;
+.achieveforms-container .fillinButtons .btn-af.cancelbutton:hover {
+    background-color: var(--color-grey-mid);
+    box-shadow: 0px 4px var(--color-grey-dark);
 }
 
-.achieveforms-container .btn-af.nextbutton, 
-.achieveforms-container .btn-af.submitbutton {
-    color: #fff !important;
-    background-color: var(--color-success) !important;
-    box-shadow: 0px 4px var(--color-success-hover) !important;
-    border-radius: 8px !important;
+.achieveforms-container .fillinButtons .btn-af.nextbutton, 
+.achieveforms-container .fillinButtons .btn-af.submitbutton {
+    color: #fff;
+    background-color: var(--color-success);
+    box-shadow: 0px 4px var(--color-success-hover);
+    border-radius: 8px;
 }
 
 .achieveforms-container .btn-af.nextbutton:hover, 
 .achieveforms-container .btn-af.submitbutton:hover {
-    background-color: var(--color-success-hover) !important;
-    box-shadow: 0px 4px var(--color-success) !important;
+    background-color: var(--color-success-hover);
+    box-shadow: 0px 4px var(--color-success);
 }
 
 /*._AF .btn-af.active, ._AF .btn-af:active, ._AF .btn-af:focus, ._AF .btn-af:hover, .achieveforms-container .btn-af.active, .achieveforms-container .btn-af:active, .achieveforms-container .btn-af:focus, .achieveforms-container .btn-af:hover, .open .dropdown-toggle._AF .btn-af, .open .dropdown-toggle.achieveforms-container .btn-af {
