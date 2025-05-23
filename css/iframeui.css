@@ -10009,12 +10009,6 @@ form#feedback-form .form-type-radio:last-child {
     }
 }
 
-body {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans';
     font-style: normal;
@@ -10407,22 +10401,18 @@ input[type='text'], input[type='number'] {
 }
 
 a:link, html._AF a {
-    color: #005ea5;
+    color: var(--color-primary-light);
     padding: 0 2px;
     text-decoration: underline;
 }
 
 a:hover, html._AF a:hover {
-    color: #2b8cc4 !important;
+    color: var(--color-primary-dark) !important;
 }
 
-a:focus {
-    outline: 3px solid transparent;
-    color: #fff !important;
-    background-color: #09509d;
-    -webkit-box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
-    box-shadow: 0 -2px #09509d, 0 4px #0b0c0c;
-    text-decoration: none !important;
+html._AF .achieveform a:focus {
+    color: var(--color-primary-dark) !important;
+    background-color: var(--color-focus);
 }
 
 /*=======Dropdown styles - added 29/01/2021===========*/
