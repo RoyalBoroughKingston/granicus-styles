@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
 html {
@@ -56,7 +55,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
     line-height: 1.42857143;
     color: #333;
@@ -5272,7 +5271,7 @@ button.close {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     letter-spacing: normal;
@@ -5406,7 +5405,7 @@ button.close {
     display: none;
     max-width: 276px;
     padding: 1px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     letter-spacing: normal;
@@ -7873,7 +7872,7 @@ footer.footer #block-block-2 .footer_vote_link .footer_vote_down:before {
 .front .pane-twitter-block-hp-twitter-block-hp {
     background-color: #959595;
     color: #fff;
-    font-family: open sans;
+    font-family: "Open Sans", sans-serif;
     margin-top: 40px;
     padding: 10px 40px 40px;
     text-align: center;
@@ -10035,9 +10034,9 @@ span,
 label,
 ._fieldName,
 .fieldInput, p {
-    font-family: 'Noto Sans', sans-serif !important;
+    font-family: "Open Sans", sans-serif !important;
     font-weight: 300 !important;
-    font-size: 19px !important;
+    font-size: 20px;
 }
 
 /* Sido remove !important 16th May 2025 */
@@ -10271,7 +10270,7 @@ li.sectionNameWrapper a::before {
 
 li.sectionNameWrapper a {
     color: #959595 !important;
-    font-family: 'Noto Sans', Arial, Helvetica !important;
+    font-family: "Open Sans", sans-serif !important;
     font-size: 17px !important;
     height: 50px;
 }
@@ -10398,7 +10397,7 @@ input[type='text'], input[type='number'] {
 }
 
 ._fieldName {
-    font-family: 'Noto Sans', sans-serif !important;
+    font-family: "Open Sans", sans-serif !important;
     font-weight: bold !important;
     font-size: 19px !important;
 }
@@ -10969,7 +10968,7 @@ fieldset.valid .gds-select[type=checkbox] + label:before, fieldset.valid .gds-se
 /*===========******************Moved from iframe.css*******************==================*/
 
 body._AF a, body._AF div, body._AF h1, body._AF h2, body._AF h3, body._AF h4, body._AF h5, body._AF p, body._AF span:not(.fa), div._AF a, div._AF div, div._AF h1, div._AF h2, div._AF h3, div._AF h4, div._AF h5, div._AF p, div._AF span:not(.fa), html._AF a, html._AF div, html._AF h1, html._AF h2, html._AF h3, html._AF h4, html._AF h5, html._AF p, html._AF span:not(.fa) {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 body._AF article, body._AF footer, body._AF form, body._AF header, body._AF input, body._AF label, body._AF nav, body._AF section, body._AF select, body._AF textarea, div._AF article, div._AF footer, div._AF form, div._AF header, div._AF input, div._AF label, div._AF nav, div._AF section, div._AF select, div._AF textarea, html._AF article, html._AF footer, html._AF form, html._AF header, html._AF input, html._AF label, html._AF nav, html._AF section, html._AF select, html._AF textarea {
@@ -10977,7 +10976,7 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
 }
 
 .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper label, .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper label {
-    font-size: 19px;
+    font-size: 20px;
 }
 
 /*===========Top border green===================*/
@@ -11229,7 +11228,7 @@ span.form-link-color {
     color: #fff !important;
     cursor: pointer;
     display: inline-block;
-    font-family: "Noto Sans", sans-serif !important;
+    font-family: "Open Sans", sans-serif !important;
     font-weight: 700;
     font-size: 16px !important;
     margin: 0 0 .75rem;
@@ -11673,7 +11672,7 @@ submission-message-content h4 {
 
 @media print {
     .gds-summary-list {
-        font-family: sans-serif;
+        font-family: "Open Sans", sans-serif;
     }
 }
 
@@ -11875,7 +11874,7 @@ submission-message-content h4 {
     color: #fff !important;
     cursor: pointer;
     display: inline-block;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     margin: 0 0 .75rem;
     padding: .625rem .75rem !important;
