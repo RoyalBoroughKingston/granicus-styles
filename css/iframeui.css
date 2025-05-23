@@ -10064,7 +10064,7 @@ input[type='text']:focus {
     /*background-color: #162755!important;*/
     padding: 10px 25px !important;
     color: #FFF !important;
-    border: 0 !important;
+    border: 0;
 }
 
 /*Added by Merizza 18/02/2021 to add button styles on focus*/
@@ -12930,18 +12930,17 @@ a.rbk-link-button--primary-inverse:focus:not(:hover) {
 }
 
 label.prefix, span.prefix {
-    border: none important;
+    border: none !important;
 }
 
-
-.btn-default, .btn-af {
+/* Comment out duplicate */
+/* .btn-default, .btn-af {
     border-radius: 0 !important;
-    /* box-shadow: none!important; */
     background-color: #162755 !important;
     padding: 10px 25px !important;
     color: #FFF !important;
-    border: 0 !important;
-}
+    border: 0;
+} */
 
 .achieveforms-container .resumable-list i.remove-upload {
     float: left;
