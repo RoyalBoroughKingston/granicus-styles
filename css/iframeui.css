@@ -10070,20 +10070,20 @@ input[type='text']:focus {
 /*Added by Merizza 18/02/2021 to add button styles on focus*/
 
 .btn.btn-af:focus {
-    background-color: #09509d !important;
-    -webkit-box-shadow: 0 4px 0 #0b0c0c !important;
-    box-shadow: 0px 4px 0 #0b0c0c !important;
+    background-color: #09509d;
+    -webkit-box-shadow: 0 4px 0 #0b0c0c;
+    box-shadow: 0px 4px 0 #0b0c0c;
 }
 
 .btn.btn-af:hover {
-    background: #213773 !important;
-    color: #FFF !important;
+    background: #213773;
+    color: #FFF;
 }
 
 .btn.btn-af:active {
-    background-color: #09509d !important;
-    -webkit-box-shadow: 0 4px 0 #0b0c0c !important;
-    box-shadow: 0px 4px 0 #0b0c0c !important;
+    background-color: #09509d;
+    -webkit-box-shadow: 0 4px 0 #0b0c0c;
+    box-shadow: 0px 4px 0 #0b0c0c;
 }
 
 /*
@@ -10091,13 +10091,13 @@ input[type='text']:focus {
 .cancelbutton:hover,
 .nextbutton:hover,
 .savebutton:hover {
-	/*border: 2px solid #162755 !important;
+	/*border: 2px solid #162755;
 
 }*/
 
 
 button:hover {
-    background-color: #19A988 !important;
+    background-color: #19A988;
 }
 
 .button1 {
