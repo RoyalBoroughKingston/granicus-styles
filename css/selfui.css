@@ -71,7 +71,7 @@ input[type='text'], input[type='number'] {
 }
 
 ._fieldName {
-    font-family: 'Noto Sans', sans-serif !important;
+    font-family: var(--font-main) !important;
     font-weight: bold !important;
     font-size: 19px !important;
 }
@@ -274,7 +274,7 @@ a:focus {
 
 body, html {
     /*	overflow-x: hidden !important; - do not do this as it breaks jump to top when changing sections */
-    font-family: 'Noto Sans', sans-serif !important;
+    font-family: var(--font-main) !important;
 }
 
 /*-----Reset link style-----*/
