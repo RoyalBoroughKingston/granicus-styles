@@ -10821,7 +10821,7 @@ input[type=radio].checked + label:before {
 }
 
 fieldset.valid input[type=checkbox] + label:before {
-    border-color: #060 !important;
+    border-color: var(--color-text-primary) !important;
 }
 
 fieldset.valid input[type=radio] + label:before {
@@ -10860,9 +10860,9 @@ fieldset.valid input[type=radio] + label:before {
 }
 
 .gds-select [type=checkbox] + label::before, .gds-select [type=radio] + label::before {
-    border-radius: 0px;
     content: "";
-    border: 4px solid #000;
+    border: 2px solid #000;
+    border-radius: 8px;
     background: transparent;
     width: 35px;
     height: 35px;
@@ -10931,7 +10931,7 @@ fieldset.valid input[type=radio] + label:before {
 
 /*Below styles replace the green color on this fields*/
 fieldset.valid .gds-select[type=checkbox] + label:before, fieldset.valid .gds-select[type=radio] + label:before {
-    border: 2px solid #000;
+    border: 2px solid var(--color-text-primary);
 }
 
 .gds-select[type=checkbox].checked + label:before, .gds-select[type=checkbox]:checked + label:before {
