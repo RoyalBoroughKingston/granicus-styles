@@ -814,7 +814,7 @@ p.lead {
     }
 
       .rbk-nav__list > .rbk-nav__item > a:hover {
-        color: var(--color-primary-light); 
+        color: var(--color-primary-light) !important; 
     }
 
     .rbk-nav__list > .rbk-nav__item > a:focus {
