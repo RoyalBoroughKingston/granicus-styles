@@ -256,10 +256,8 @@ a.btn.btn-lg.btn-primary.top:hover {
 /*Adding by Merizza 29/01/21 to fix the focus styles issue*/
 a.btn.btn-lg.btn-primary.top:focus {
     outline: 3px solid transparent;
-    color: #fff !important;
-    background-color: #09509d !important;
-    -webkit-box-shadow: 0 -2px #fd0, 0 4px #0b0c0c !important;
-    box-shadow: 0 -2px #09509d, 0 4px #0b0c0c !important;
+    color: var(--color-primary-dark) !important;
+    background-color: var(--color-focus) !important;
     text-decoration: none !important;
 }
 
@@ -899,6 +897,7 @@ p.lead {
     width: 100%;
     margin: 0 15px;
     cursor: pointer;
+    margin-top: 27px;
 }
 
 @media(min-width: 40.0625em) {
@@ -920,7 +919,6 @@ p.lead {
     display: block;
     width: fit-content;
     height: fit-content;
-    margin-top: 27px;
 }
 
 .RBKLogo {
