@@ -2274,7 +2274,8 @@ textarea.input-lg, select[multiple].input-lg {
     }
 }
 
-.btn {
+.btn,
+.achieveforms-container .fillinButtons-wrapper .fillinButtons .btn {
     display: inline-block;
     margin-bottom: 0;
     font-weight: 400;
@@ -2285,8 +2286,8 @@ textarea.input-lg, select[multiple].input-lg {
     background-image: none;
     border: 1px solid transparent;
     white-space: pre-wrap;
-    padding: 6px 12px;
-    font-size: 19px;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.9rem;
     line-height: 1.42857143;
     border-radius: 4px;
     -webkit-user-select: none;
@@ -2297,6 +2298,7 @@ textarea.input-lg, select[multiple].input-lg {
     /* Sido add 16th May 2025 */
     padding: 1.2rem 2.4rem;
     border-radius: 0.8rem;
+    margin-bottom: 1.2rem;
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
