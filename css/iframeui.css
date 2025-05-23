@@ -10059,10 +10059,10 @@ input[type='text']:focus {
 
 .btn-default,
 .btn-af {
-    border-radius: 0 !important;
+    border-radius: 0;
     /*box-shadow: none!important;*/
     /*background-color: #162755!important;*/
-    padding: 10px 25px !important;
+    padding: 10px 25px;
     color: #FFF;
     border: 0;
 }
