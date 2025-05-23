@@ -11936,7 +11936,7 @@ a.rbk-link-button--primary-inverse:focus:not(:hover) {
     }
 
     #rbk-footer a.rbk-link-button--primary-inverse {
-        max-width: 240px;
+        max-width: 250px;
     }
 
 }
