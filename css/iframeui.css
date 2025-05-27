@@ -3413,7 +3413,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 
 .navbar {
     position: relative;
-    min-height: 50px;
+    min-height: 20px;
     margin-bottom: 5px;
     border: 1px solid transparent;
 }
@@ -3421,6 +3421,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 @media (min-width: 768px) {
     .navbar {
         border-radius: 4px;
+        margin-top: 2rem;
     }
 }
 
