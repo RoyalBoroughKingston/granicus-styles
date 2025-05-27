@@ -12004,7 +12004,6 @@ label.prefix, span.prefix {
 .govuk-details__summary:focus .govuk-details__summary-text{
     background-color: #fd0;
     outline: 3px solid rgba(0,0,0,0);
-    box-shadow: 0 -2px #fd0, 0 4px var(--color-text-primary);
     text-decoration: none;
 }
 
