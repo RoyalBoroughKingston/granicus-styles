@@ -1355,7 +1355,7 @@ ul.registerList > li::before {
 @media (min-width: 768px) {
 
     #navigation.container {
-        width: 640px !important;
+        width: 662px !important;
         padding-left: 18px;
     }
 
@@ -1368,7 +1368,7 @@ ul.registerList > li::before {
 @media (min-width: 992px) {
 
     #navigation.container {
-        width: 870px !important;
+        width: 890px !important;
         padding-left: 18px;
     }
 
