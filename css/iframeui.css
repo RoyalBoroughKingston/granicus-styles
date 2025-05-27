@@ -10545,6 +10545,8 @@ html._AF .achieveform a:focus {
     background: var(--color-grey-light);
     border: 1px solid var(--color-grey-dark);
     box-shadow: 0px 4px var(--color-grey-dark);
+    margin-left: 1rem;
+    margin-bottom: 0;
 }
 
 .achieveforms-container .btn-af.upload-button:hover {
@@ -10552,7 +10554,8 @@ html._AF .achieveform a:focus {
     border: 1px solid var(--color-grey-mid);
 }
 
-.achieveforms-container .btn-af.upload-button:focus {
+.achieveforms-container .btn-af.upload-button:focus, 
+.achieveforms-container .btn-af.upload-button:focus:not(:active):not(:hover) {
     color: var(--color-white);
     background: var(--color-grey-dark);
 }
@@ -11256,9 +11259,12 @@ span.form-link-color {
 
     button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton {
         width: 100% !important;
-        margin-top: 3.5px !important;
-        /*background-color: #162755 !important;*/
-        color: #fff !important;
+    }
+
+    .achieveforms-container .btn-af.upload-button {
+        width: 100% !important;
+        margin-top: 2rem;
+        margin-left: 0;
     }
 
     /*===========Download PDF, Return to Website, Leave a Review Buttons============*/
@@ -11773,6 +11779,11 @@ label.prefix, span.prefix {
 .achieveforms-container .resumable-drop {
     border-top: 1px dashed #aaa !important;
     border-radius: 8px;
+    padding: 3.2rem;
+}
+
+.achieveforms-container .resumable-drop .drop-upload-message{
+    vertical-align: middle;
 }
 
 .achieveforms-container .resumable-list i.remove-upload {
