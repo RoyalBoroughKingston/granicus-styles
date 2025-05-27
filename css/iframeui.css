@@ -274,10 +274,15 @@ a:hover, a:focus {
 }
 
 a:focus {
-    outline: 4px solid var(--color-focus);
+    /* outline: 4px solid var(--color-focus); */
+    outline: none;
     outline-offset: 0;
     color: var(--color-link-hover);
     background-color: var(--color-focus);
+}
+
+a.skip:active, a.skip:focus, a.skip:hover {
+    color: var(--color-link-hover);
 }
 
 figure {
