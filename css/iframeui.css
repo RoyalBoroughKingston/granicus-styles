@@ -4464,7 +4464,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     line-height: 27px;
     color: var(--color-white);
     text-align: center;
-    background-color: #2e7d6b;
+    background-color: var(--color-rbk-blue);
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
@@ -10414,11 +10414,11 @@ input[type='text'], input[type='number'] {
 } */
 
 a:hover, html._AF a:hover {
-    color: var(--color-link-hover) !important;
+    color: var(--color-link-hover);
 }
 
 html._AF .achieveform a:focus {
-    color: var(--color-link-hover) !important;
+    color: var(--color-link-hover);
     background-color: var(--color-focus);
 }
 
