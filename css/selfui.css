@@ -243,6 +243,7 @@ a.btn.btn-lg.btn-primary.top {
     border-right: 2px solid #09509d !important;
     padding: 0 12px !important;
     margin-right: 1px;
+    box-shadow: none;
 }
 
 a.btn.btn-lg.btn-primary.top:first-child {
