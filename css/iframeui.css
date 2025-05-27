@@ -10396,12 +10396,6 @@ input[type='text'], input[type='number'] {
     border-radius: 0 !important;
 }
 
-._fieldName {
-    font-family: "Open Sans", sans-serif !important;
-    font-weight: bold !important;
-    font-size: 19px !important;
-}
-
 .fieldName {
     margin-bottom: 0px !important;
 }
