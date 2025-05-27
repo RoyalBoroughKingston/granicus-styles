@@ -124,11 +124,6 @@ dfn {
     font-style: italic;
 }
 
-h1 {
-    font-size: 2em;
-    margin: .67em 0;
-}
-
 mark {
     background: #ff0;
     color: var(--color-black);
@@ -353,10 +348,9 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
     color: inherit;
+    font-family: inherit;
+    font-weight: 600;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
@@ -384,27 +378,114 @@ h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small, .h4 .s
 }
 
 h1, .h1 {
-    font-size: 29px;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+}
+
+@media (min-width: 768px) {
+    h1, .h1 {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+    } 
+}
+
+@media (min-width: 992px) {
+     h1, .h1 {
+        font-size: 4rem;
+        line-height: 4.8rem;
+    } 
 }
 
 h2, .h2 {
-    font-size: 25px;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+}
+
+@media (min-width: 768px) {
+    h2, .h2 {
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+    } 
+}
+
+@media (min-width: 992px) {
+     h2, .h2 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+    } 
 }
 
 h3, .h3 {
-    font-size: 21px;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+@media (min-width: 768px) {
+    h3, .h3 {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+    } 
+}
+
+@media (min-width: 992px) {
+     h3, .h3 {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    } 
 }
 
 h4, .h4 {
-    font-size: 19px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+@media (min-width: 768px) {
+    h4, .h4 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    } 
+}
+
+@media (min-width: 992px) {
+     h4, .h4 {
+        line-height: 2.8rem;
+    } 
 }
 
 h5, .h5 {
-    font-size: 19px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+@media (min-width: 768px) {
+    h5, .h5 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    } 
+}
+
+@media (min-width: 992px) {
+     h5, .h5 {
+        line-height: 2.8rem;
+    } 
 }
 
 h6, .h6 {
-    font-size: 17px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+@media (min-width: 768px) {
+    h6, .h6 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    } 
+}
+
+@media (min-width: 992px) {
+     h6, .h6 {
+        line-height: 2.8rem;
+    } 
 }
 
 p {
@@ -10147,8 +10228,23 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
 }
 
 span._formName {
-    font-size: 29px !important;
-    font-weight: bold !important;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    span._formName {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+    } 
+}
+
+@media (min-width: 992px) {
+     span._formName {
+        font-size: 4rem;
+        line-height: 4.8rem;
+    } 
 }
 
 p.formDescription {
