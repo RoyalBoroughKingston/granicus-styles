@@ -3414,7 +3414,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 .navbar {
     position: relative;
     min-height: 50px;
-    margin-bottom: 27px;
+    margin-bottom: 5px;
     border: 1px solid transparent;
 }
 
@@ -10772,7 +10772,6 @@ fieldset.valid .gds-select[type=checkbox] + label:before, fieldset.valid .gds-se
 /*===========Top border green===================*/
 div#page-container {
     background-color: var(--color-white);
-    border-top: 4px solid #02836d;
     margin: 0 0 1.5rem;
 }
 
@@ -10796,7 +10795,7 @@ div#page-container {
     line-height: 27px;
     color: var(--color-white);
     text-align: center;
-    background-color: #2e7d6b;
+    background-color: var(--color-rbk-blue);
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
@@ -10838,10 +10837,8 @@ div#page-container {
 }
 
 /*==========================FORM IFRAME============================*/
-
 #page.render {
     margin: 0 auto;
-    padding: 24px 24px !important;
 }
 
 /*----------------Remove Favicons---------------------*/
@@ -11232,11 +11229,6 @@ span.form-link-color {
 
     section.sectionsHead.navbar-default.render {
         padding: 0px 0px !important;
-    }
-
-    /*==============Forms Layout============*/
-    #page.render {
-        padding: 14px 0 !important;
     }
 
     /*===========Cancel, Previous, Submit Buttons=============*/
