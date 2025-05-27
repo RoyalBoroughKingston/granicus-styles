@@ -555,6 +555,7 @@ a.bg-danger:hover, a.bg-danger:focus {
 ul, ol {
     margin-top: 0;
     margin-bottom: 13.5px;
+    font-size: 2rem;
 }
 
 ul ul, ol ul, ul ol, ol ol {
@@ -10040,7 +10041,7 @@ label,
 ._fieldName,
 .fieldInput, p {
     font-family: "Open Sans", sans-serif !important;
-    font-weight: 300 !important;
+    font-weight: 400;
     font-size: 20px;
 }
 
