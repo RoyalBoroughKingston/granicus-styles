@@ -9251,12 +9251,6 @@ form#feedback-form .form-type-radio:last-child {
         display: none;
     }
 
-    .btn-primary {
-        color: #000;
-        background-color: transparent;
-        border: none;
-    }
-
     .main-container .region-header form#search-block-form button.btn-primary {
         font-size: 7vw;
     }
