@@ -1355,7 +1355,7 @@ ul.registerList > li::before {
 @media (min-width: 768px) {
 
     #navigation.container {
-        width: 750px !important;
+        width: 640px !important;
         padding-left: 18px;
     }
 
@@ -1368,7 +1368,7 @@ ul.registerList > li::before {
 @media (min-width: 992px) {
 
     #navigation.container {
-        width: 970px !important;
+        width: 870px !important;
         padding-left: 18px;
     }
 
@@ -1379,12 +1379,6 @@ ul.registerList > li::before {
 }
 
 @media (min-width: 1200px) {
-
-    #navigation.container {
-        width: 1170px !important;
-        /* Sido remove bgc 16th May 2025 */
-        /* background: #eef1e6; */
-    }
 
     .environment-banner > div {
         max-width: 1170px !important;
