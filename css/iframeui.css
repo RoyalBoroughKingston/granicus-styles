@@ -10840,6 +10840,7 @@ div#page-container {
 /*==========================FORM IFRAME============================*/
 #page.render {
     margin: 0 auto;
+    padding: 0;
 }
 
 /*----------------Remove Favicons---------------------*/
