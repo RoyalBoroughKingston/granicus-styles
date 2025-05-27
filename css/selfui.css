@@ -1,23 +1,21 @@
 /* Sido add root colour 16th May 2025 */
 :root {
     /* Primary brand colours */
-    --color-primary: #162655;
-    --color-primary-light: #0060AC;
-    --color-primary-dark: #003078;
+    --color-rbk-blue: #162655;
+    --color-blue: #0060AC;
 
     /* Secondary and utility colours */
-    --color-secondary: #475054;
     --color-text-primary: #0B0C0C;
-    --color-text-secondary: #505A5F;
+    --color-text-secondary: #475054;
     --color-text-disabled: #B1B4B6;
 
     /* UI/UX feedback colours */
-    --color-success: #00681F;
-    --color-success-hover: #004E17;
-    --color-success-disabled: #99B8A2;
+    --color-green-normal: #00681F;
+    --color-green-hover: #004E17;
+    --color-green-disabled: #99B8A2;
 
-    --color-warning: #EC6719;
-    --color-warning-light: #FDF0E8;
+    --color-orage: #EC6719;
+    --color-orage-pale: #FDF0E8;
 
     --color-error: #AD0000;
     --color-error-hover: #7A0000;
@@ -28,12 +26,17 @@
 
     /* Teal shades */
     --color-teal: #5EBEBF;
-    --color-teal-light: #EFF8F9;
+    --color-teal-pale: #EFF8F9;
+
+     --color-link-primary: #0060AC;
+    --color-link-hover: #003078;
+    --color-link-visited: #4C2C92;
 
     /* Neutrals */
-    --color-white: #ffffff;
-    --color-grey-light: #F3F2F1;
-    --color-grey-mid: #B1B4B6;
+    --color-white: #fff;
+    --color-light-grey: #F3F2F1;
+    --color-mid-grey: #B1B4B6;
+    --color-dark-grey: #505A5F;
     --color-black: #000000;
 
     /* Typography */
@@ -97,31 +100,31 @@ div#header {
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: #3c3c3c !important;
-    color: #fff !important;
+    color: var(--color-white) !important;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #000 !important;
+    color: var(--color-black) !important;
 }
 
 /*Updated by Merizza 04/03/2021 to fix dropdown menu styles on focus*/
 /* Sido fix syntax 16th May 2025  */
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #3c3c3c !important;
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 
 .navbar-inverse .navbar-nav > li > a:focus {
     outline: 3px solid transparent;
-    color: #fff !important;
+    color: var(--color-white) !important;
     background-color: #09509d;
-    -webkit-box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
-    box-shadow: 0 -2px #09509d, 0 4px #0b0c0c;
+    -webkit-box-shadow: 0 -2px #fd0, 0 4px var(--color-text-primary);
+    box-shadow: 0 -2px #09509d, 0 4px var(--color-text-primary);
     text-decoration: none !important;
 }
 
 .navbar.main.navbar-static-top.navbar-inverse {
-    background-color: #fff;
+    background-color: var(--color-white);
     height: auto;
     border-bottom: 1px solid transparent;
 }
@@ -154,7 +157,7 @@ a#toolbar_logo:focus {
 /*============Added by Merizza 04/02/21 - changing focus styles of dropdown menu==============*/
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-    color: #fff !important;
+    color: var(--color-white) !important;
     background-color: #09509d !important;
 }
 
@@ -257,7 +260,7 @@ a.btn.btn-lg.btn-primary.top:hover {
 /*Adding by Merizza 29/01/21 to fix the focus styles issue*/
 a.btn.btn-lg.btn-primary.top:focus {
     outline: 3px solid transparent;
-    color: var(--color-primary-dark) !important;
+    color: var(--color-link-hover) !important;
     background-color: var(--color-focus) !important;
     text-decoration: none !important;
 }
@@ -279,7 +282,7 @@ a.btn.btn-lg.btn-primary.top > .caret {
 #registerLink, #loginLink {
     display: none;
     color: #A0505C !important;
-    background-color: #fff !important;
+    background-color: var(--color-white) !important;
     border-radius: 25px;
     transition: all 300ms fade-in;
 }
@@ -290,18 +293,18 @@ a.btn.btn-lg.btn-primary.top > .caret {
 
 #registerLink:hover, #loginLink:hover {
     color: #A0505C !important;
-    background: #fff;
+    background: var(--color-white);
     border: 2px solid #A0505C;
 }
 
 #inner_warning_text > a {
     font-size: 12px !important;
-    color: #fff;
+    color: var(--color-white);
     text-decoration: none;
 }
 
 #inner_warning_text > a:hover {
-    background-color: #fff;
+    background-color: var(--color-white);
     color: #09509D;
 }
 
@@ -387,7 +390,7 @@ p.lead {
 }
 
 .registerButton {
-    color: #fff !important;
+    color: var(--color-white) !important;
     background-color: #A0505C;
     border-radius: 25px;
     border: none;
@@ -399,7 +402,7 @@ p.lead {
 }
 
 .registerButton:hover {
-    background-color: #fff !important;
+    background-color: var(--color-white) !important;
     color: #A0505C !important;
     border: 3px solid #A0505C;
     -webkit-box-shadow: none !important;
@@ -407,7 +410,7 @@ p.lead {
 }
 
 .registerButton:active {
-    background-color: #fff !important;
+    background-color: var(--color-white) !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
@@ -450,12 +453,12 @@ p.lead {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.25;
-    color: #0b0c0c;
+    color: var(--color-text-primary);
     padding: 1.6rem 2.4rem 1.6rem 3.2rem;
     margin-top: 20px;
     margin-bottom: 20px;
     clear: both;
-    border-left: 10px solid #0060AC;
+    border-left: 10px solid var(--color-blue);
     background: #E8F1F8;
 }
 
@@ -491,23 +494,22 @@ p.lead {
     line-height: 1.25;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .notification-banner__content {
     /* Sido change padding, add radius */
-    color: #0b0c0c;
+    color: var(--color-text-primary);
     padding: 2.4rem;
-    background-color: #fff;
+    background-color: var(--color-white);
     border-radius: 0 0 6px 6px;
 }
 
 /*Confirmation panel*/
 .confirmation-panel-container {
     /* Sido change bgc add radius */
-    color: #fff;
-    background-color: var(--color-success);
-    background: #00681F;
+    color: var(--color-white);
+    background-color: var(--color-green-normal);
     border-radius: 8px;
 }
 
@@ -535,7 +537,7 @@ p.lead {
     font-size: 32px !important;
     font-size: 2rem;
     line-height: 1.09375;
-    color: #fff !important;
+    color: var(--color-white) !important;
 }
 
 .confirmation-panel__body {
@@ -545,7 +547,7 @@ p.lead {
     font-size: 24px !important;
     font-size: 1.5rem;
     line-height: 1.5;
-    color: #fff !important;
+    color: var(--color-white) !important;
 }
 
 
@@ -557,7 +559,6 @@ p.lead {
     padding: 2.4rem;
     border: 4px solid var(--color-error);
     color: var(--color-error) !important;
-    color: #AD0000;
     border-radius: 8px;
 }
 
@@ -582,10 +583,10 @@ p.lead {
     left: 0;
     min-width: 35px;
     min-height: 35px;
-    border: 3px solid #0b0c0c;
+    border: 3px solid var(--color-text-primary);
     border-radius: 50%;
-    color: #fff;
-    background: #0b0c0c;
+    color: var(--color-white);
+    background: var(--color-text-primary);
     font-size: 25px !important;
     line-height: 29px;
     text-align: center;
@@ -603,7 +604,7 @@ p.lead {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5em;
-    color: #0b0c0c;
+    color: var(--color-text-primary);
     display: block;
     padding-left: 45px;
 }
@@ -654,7 +655,7 @@ p.lead {
 }
 
 .dark.rbk-nav {
-    background-color: var(--color-primary);
+    background-color: var(--color-rbk-blue);
     box-shadow: none;
     display: none;
 }
@@ -706,7 +707,7 @@ p.lead {
 
 .rbk-nav__item {
     display: none;
-    color: var(--color-primary);
+    color: var(--color-rbk-blue);
 }
 
 .open > .rbk-nav__item {
@@ -724,7 +725,7 @@ p.lead {
 
 /* ========== Navigation Buttons ========== */
 .rbk-nav__button {
-    background: var(--color-primary);
+    background: var(--color-rbk-blue);
     color: var(--color-white);
     font-family: var(--font-main);
     font-weight: 600;
@@ -745,7 +746,7 @@ p.lead {
 
 .dark .rbk-nav__button {
     background: var(--color-white);
-    color: var(--color-primary);
+    color: var(--color-rbk-blue);
 }
 
 .rbk-nav__button-icon {
@@ -756,7 +757,7 @@ p.lead {
 }
 
 .dark .rbk-nav__button-icon {
-    background: var(--color-primary);
+    background: var(--color-rbk-blue);
 }
 
 /* ========== Mobile Toggle Logic ========== */
@@ -804,17 +805,17 @@ p.lead {
     }
 
     .rbk-nav__list > .rbk-nav__item > a {
-        color: var(--color-primary);
+        color: var(--color-rbk-blue);
         text-decoration: none;
         font-size: 2rem;
     }
 
       .rbk-nav__list > .rbk-nav__item > a:hover {
-        color: var(--color-primary-light) !important; 
+        color: var(--color-blue) !important; 
     }
 
     .rbk-nav__list > .rbk-nav__item > a:focus {
-        color: var(--color-primary-dark); 
+        color: var(--color-link-hover); 
         background-color: var(--color-focus);
     }
 
@@ -870,7 +871,7 @@ p.lead {
     width: 100%;
     height: auto;
     background-color: #162755;
-    color: #fff;
+    color: var(--color-white);
     font-size: 1.6rem;
 }
 
@@ -945,7 +946,7 @@ ul.rbk-useful-links__list {
 }
 
 .rbk-useful-links__list > li > a {
-    color: #fff;
+    color: var(--color-white);
     text-decoration: underline !important;
 }
 
@@ -957,7 +958,7 @@ ul.rbk-useful-links__list {
 }
 
 .rbk-useful-links__list > li > a:hover {
-    color: #fff !important;
+    color: var(--color-white) !important;
     text-decoration: none !important;
     text-decoration-thickness: 1px;
 }
@@ -1000,11 +1001,11 @@ ul.rbk-useful-links__list {
 }
 
 .rbk-social-icons li a {
-    color: #fff;
+    color: var(--color-white);
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    outline-color: #fff;
+    outline-color: var(--color-white);
     outline-style: solid;
     border-radius: 4px;
     width: 40px;
@@ -1025,14 +1026,14 @@ ul.rbk-useful-links__list {
 }
 
 .rbk-social-icons li a:hover {
-    outline-color: #fff;
+    outline-color: var(--color-white);
     outline-width: 6px;
     outline-style: double;
     background-color: transparent;
 }
 
 .rbk-social-icons li a:hover i {
-    color: #fff;
+    color: var(--color-white);
 }
 
 .govuk-grid-row.align-bottom {
@@ -1053,7 +1054,7 @@ ul.rbk-useful-links__list {
     border-radius: 25px;
     padding: 10px 20px 10px;
     border: none;
-    color: #fff !important;
+    color: var(--color-white) !important;
     background-color: #A0505C !important;
     position: absolute;
     left: 50%;
@@ -1085,7 +1086,7 @@ ul.rbk-useful-links__list {
     padding: 10px 20px 10px;
     border: none;
     background-color: #A0505C !important;
-    color: #fff !important;
+    color: var(--color-white) !important;
     margin-top: 20px;
     letter-spacing: 0;
     position: absolute;
@@ -1099,7 +1100,7 @@ ul.rbk-useful-links__list {
     padding: 10px 20px 10px;
     border: 2px solid #A0505C;
     color: #A0505C !important;
-    background-color: #fff !important;
+    background-color: var(--color-white) !important;
     box-shadow: none;
 }
 
@@ -1194,7 +1195,7 @@ ul.registerList > li::before {
     transform: translateX(-50%);
     width: 75px;
     height: 75px;
-    background-color: #fff;
+    background-color: var(--color-white);
     border: 10px solid #fafbf8;
     border-radius: 50%;
 }
@@ -1213,7 +1214,7 @@ ul.registerList > li::before {
 }
 
 #anonReturnToMain > a {
-    color: #fff;
+    color: var(--color-white);
     background: #A0505C;
     padding: 10px 20px 10px;
     border-radius: 25px;
@@ -1222,7 +1223,7 @@ ul.registerList > li::before {
 
 #anonReturnToMain > a:hover {
     color: #A0505C;
-    background: #fff;
+    background: var(--color-white);
     border: 3px solid #A0505C;
 }
 
@@ -1346,7 +1347,7 @@ ul.registerList > li::before {
         text-align: center;
         padding: 10px;
         background: #09509D;
-        color: #fff;
+        color: var(--color-white);
     }
 }
 
@@ -1415,7 +1416,7 @@ ul.registerList > li::before {
     ul#session-badge > li {
         margin: 0px auto !important;
         text-align: center;
-        background-color: #fff !important;
+        background-color: var(--color-white) !important;
     }
 
     ul#session-badge > li:hover {
@@ -1437,7 +1438,7 @@ ul.registerList > li::before {
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-        color: #000;
+        color: var(--color-black);
     }
 
     .navbar-nav .open .dropdown-menu {
@@ -1484,10 +1485,10 @@ ul.registerList > li::before {
     div#navbar-collapse > ul.nav.navbar-nav > li > a:focus {
         /*font-weight: bold;*/
         outline: 3px solid transparent;
-        color: #fff !important;
+        color: var(--color-white) !important;
         background-color: #09509d !important;
-        -webkit-box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
-        box-shadow: 0 -2px #09509d, 0 4px #0b0c0c;
+        -webkit-box-shadow: 0 -2px #fd0, 0 4px var(--color-text-primary);
+        box-shadow: 0 -2px #09509d, 0 4px var(--color-text-primary);
         text-decoration: none !important
 
     }
