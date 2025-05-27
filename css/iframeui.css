@@ -10547,6 +10547,7 @@ html._AF .achieveform a:focus {
     box-shadow: 0px 4px var(--color-grey-dark);
     margin-left: 1rem;
     margin-bottom: 0;
+    font-size: 2rem;
 }
 
 .achieveforms-container .btn-af.upload-button:hover {
