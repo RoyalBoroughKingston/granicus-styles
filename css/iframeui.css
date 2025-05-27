@@ -552,8 +552,11 @@ a.bg-danger:hover, a.bg-danger:focus {
 ul, ol {
     margin-top: 0;
     margin-bottom: 13.5px;
-    font-size: 2rem;
 }
+
+.all-sections ul, .all-sections ol {
+    font-size: 2rem;
+} 
 
 ul ul, ol ul, ul ol, ol ol {
     margin-bottom: 0;
