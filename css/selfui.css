@@ -1354,10 +1354,10 @@ ul.registerList > li::before {
 
 @media (min-width: 768px) {
 
-    #navigation.container {
+    /* #navigation.container {
         width: 662px !important;
         padding-left: 18px;
-    }
+    } */
 
     .environment-banner > div {
         max-width: 720px !important;
@@ -1367,10 +1367,10 @@ ul.registerList > li::before {
 
 @media (min-width: 992px) {
 
-    #navigation.container {
+    /* #navigation.container {
         width: 890px !important;
         padding-left: 18px;
-    }
+    } */
 
     .environment-banner > div {
         max-width: 940px !important;
