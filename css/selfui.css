@@ -739,6 +739,10 @@ p.lead {
     cursor: pointer;
 }
 
+.rbk-nav__button:hover{
+    background-color: var(--color-blue);
+}
+
 .rbk-nav__button:focus {
     outline-color: var(--color-focus);
     outline-width: 4px;
