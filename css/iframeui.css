@@ -7122,10 +7122,6 @@ b, strong {
     font-weight: 600;
 }
 
-h1 {
-    font-weight: 600 !important;
-}
-
 .region-sidebar-second {
     font-size: 19px;
     color: var(--color-black);
@@ -10107,20 +10103,7 @@ form#feedback-form .form-type-radio:last-child {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-}
-
-h1 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-}
-
 /*CUSTOM SELF*/
-
 input,
 span,
 label,
