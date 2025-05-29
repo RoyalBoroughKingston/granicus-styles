@@ -6621,7 +6621,7 @@ a.tabledrag-handle .handle {
     color: #a94442;
 }
 
-div.error, table tr.error {
+table tr.error {
     background-color: #f2dede;
     color: #a94442;
 }
@@ -10496,8 +10496,6 @@ _AF input[type=date], ._AF input[type=datetime-local], ._AF input[type=datetime]
     margin: 8px 0 !important;
     border-radius: 8px;
     border: 2px solid var(--color-text-primary) !important;
-
-
 }
 
 .achieveforms-container .all-sections .field .fieldContent textarea.fieldInput {
