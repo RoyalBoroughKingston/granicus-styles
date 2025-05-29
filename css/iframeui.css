@@ -10940,13 +10940,12 @@ div#page-container {
     padding: 0;
 }
 
-/* Change the background color of form sections*/
 .achieveforms-container .sectionsHead {
     background: var(--color-white);
 }
 
 .sectionNameWrapper {
-    width: auto;
+    width: auto !important;
     height: 47px;
 }
 
