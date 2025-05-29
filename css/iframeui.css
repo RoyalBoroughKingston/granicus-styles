@@ -816,7 +816,7 @@ pre code {
     overflow-y: scroll;
 }
 
-.container {
+#self-content.container {
     padding-left: 0;
     padding-right: 0;
 }
