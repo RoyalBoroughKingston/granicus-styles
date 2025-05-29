@@ -831,17 +831,30 @@ pre code {
 #self-content.container {
     padding-left: 0;
     padding-right: 0;
+    max-width: 390px;
+}
+
+.container {
+    max-width: 390px;
 }
 
 @media (min-width: 768px) {
+    #self-content.container {
+    max-width: 642px;
+}
+
     .container {
-        max-width: 642px;
+        max-width: 768px;
     }
 }
 
 @media (min-width: 992px) {
-    .container {
+    #self-content.container {
         max-width: 1002px;
+    }
+
+    .container {
+        max-width: 1200px;
     }
 }
 
