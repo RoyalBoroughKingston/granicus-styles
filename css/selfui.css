@@ -565,11 +565,22 @@ p.lead {
 .warning-text {
     position: relative;
     padding: 10px 0;
+    display: flex;
+}
+
+@media (min-width: 768px){
+   .warning-text {
+    align-items: center;
+   } 
 }
 
 .warning-text p, .warning-text span {
-    font-size: 2rem;
     font-weight: 600;
+}
+
+/* For old html */
+.warning-text p > span {
+    margin-left: -50px;
 }
 
 .warning-text__icon {
