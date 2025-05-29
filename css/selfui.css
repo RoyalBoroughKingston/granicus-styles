@@ -649,7 +649,7 @@ p.lead {
 
 .rbk-nav {
     background: var(--color-white);
-    padding: 2rem 1.6rem;
+    padding: 1.6rem 3rem;
     display: flex;
     align-items: center;
 }
@@ -832,12 +832,6 @@ p.lead {
 
 /* ========== Desktop View ========== */
 @media (min-width: 1024px) {
-    .rbk-nav {
-        padding: 1rem 1.5rem;
-    }
-
-
-
     .dark .rbk-nav__list.open .rbk-nav__item--link {
         color: var(--color-white);
         font-size: 2rem;
