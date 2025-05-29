@@ -10700,8 +10700,11 @@ html._AF .achieveform a:focus {
     font-size: 16px !important;
 }
 
-
 /*Check box and radio button*/
+input[type=radio]+label:before, input[type=checkbox]+label:before {
+    margin-right: 8px;
+}
+
 input[type=checkbox] + label.btn:before {
     border: none !important;
 }
