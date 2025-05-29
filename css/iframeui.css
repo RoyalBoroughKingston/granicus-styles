@@ -11847,8 +11847,34 @@ a.rbk-link-button--primary-inverse:focus:not(:hover) {
     padding-left: 20px !important;
 }
 
+span.fileType {
+    font-size: 1.6rem !important;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+span.fileCount{
+    display: block;
+    font-size: 1.6rem !important;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+@media (min-width: 768px) {
+    span.fileCount{
+    display: inline;
+    float: right;
+}
+}
+
 .hide-fileCount .fileCount {
     display: none;
+}
+
+span.fileCountDisplay {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
 }
 
 label.prefix, span.prefix {
@@ -11859,6 +11885,11 @@ label.prefix, span.prefix {
     border-top: 1px dashed #aaa !important;
     border-radius: 8px;
     padding: 3.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.achieveforms-container .all-sections .field .fieldContent .upload.fieldInput.error .resumable-drop{
+    border-color: var(--color-error) !important;
 }
 
 .achieveforms-container .resumable-drop .drop-upload-message{
