@@ -10120,6 +10120,16 @@ label,
     font-size: 20px;
 }
 
+span._fieldName {
+    font-weight: 600;
+    line-height: 2.8rem
+}
+
+.fieldName {
+    margin-bottom: 0px !important;
+}
+
+
 /* Sido remove !important 16th May 2025 */
 input[type='text'] {
     border: 1px solid #CCC;
@@ -10491,9 +10501,6 @@ input[type='text'], input[type='number'] {
     border-radius: 0 !important;
 }
 
-.fieldName {
-    margin-bottom: 0px !important;
-}
 
 /* a:link, html._AF a {
     color: var(--color-blue);
@@ -10697,7 +10704,8 @@ html._AF .achieveform a:focus {
 }
 
 .help-text span {
-    font-size: 16px !important;
+    color: var(--color-text-secondary);
+    font-size: 1.6rem;
 }
 
 /*Check box and radio button*/
