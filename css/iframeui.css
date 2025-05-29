@@ -11878,13 +11878,15 @@ span.fileCount{
     font-size: 1.6rem !important;
     font-weight: 400;
     line-height: 2.4rem;
-    float: none;
+    float: none !important;
+    padding-top: 1.5rem;
 }
 
 @media (min-width: 768px) {
     span.fileCount{
     display: inline;
-    float: right;
+    float: right !important;
+    padding-top: 0;
 }
 }
 
