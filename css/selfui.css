@@ -577,7 +577,7 @@ p.lead {
 }
 
 /* For old html */
-.warning-text p > span {
+.warning-text p + span {
     margin-left: -50px;
 }
 
