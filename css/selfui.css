@@ -885,6 +885,7 @@ p.lead {
 #rbk-footer p {
     font-weight: 400 !important;
     font-size: 1.6rem !important;
+    margin-bottom: 1.6rem;
 }
 
 @media(min-width: 40.0625em) {
