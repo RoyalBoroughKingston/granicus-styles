@@ -828,33 +828,42 @@ pre code {
     overflow-y: scroll;
 }
 
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #self-content.container {
-    padding-left: 0;
-    padding-right: 0;
     max-width: 390px;
 }
 
-.container {
+#rbk-header .container, 
+#rbk-footer .container {
     max-width: 390px;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
-    #self-content.container {
-        max-width: 652px;
+    #rbk-header .container, 
+    #rbk-footer .container {
+        max-width: 768px;
     }
 
-    .container {
-        max-width: 768px;
+    #self-content.container {
+        max-width: 652px;
     }
 }
 
 @media (min-width: 992px) {
-    #self-content.container {
-        max-width: 1032px;
+    
+    #rbk-header .container, 
+    #rbk-footer .container {
+        max-width: 1200px;
+        width: 100%;
     }
 
-    .container {
-        max-width: 1200px;
+    #self-content.container {
+        max-width: 1032px;
     }
 }
 
