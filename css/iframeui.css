@@ -18,6 +18,10 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
     margin: 0;
 }
 
+.achieveforms-container .all-sections .field {
+    padding-top: 0;
+}
+
 .achieveforms-container .all-sections .field .fieldContent {
     margin-bottom: 3.2rem;
 }
@@ -10255,6 +10259,10 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     display: block !important;
 }
 
+h1.formName{
+    margin-bottom: 0;
+}
+
 span._formName {
     font-size: 2.8rem;
     line-height: 3.2rem;
@@ -10275,10 +10283,6 @@ span._formName {
         font-size: 4rem;
         line-height: 4.8rem;
     } 
-}
-
-p.formDescription {
-    margin: 5px auto 20px auto !important;
 }
 
 /* widgets ****************************************************************/
@@ -10990,13 +10994,13 @@ div#page-container {
 .achieveforms-container header.formHeader, 
 .achieveforms-container header.processHeader {
     padding: 0;
-    margin-bottom: 3.2rem;
+    margin-bottom: 1.2rem;
 }
 
 @media (min-width: 992px){
     .achieveforms-container header.formHeader, 
     .achieveforms-container header.processHeader {
-        margin-bottom: 4.8rem;
+        margin-bottom: 2.8rem;
     }
 }
 
