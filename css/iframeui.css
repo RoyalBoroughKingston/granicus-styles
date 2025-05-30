@@ -2043,8 +2043,8 @@ input[type="search"] {
 .radio, .checkbox {
     position: relative;
     display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .radio label, .checkbox label {
@@ -10739,6 +10739,11 @@ html._AF .achieveform a:focus {
     color: var(--color-white) !important;
 }
 
+.achieveforms-container .help-text {
+    padding-bottom: 0;
+    margin-bottom: 0.8rem;
+}
+
 .help-text span {
     color: var(--color-text-secondary);
     font-size: 1.6rem;
@@ -10774,6 +10779,14 @@ fieldset.valid input[type=radio] + label:before {
     box-shadow: 0 0 0 4px var(--color-focus);
     border: 4px solid black;
     margin-right: 8px;
+}
+
+.product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper:not(:last-of-type) label, .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper:not(:last-of-type) label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper:not(:last-of-type) label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper:not(:last-of-type) label {
+    margin-bottom: 0;
+}
+
+.product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper:not(:last-of-type) label, .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper:not(:last-of-type) label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper:not(:last-of-type) label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper:not(:last-of-type) label {
+    margin-bottom: 1.6rem;
 }
 
 .achieveforms-container .all-sections .field .fieldContent .fieldInput.content{
