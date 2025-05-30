@@ -889,7 +889,7 @@ p.lead {
 
 @media(min-width: 40.0625em) {
     #rbk-footer {
-        padding: 1.1rem 5rem 3.2rem 5rem;
+        padding: 3.2rem 5rem;
     }
 }
 
@@ -979,7 +979,7 @@ ul.rbk-useful-links__list {
 /*---------------SOCIAL MEDIA ICONS---------------*/
 
 .rbk-socials > p {
-    margin: 3rem 0 1.5rem 0;
+    margin: 3rem 0 2rem 0;
 }
 
 
@@ -1041,6 +1041,16 @@ ul.rbk-useful-links__list {
 
 .rbk-social-icons li a:hover i {
     color: var(--color-white);
+}
+
+#rbk-footer .govuk-grid-row.align-bottom {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 40.0625em){
+    #rbk-footer .govuk-grid-row.align-bottom {
+        margin-bottom: 3.2rem;
+    }
 }
 
 .govuk-grid-row.align-bottom {
