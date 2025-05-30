@@ -903,7 +903,6 @@ p.lead {
     box-sizing: border-box;
     width: 100%;
     cursor: pointer;
-    margin-top: 27px;
 }
 
 @media(min-width: 40.0625em) {
