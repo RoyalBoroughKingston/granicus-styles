@@ -14,6 +14,25 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
     margin: 0;
 }
 
+.achieveforms-container .all-sections {
+    margin: 0;
+}
+
+.achieveforms-container .all-sections .field .fieldContent {
+    margin-bottom: 3.2rem;
+}
+
+@media (min-width: 992px){
+    .achieveforms-container .all-sections .field .fieldContent {
+        margin-bottom: 4.8rem;
+    }
+}
+
+.achieveforms-container .all-sections .field.fs-hidden .fieldContent {
+    margin-bottom: 0 !important;
+}
+
+
 .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper label, .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper label {
     font-size: 20px;
 }
@@ -347,21 +366,18 @@ hr {
     cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, .h1, body._AF h1, div._AF h1, html._AF h1, h2, .h2, body._AF h2, div._AF h2, html._AF h2, h3, .h3, body._AF h3, div._AF h3, html._AF h3, h4, .h4, body._AF h4, div._AF h4, html._AF h4, h5, .h5, body._AF h5, div._AF h5, html._AF h5, h6, .h6, body._AF h6, div._AF h6, html._AF h6 {
     color: inherit;
     font-family: inherit;
     font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1.6rem;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
     font-weight: 400;
     line-height: 1;
     color: #777;
-}
-
-h1, .h1, h2, .h2, h3, .h3 {
-    margin-top: 27px;
-    margin-bottom: 13.5px;
 }
 
 h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .small, h2 .small, .h2 .small, h3 .small, .h3 .small {
@@ -6465,9 +6481,6 @@ ul.secondary {
     margin-top: 0;
 }
 
-p:last-child {
-    margin-bottom: 0;
-}
 
 .region-help > .glyphicon {
     font-size: 24px;
@@ -10984,12 +10997,27 @@ div#page-container {
 }
 
 /*=========================FORM SECTIONS====================*/
-.achieveforms-container header.formHeader, .achieveforms-container header.processHeader{
+.achieveforms-container header.formHeader, 
+.achieveforms-container header.processHeader {
     padding: 0;
+    margin-bottom: 3.2rem;
+}
+
+@media (min-width: 992px){
+    .achieveforms-container header.formHeader, 
+    .achieveforms-container header.processHeader {
+        margin-bottom: 4.8rem;
+    }
 }
 
 .achieveforms-container .sectionsHead {
-    background: var(--color-white);
+    margin-bottom: 3.2rem;
+}
+
+@media (min-width: 992px){
+    .achieveforms-container .sectionsHead {
+        margin-bottom: 4.8rem;
+    }
 }
 
 .sectionNameWrapper {
