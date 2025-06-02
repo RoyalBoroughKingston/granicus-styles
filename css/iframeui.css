@@ -10433,6 +10433,10 @@ body {
 
 }
 
+.nav-tabs > li.sectionNameWrapper {
+ margin-bottom: 0.8rem;
+}
+
 li.sectionNameWrapper a::before {
     background-color: #959595;
     border-radius: 50%;
@@ -11090,7 +11094,7 @@ div#page-container {
 
 .sectionsHead.navbar-default.render {
     border-bottom: 1px solid var(--color-mid-grey) !important;
-    padding-bottom: 0.8rem;
+    border-radius: 0;
 } 
 
 .achieveforms-container .sectionsHead .sectionsHeadInner {
@@ -11106,6 +11110,10 @@ div#page-container {
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper .sectionNameTab {
     border: none;
     background-color: transparent;
+}
+
+ul.nav.nav-tabs.sectionsHeadInner {
+    margin-bottom: 0;
 }
 
 li.sectionNameWrapper:empty {
@@ -11460,10 +11468,6 @@ span.form-link-color {
         display: none;
         background-color: transparent !important;
         border-radius: 50%;
-    }
-
-    section.sectionsHead.navbar-default.render {
-        padding: 0px 0px !important;
     }
 
     /*===========Cancel, Previous, Submit Buttons=============*/
