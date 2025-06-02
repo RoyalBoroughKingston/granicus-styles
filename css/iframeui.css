@@ -24,7 +24,7 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
 
 /* Expand the child element within fieldContent to fill available space*/
 .fieldContent > * {
-    width: 100%;
+    width: 100% !important;
 }
 
 .achieveforms-container .all-sections .field .fieldContent {
