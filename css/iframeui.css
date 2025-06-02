@@ -10822,7 +10822,8 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
 }
 
 .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput.error input[type=checkbox]+label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput.error input[type=radio]+label:before {
-    border: 2px solid var(--color-error) !important;
+    border-color: var(--color-error) !important;
+    border: 2px solid var(--color-error);
 
 }
 
