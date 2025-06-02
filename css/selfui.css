@@ -896,7 +896,13 @@ p.lead {
 
 /*---------------LOGO---------------*/
 #rbk-footer .rbk-logo-wrapper {
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 2.4rem 1.5rem;
+}
+
+@media(min-width: 40.0625em) {
+    #rbk-footer .rbk-logo-wrapper {
+        padding: 0 1.5rem;
+    }
 }
 
 #rbk-footer a.rbk-logo_link {
@@ -933,6 +939,21 @@ p.lead {
     height: 149px;
     margin: 0 auto;
 }
+
+#subscribe-heading {
+    margin-bottom: 1.6rem;
+}
+
+#rbk-footer .govuk-grid-column-full.govuk-grid-column-one-half-from-desktop .rbk-link-button.rbk-link-button--primary-inverse {
+    margin-bottom: 4rem;
+}
+
+@media(min-width: 40.0625em) {
+    #rbk-footer .govuk-grid-column-full.govuk-grid-column-one-half-from-desktop .rbk-link-button.rbk-link-button--primary-inverse {
+        margin-bottom: 0rem;
+    }
+}
+
 
 /*---------------USEFUL LINKS---------------*/
 
