@@ -10811,6 +10811,11 @@ fieldset.valid input[type=radio] + label:before {
     margin-bottom: 1.6rem;
 }
 
+fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):not(.hidden) {
+  margin-bottom: 0.8rem;
+}
+
+
 .achieveforms-container .all-sections .field .fieldContent .fieldInput.content{
     font-size: inherit;
     margin-bottom: 0;
