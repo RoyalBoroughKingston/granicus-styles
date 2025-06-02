@@ -11567,13 +11567,11 @@ submission-message-content h4 {
 .gds-summary-list {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.25;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
     color: var(--color-text-primary);
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 1.7rem;
     padding-left: 0px !important;
 }
 
@@ -11624,15 +11622,13 @@ submission-message-content h4 {
 
 @media (min-width: 40.0625em) {
     .gds-summary-list {
-        font-size: 19px;
-        font-size: 1.1875rem;
+        font-size: 2rem;
         line-height: 1.31579;
     }
 
 
     .gds-summary-list__key {
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 2rem;
     }
 }
 
@@ -11713,8 +11709,8 @@ submission-message-content h4 {
 }
 
 .gds-summary-list__key {
-    margin-bottom: 5px;
-    font-weight: 700;
+    margin-bottom: 1.6rem;
+    font-weight: 600;
 }
 
 @media (min-width: 40.0625em) {
@@ -11726,14 +11722,13 @@ submission-message-content h4 {
 @media (max-width: 40.0525em) {
     .gds-summary-list__value {
         margin-bottom: 15px;
-        font-size: 16px !important;
+        font-size: 1.8rem !important;
     }
 }
 
 @media (min-width: 40.0625em) {
     .gds-summary-list__value {
         width: 50%;
-        font-size: 16px !important;
     }
 }
 
