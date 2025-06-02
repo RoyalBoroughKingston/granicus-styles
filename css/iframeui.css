@@ -10393,6 +10393,7 @@ body {
 
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.active .sectionNameTab {
     border: none !important;
+    cursor: pointer;
 }
 
 /**To re-align £ signs for prefixes**/
@@ -11156,9 +11157,14 @@ li.sectionNameWrapper a::before {
     background-color: var(--color-rbk-blue);
 }
 
+.achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper .sectionNameTab:focus, .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.sectionNameTab:focus {
+    cursor: pointer;
+    background-color: var(--color-focus);
+    text-decoration: none;
+}
+
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.active .sectionNameTab:focus, .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.valid.active.sectionNameTab:focus {
     color: var(--color-text-primary);
-    background-color: var(--color-focus);
     text-decoration: none;
 }
 
