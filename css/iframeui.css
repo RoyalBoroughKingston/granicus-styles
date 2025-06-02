@@ -50,6 +50,7 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
     /* Primary brand colours */
     --color-rbk-blue: #162655;
     --color-blue: #0060AC;
+    --color-blue-pale: #E8F1F8;
 
     /* Secondary and utility colours */
     --color-text-primary: #0B0C0C;
@@ -2491,34 +2492,38 @@ a.btn.disabled, fieldset[disabled] a.btn {
     pointer-events: none;
 }
 
-.btn-default {
-    color: #333;
-    background-color: var(--color-white);
-    border-color: #ccc;
+.btn-default,
+._AF .btn.btn-default, .achieveforms-container .btn.btn-default {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    box-shadow: 0px 4px var(--color-rbk-blue);
+    border-radius: 8px;
+    border-color: unset;
 }
 
 .btn-default:focus, .btn-default.focus {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #8c8c8c;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    border-color: unset;
+
 }
 
-.btn-default:hover {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
+.btn-default:hover,
+._AF .btn.btn-default, .achieveforms-container .btn.btn-default:hover {
+    background-color: var(--color-rbk-blue);
+    box-shadow: 0px 4px var(--color-blue);
 }
 
-.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
+.btn-default:active,
+._AF .btn.btn-default, .achieveforms-container .btn.btn-default:active,
+ .btn-default.active, .open > .dropdown-toggle.btn-default,
+ ._AF .btn.btn-default, .achieveforms-container .btn.btn-default.active, .open > .dropdown-toggle.btn-default {
+    color: var(--color-white);
+    background-color: var(--color-blue);
 }
 
 .btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
-    color: #333;
-    background-color: #d4d4d4;
-    border-color: #8c8c8c;
+        background-color: var(--color-rbk-blue);
 }
 
 .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
@@ -2526,13 +2531,13 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default.focus {
-    background-color: var(--color-white);
-    border-color: #ccc;
+    color: var(--color-text-secondary);
+    background-color: var(--color-blue-pale);
 }
 
 .btn-default .badge {
     color: var(--color-white);
-    background-color: #333;
+    background-color: var(--color-blue);
 }
 
 .btn-primary {
