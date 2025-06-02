@@ -10424,6 +10424,10 @@ body {
     border: none;
 }
 
+.sectionNameTab > i.fa.fa-exclamation-circle {
+    display: none;
+}
+
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper .sectionNameTab {
     padding: 0.8rem 1.6rem;
 
@@ -11084,6 +11088,15 @@ div#page-container {
     }
 }
 
+.sectionsHead.navbar-default.render {
+    border-bottom: 1px solid var(--color-mid-grey) !important;
+    padding-bottom: 0.8rem;
+} 
+
+.achieveforms-container .sectionsHead .sectionsHeadInner {
+    border-color: var(--color-mid-grey);
+}
+
 .sectionNameWrapper {
     width: auto !important;
     height: 40px;
@@ -11120,7 +11133,7 @@ li.sectionNameWrapper a::before {
     padding: 16px 20px;
 }
 
-li.sectionNameWrapper.active {
+.achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.active, .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.valid.active {
     border-bottom: unset;
     color: var(--color-white);
     background-color: var(--color-rbk-blue);
@@ -11447,7 +11460,6 @@ span.form-link-color {
         display: none;
         background-color: transparent !important;
         border-radius: 50%;
-        border: 5px solid #22a473;
     }
 
     section.sectionsHead.navbar-default.render {
@@ -11524,14 +11536,6 @@ span.form-link-color {
         height: 45px;
         margin: 14px auto;
         padding: 16px 20px;
-    }
-
-    li.sectionNameWrapper.active {
-        border-bottom: 5px solid #09509d;
-    }
-
-    li.sectionNameWrapper.active.valid {
-        border-bottom: 5px solid #22a473;
     }
 
     li.sectionNameWrapper.valid a::before {
