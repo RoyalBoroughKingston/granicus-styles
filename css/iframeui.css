@@ -2509,15 +2509,15 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-default:hover,
-._AF .btn.btn-default, .achieveforms-container .btn.btn-default:hover {
+._AF .btn.btn-default:hover, .achieveforms-container .btn.btn-default:hover {
     background-color: var(--color-rbk-blue);
     box-shadow: 0px 4px var(--color-blue);
 }
 
 .btn-default:active,
-._AF .btn.btn-default, .achieveforms-container .btn.btn-default:active,
+._AF .btn.btn-default:active, .achieveforms-container .btn.btn-default:active,
  .btn-default.active, .open > .dropdown-toggle.btn-default,
- ._AF .btn.btn-default, .achieveforms-container .btn.btn-default.active, .open > .dropdown-toggle.btn-default {
+.achieveforms-container .btn.btn-default.active, .open > .dropdown-toggle.btn-default {
     color: var(--color-white);
     background-color: var(--color-blue);
 }
