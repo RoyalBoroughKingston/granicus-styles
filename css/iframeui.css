@@ -10883,8 +10883,8 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
     width: 20px;
     height: 10px;
     position: absolute;
-    top: 15px;
-    left: 8px;
+    top: 11px;
+    left: 7px;
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -10902,7 +10902,7 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
     width: 0px;
     height: 0px;
     position: absolute;
-    top: 13px;
+    top: 8px;
     left: 8px;
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
