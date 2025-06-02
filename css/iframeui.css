@@ -10424,6 +10424,11 @@ body {
     border: none;
 }
 
+.achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper .sectionNameTab {
+    padding: 0.8rem 1.6rem;
+
+}
+
 li.sectionNameWrapper a::before {
     background-color: #959595;
     border-radius: 50%;
@@ -11081,13 +11086,13 @@ div#page-container {
 
 .sectionNameWrapper {
     width: auto !important;
-    height: 47px;
+    height: 40px;
 }
 
 /*Remove the form sections border*/
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper .sectionNameTab {
     border: none;
-    background-color: white !important;
+    background-color: transparent;
 }
 
 li.sectionNameWrapper:empty {
@@ -11116,11 +11121,17 @@ li.sectionNameWrapper a::before {
 }
 
 li.sectionNameWrapper.active {
-    border-bottom: 3px solid #09509d;
+    border-bottom: unset;
+    color: var(--color-white);
+    background-color: var(--color-rbk-blue);
 }
 
-li.sectionNameWrapper.active.valid {
-    border-bottom: 3px solid #22a473;
+.achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.valid {
+    color: var(--color-text-primary);
+}
+
+li.sectionNameWrapper {
+    border-bottom: 2px solid var(--color-mid-grey);
 }
 
 li.sectionNameWrapper.valid a::before {
