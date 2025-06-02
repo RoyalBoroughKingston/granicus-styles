@@ -10429,15 +10429,18 @@ body {
 }
 
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper .sectionNameTab {
-    padding: 0.8rem 1.6rem;
+    padding: 0.8rem 1.2rem;
 
 }
 
 .nav-tabs > li.sectionNameWrapper {
  margin-bottom: 0.8rem;
+ padding: 0.8rem 1.6rem;
+
 }
 
 .nav-tabs > li.sectionNameWrapper:hover {
+    font-family: var(--font-main);
     text-decoration: underline;
     color: var(--color-link-hover);
 }
@@ -11115,6 +11118,8 @@ div#page-container {
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper .sectionNameTab {
     border: none;
     background-color: transparent;
+    border-radius: 0;
+    padding: 0.1rem 0.4rem;
 }
 
 ul.nav.nav-tabs.sectionsHeadInner {
@@ -11150,6 +11155,12 @@ li.sectionNameWrapper a::before {
     border-bottom: unset;
     color: var(--color-white);
     background-color: var(--color-rbk-blue);
+}
+
+.achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.active .sectionNameTab:focus, .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.valid.active.sectionNameTab:focus {
+    color: var(--color-text-primary);
+    background-color: var(--color-focus);
+    text-decoration: none;
 }
 
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.valid {
