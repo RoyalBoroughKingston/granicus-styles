@@ -10479,7 +10479,7 @@ li.sectionNameWrapper.valid a {
 
 /* Change of address select box error ******/
 .achieveforms-container select {
-    padding: 0 8px 0 4px !important;
+    padding: 0.8rem;
 }
 
 @media only screen and (max-width: 367px) {
@@ -10556,7 +10556,7 @@ html._AF .achieveform a:focus {
 .achieveforms-container select {
     border-radius: 8px;
     border: 2px solid var(--color-black);
-    padding: 3px 8px;
+    padding: 0.8rem;
     color: var(--color-black);
 }
 
@@ -11910,6 +11910,14 @@ a.rbk-link-button--primary-inverse:focus:not(:hover) {
 .achieveforms-container .all-sections .field .fieldContent .fieldInput.hasPrefix {
     border-radius: 0 !important;
     padding-left: 20px !important;
+}
+
+.achieveforms-container .all-sections .field .fieldContent .fieldInput, .achieveforms-container .all-sections .field .fieldContent .prefix-suffix-mode {
+    min-height: 42px;
+}
+
+.achieveforms-container .all-sections .field .fieldContent textarea.fieldInput {
+    min-height: 136px;
 }
 
 span.fileType {
