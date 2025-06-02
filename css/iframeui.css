@@ -44,6 +44,7 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
 
 .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper label, .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper label {
     font-size: 20px;
+    line-height: 3.45rem;
 }
 
 :root {
@@ -10861,6 +10862,7 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
     height: 35px;
     top: 5px;
     left: 0;
+    float: left;
 }
 
 .gds-select [type=radio] + label::before {
