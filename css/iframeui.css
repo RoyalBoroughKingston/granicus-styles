@@ -12225,6 +12225,11 @@ label.prefix, span.prefix {
     text-decoration: none;
 }
 
+.govuk-details__text > div {
+    border-left: 4px solid var(--color-mid-grey);
+    padding: 1.6rem 2.4rem;
+}
+
 .govuk-visually-hidden {
     position: absolute !important;
     width: 1px !important;
