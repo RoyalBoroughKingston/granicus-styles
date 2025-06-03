@@ -10583,7 +10583,7 @@ li.sectionNameWrapper.valid a {
     margin: 8px 0 !important;
     margin-bottom: 0 !important;
     border-radius: 8px;
-    border: 2px solid var(--color-text-primary) !important;
+    border: 2px solid var(--color-text-primary);
 }
 
 .achieveforms-container .all-sections .field .fieldContent textarea.fieldInput {
@@ -10617,8 +10617,7 @@ html._AF .achieveform a:focus {
 }
 
 /*=================Error warning====================*/
-._AF .postfix-wrapper.error .postfix, ._AF .prefix-wrapper.error .prefix, ._AF input.error, ._AF select.error, ._AF textarea.error, .achieveforms-container .postfix-wrapper.error .postfix, .achieveforms-container .prefix-wrapper.error .prefix, .achieveforms-container input.error, .achieveforms-container select.error, .achieveforms-container textarea.error {
-    /* Sido change border colour 16th May 2025 */
+._AF .postfix-wrapper.error .postfix, ._AF .prefix-wrapper.error .prefix, ._AF input.error, ._AF select.error, ._AF textarea.error, .achieveforms-container .postfix-wrapper.error .postfix, .achieveforms-container .prefix-wrapper.error .prefix, .achieveforms-container input.error, .achieveforms-container select.error, .achieveforms-container .all-sections .field .fieldContent textarea.fieldInput.error {
     border: 2px solid var(--color-error);
 }
 
