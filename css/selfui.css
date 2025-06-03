@@ -910,6 +910,11 @@ p.lead {
     width: 100%;
     cursor: pointer;
 }
+a.rbk-nav__logo-link:focus,
+a.rbk-logo_link:focus {
+    background-color: transparent;
+    outline: 4px solid var(--color-focus);
+}
 
 @media(min-width: 40.0625em) {
     #rbk-footer a.rbk-logo_link {
