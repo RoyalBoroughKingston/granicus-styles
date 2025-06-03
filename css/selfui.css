@@ -471,14 +471,12 @@ p.lead {
     font-size: 1rem;
     line-height: 1.25;
     margin-bottom: 15px;
-    border: 5px solid #1d70b8;
-    background-color: #1d70b8;
-    /* Sido add radius 16th May 2025 */
+    border: 5px solid var(--color-blue);
+    background-color: var(--color-blue);
     border-radius: 8px;
 }
 
 .notification-banner__header {
-    /* Sido change padding 16th May 2025 */
     padding: 0.8rem 2.4rem;
     border-bottom: 1px solid transparent;
 }
@@ -548,6 +546,16 @@ p.lead {
     color: var(--color-white) !important;
 }
 
+
+.prepayment_alert {
+    background-color: #EFF8F9;
+    font-size: 2rem;
+    color: var(--color-text-primary);
+    word-wrap: break-word;
+    padding: 1.6rem 2.4rem;
+    border: 1px solid var(--color-rbk-blue);
+    border-radius: 8px;
+}
 
 /*Warning text*/
 .error-info-container {
