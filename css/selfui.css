@@ -557,6 +557,10 @@ p.lead {
     border-radius: 8px;
 }
 
+.prepayment_alert > p:not(:last-of-type) {
+    margin-bottom: 0.8rem;
+}
+
 /*Warning text*/
 .error-info-container {
     /* Sido change style 16th May 2025 */
