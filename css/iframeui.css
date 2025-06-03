@@ -12007,7 +12007,7 @@ a.rbk-link-button--primary-inverse:focus:not(:hover) {
 }
 
 .achieveforms-container .all-sections .field .fieldContent .fieldInput, .achieveforms-container .all-sections .field .fieldContent .prefix-suffix-mode {
-    min-height: 42px;
+    min-height: 4.2rem;
 }
 
 .achieveforms-container .all-sections .field .fieldContent textarea.fieldInput {
