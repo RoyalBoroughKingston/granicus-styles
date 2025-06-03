@@ -501,9 +501,8 @@ p.lead {
     border-radius: 0 0 6px 6px;
 }
 
-/*Confirmation panel*/
+/*Post submission page*/
 .confirmation-panel-container {
-    /* Sido change bgc add radius */
     color: var(--color-white);
     background-color: var(--color-green-normal);
     border-radius: 8px;
@@ -513,15 +512,16 @@ p.lead {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.25;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-bottom: 15px;
-    padding: 35px;
-    border: 5px solid transparent;
+    padding: 2.4rem;
     text-align: center;
+}
+
+@media (min-width: 768px){
+    .confirmation-panel {
+        padding: 3.2rem;
+    }
 }
 
 .confirmation-panel__title {
@@ -529,18 +529,39 @@ p.lead {
     margin-bottom: 1.6rem !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 4rem !important;
-    line-height: 4.8rem !important;
+    font-size: 2.8rem !important;
+    line-height: 3.2rem !important;
     color: var(--color-white) !important;
+}
+
+@media (min-width: 768px){
+    .confirmation-panel__title {
+        font-size: 3.2rem !important;
+        line-height: 3.8rem !important;
+    }
+}
+
+@media (min-width: 992px){
+     .confirmation-panel__title {
+        font-size: 4rem !important;
+        line-height: 4.8rem !important;
+    }
 }
 
 .confirmation-panel__body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.5;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
     color: var(--color-white) !important;
+}
+
+@media (min-width: 768px){
+    .confirmation-panel__body {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
 }
 
 .confirmation-panel__body + p {
