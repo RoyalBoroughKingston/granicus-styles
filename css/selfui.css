@@ -490,7 +490,7 @@ p.lead {
     line-height: 1.25;
     margin: 0;
     padding: 0;
-    color: var(--color-white);
+    color: var(--color-white) !important;
 }
 
 .notification-banner__content {
