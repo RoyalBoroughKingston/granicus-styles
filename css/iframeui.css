@@ -11164,13 +11164,12 @@ li.sectionNameWrapper a::before {
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper .sectionNameTab:focus, .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.sectionNameTab:focus {
     cursor: pointer;
     background-color: var(--color-focus);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* Focus state when section tab has active class */
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.active .sectionNameTab:focus, .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.valid.active.sectionNameTab:focus {
     color: var(--color-link-hover);
-    text-decoration: none;
 }
 
 /* Hover state when section tab has active class and focused */
