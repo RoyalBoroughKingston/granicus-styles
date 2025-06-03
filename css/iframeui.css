@@ -10445,6 +10445,11 @@ body {
     color: var(--color-link-hover);
 }
 
+/* Hover state when tab is active */
+.achieveforms-container .sectionsHead .nav-tabs > li.sectionNameWrapper.active:hover {
+    color: var(--color-white);
+}
+
 li.sectionNameWrapper a::before {
     background-color: #959595;
     border-radius: 50%;
@@ -11154,21 +11159,30 @@ li.sectionNameWrapper a::before {
     padding: 16px 20px;
 }
 
+/* Resetting default active state */
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.active, .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.valid.active {
     border-bottom: unset;
     color: var(--color-white);
     background-color: var(--color-rbk-blue);
 }
 
+/* Resetting default active state */
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper .sectionNameTab:focus, .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.sectionNameTab:focus {
     cursor: pointer;
     background-color: var(--color-focus);
     text-decoration: none;
 }
 
+/* Focus state when section tab has active class */
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.active .sectionNameTab:focus, .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.valid.active.sectionNameTab:focus {
-    color: var(--color-text-primary);
+    color: var(--color-link-hover);
     text-decoration: none;
+}
+
+/* Hover state when section tab has active class and focused */
+.achieveforms-container .sectionsHead .nav-tabs > li.sectionNameWrapper.active:hover .sectionNameTab:focus, .achieveforms-container .sectionsHead .nav-tabs > li.sectionNameWrapper.active:hover .sectionNameTab:focus {
+    color: var(--color-link-hover);
+    text-decoration: underline;
 }
 
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.valid {
