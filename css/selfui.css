@@ -526,13 +526,11 @@ p.lead {
 
 .confirmation-panel__title {
     margin-top: 0;
-    margin-bottom: 30px !important;
+    margin-bottom: 1.6rem !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 700 !important;
-    font-size: 32px !important;
-    font-size: 2rem;
-    line-height: 1.09375;
+    font-size: 4rem !important;
+    line-height: 4.8rem !important;
     color: var(--color-white) !important;
 }
 
@@ -540,10 +538,13 @@ p.lead {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: 24px !important;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     color: var(--color-white) !important;
+}
+
+.confirmation-panel__body + p {
+    margin-top: 1.6rem;
 }
 
 
