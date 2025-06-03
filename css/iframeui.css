@@ -525,10 +525,16 @@ h6, .h6, body._AF h6, div._AF h6, html._AF h6 {
 
 p {
     margin: 0 0 1.6rem;
-    line-height: 2.8rem;
+    line-height: 2.6rem;
     font-weight: 400;
 }
 
+@media (min-width: 768px){
+    p {
+        line-height: 2.8rem;
+    }
+
+}
 
 p:last-of-type  {
     margin: 0;
@@ -685,8 +691,14 @@ ul, ol {
 }
 
 .all-sections ul, .all-sections ol {
-    font-size: 2rem;
+    font-size: 1.8rem;
 } 
+
+@media (min-width: 768px){
+    .all-sections ul, .all-sections ol {
+    font-size: 2rem;
+}
+}
 
 ul ul, ol ul, ul ol, ol ol {
     margin-bottom: 0;
@@ -10171,14 +10183,16 @@ form#feedback-form .form-type-radio:last-child {
 }
 
 /*CUSTOM SELF*/
-input,
-span,
-label,
-._fieldName,
-.fieldInput, p {
+input, span, label, ._fieldName, .fieldInput, p {
     font-family: "Open Sans", sans-serif !important;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 768px){
+    input, span, label, ._fieldName, .fieldInput, p {
+        font-size: 2rem;
+    }
 }
 
 span._fieldName {
