@@ -10909,13 +10909,6 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
 }
 
 .gds-select [type=radio] + label::before {
-    content: "";
-    border: 2px solid var(--color-black);
-    background: transparent;
-    width: 35px;
-    height: 35px;
-    top: 5px;
-    left: 0;
     border-radius: 50%;
 }
 
