@@ -12287,10 +12287,10 @@ label.prefix, span.prefix {
     cursor: pointer;
 }
 
-.govuk-details__summary:focus .govuk-details__summary-text{
-    background-color: #fd0;
-    outline: 3px solid rgba(0,0,0,0);
-    text-decoration: none;
+.govuk-details__summary:focus .govuk-details__summary-text, .govuk-details[open] .govuk-details__summary-text {
+    color: var(--color-link-hover);
+    background-color: var(--color-focus);
+    text-decoration: underline;
 }
 
 .govuk-details__text > div {
