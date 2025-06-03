@@ -10440,7 +10440,7 @@ body {
     padding: 0.8rem 1.6rem;
 }
 
-.no-touch .achieveforms-container .sectionsHead .nav-tabs > li.sectionNameWrapper:hover {
+.achieveforms-container .sectionsHead .nav-tabs > li.sectionNameWrapper:hover {
     text-decoration: underline;
     color: var(--color-link-hover);
 }
