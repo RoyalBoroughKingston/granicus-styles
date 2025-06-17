@@ -10902,13 +10902,13 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
     background-color: var(--color-white) !important;
 }
 
-.gds-select, input[type=checkbox], input[type=radio] {
+.gds-select, input[type=checkbox], input[type=radio] , input[type=checkbox]+label, input[type=radio]+label {
     display: block;
     clear: left;
     position: relative;
 }
 
-.gds-select [type=checkbox] + label::before, .gds-select [type=radio] + label::before,  input[type=checkbox] + label::before, .input[type=radio] + label::before {
+.gds-select [type=checkbox] + label::before, .gds-select [type=radio] + label::before,  input[type=checkbox] + label::before, input[type=radio] + label::before {
     content: "";
     border: 2px solid var(--color-black);
     border-radius: 8px;
