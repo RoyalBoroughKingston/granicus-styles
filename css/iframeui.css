@@ -10889,7 +10889,7 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
 }
 
 
-.gds-select input {
+.gds-select input, input[type=checkbox], input[type=radio] {
     cursor: pointer;
     left: 0;
     top: 0;
@@ -10902,13 +10902,13 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
     background-color: var(--color-white) !important;
 }
 
-.gds-select {
+.gds-select, input[type=checkbox], input[type=radio] {
     display: block;
     clear: left;
     position: relative;
 }
 
-.gds-select [type=checkbox] + label::before, .gds-select [type=radio] + label::before {
+.gds-select [type=checkbox] + label::before, .gds-select [type=radio] + label::before,  input[type=checkbox] + label::before, .input[type=radio] + label::before {
     content: "";
     border: 2px solid var(--color-black);
     border-radius: 8px;
@@ -10921,12 +10921,12 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
     float: left;
 }
 
-.gds-select [type=radio] + label::before {
+.gds-select [type=radio] + label::before, input[type=radio] + label::before {
     border-radius: 50%;
 }
 
 
-.gds-select [type=checkbox] + label::after {
+.gds-select [type=checkbox] + label::after, input[type=checkbox] + label::after {
     content: "";
     border: solid;
     border-width: 0 0 5px 5px;
@@ -10947,7 +10947,7 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
     opacity: 0;
 }
 
-.gds-select [type=radio] + label::after {
+.gds-select [type=radio] + label::after, input[type=radio] + label::after {
     content: "";
     border: 10px solid var(--color-black);
     background: var(--color-white) !important;
@@ -10967,32 +10967,32 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
     border-radius: 50%;
 }
 
-.gds-select:checked + label::after {
+.gds-select:checked + label::after, input:checked + label::after {
     zoom: 1;
     filter: alpha(opacity=100);
     opacity: 1;
 }
 
 /*Below styles replace the green color on this fields and prevent text wrapping with flex*/
-fieldset.valid .gds-select[type=checkbox] + label:before, fieldset.valid .gds-select[type=radio] + label:before {
+fieldset.valid .gds-select[type=checkbox] + label:before, fieldset.valid .gds-select[type=radio] + label:before, fieldset.valid input[type=checkbox] + label:before, fieldset.valid input[type=radio] + label:before {
     flex: 1 0 auto;
     border: 2px solid var(--color-text-primary);
 }
 
-.gds-select[type=checkbox].checked + label:before, .gds-select[type=checkbox]:checked + label:before {
+.gds-select[type=checkbox].checked + label:before, .gds-select[type=checkbox]:checked + label:before, input[type=checkbox].checked + label:before, input[type=checkbox]:checked + label:before {
     content: "";
     border-color: #0c0c0c;
 }
 
 
-.gds-select[type=radio].checked + label:before, .gds-select[type=radio]:checked + label:before {
+.gds-select[type=radio].checked + label:before, .gds-select[type=radio]:checked + label:before, input[type=radio].checked + label:before, input[type=radio]:checked + label:before {
     content: "\00a0";
     background-color: var(--color-white) !important;
     border-color: var(--color-black);
 }
 
 /*Check box and radio button*/
-.gds-select[type=checkbox].checked + label:before, .gds-select[type=checkbox]:checked + label:before, .gds-select[type=radio].checked + label:before, .gds-select[type=radio]:checked + label:before {
+.gds-select[type=checkbox].checked + label:before, .gds-select[type=checkbox]:checked + label:before, .gds-select[type=radio].checked + label:before, .gds-select[type=radio]:checked + label:before, input[type=checkbox].checked + label:before, input[type=checkbox]:checked + label:before, input[type=radio].checked + label:before, input[type=radio]:checked + label:before {
     opacity: 1;
     max-width: 35px;
 }
