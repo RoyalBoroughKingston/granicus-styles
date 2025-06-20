@@ -481,6 +481,11 @@ p.lead {
     background-color: var(--color-green-normal);
 }
 
+.notification-banner.blue {
+    border: 5px solid var(--color-blue);
+    background-color: var(--color-blue);
+}
+
 .notification-banner__header {
     padding: 0.8rem 2.4rem;
     border-bottom: 1px solid transparent;
