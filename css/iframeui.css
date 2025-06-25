@@ -10678,19 +10678,19 @@ html._AF .achieveform a:focus {
     border-radius: 8px;
 }
 /* Sido add new button styles 16th May 2025 */
-.achieveforms-container .fillinButtons .btn-af.previousbutton {
+.achieveforms-container .fillinButtons .btn-af.previousbutton, .achieveforms-container .fillinButtons .btn-af.repeat-subform-btn {
     color: var(--color-white);
     background-color: var(--color-blue);
     box-shadow: 0px 4px var(--color-rbk-blue);
     border-radius: 8px;
 }
 
-.achieveforms-container .fillinButtons .btn-af.previousbutton:hover {
+.achieveforms-container .fillinButtons .btn-af.previousbutton:hover, .achieveforms-container .fillinButtons .btn-af.repeat-subform-btn:hover {
     background-color: var(--color-rbk-blue);
     box-shadow: 0px 4px var(--color-blue);
 }
 
-.achieveforms-container .fillinButtons .btn-af.previousbutton:focus {
+.achieveforms-container .fillinButtons .btn-af.previousbutton:focus, .achieveforms-container .fillinButtons .btn-af.repeat-subform-btn:focus {
     color: var(--color-white);
     background-color: var(--color-blue);
 }
@@ -10763,7 +10763,6 @@ button.btn.submitbutton.btn-af.btn-sm.repeat-subform-btn {
     margin-bottom: 4.8rem;
 }
 
-/* Subform button */
 .render-subform .af-row .fillinButtons-wrapper.col-xs-11.col-sm-11 {
     padding: 0;
 }
