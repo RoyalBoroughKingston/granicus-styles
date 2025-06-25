@@ -1884,6 +1884,7 @@ table td[class*="col-"], table th[class*="col-"] {
 .table-responsive {
     overflow-x: auto;
     min-height: .01%;
+    width: 100% !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -10753,6 +10754,21 @@ html._AF .achieveform a:focus {
     background: var(--color-dark-grey);
 }
 
+/* subform button */
+.achieveforms-container .fillinButtons .fillinButtonsRight {
+    width: auto;
+}
+
+button.btn.submitbutton.btn-af.btn-sm.repeat-subform-btn {
+    margin-bottom: 4.8rem;
+}
+
+/* Subform button */
+.render-subform .af-row .fillinButtons-wrapper.col-xs-11.col-sm-11 {
+    padding: 0;
+}
+/*****/
+
 
 ._AF .btn-af.active, ._AF .btn-af:active, ._AF .btn-af:hover, .achieveforms-container .btn-af.active, .achieveforms-container .btn-af:active, .achieveforms-container .btn-af:hover, .open .dropdown-toggle._AF .btn-af, .open .dropdown-toggle.achieveforms-container .btn-af {
     background-color: #2C498E;
@@ -12023,6 +12039,10 @@ a.rbk-link-button--primary-inverse:focus:not(:hover) {
 
 .achieveforms-container .all-sections .field .fieldContent .fieldInput, .achieveforms-container .all-sections .field .fieldContent .prefix-suffix-mode {
     min-height: 4.2rem;
+}
+
+.achieveforms-container .all-sections .field .fieldContent .prefix-suffix-mode {
+    margin-bottom: 0;
 }
 
 .achieveforms-container .all-sections .field .fieldContent textarea.fieldInput {
