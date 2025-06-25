@@ -10593,6 +10593,8 @@ li.sectionNameWrapper.valid a {
     margin-bottom: 0 !important;
     border-radius: 8px !important;
     border: 2px solid var(--color-text-primary);
+    font-size: 1.6rem;
+    padding: 0.6rem 0.8rem;
 }
 
 .achieveforms-container .all-sections .field .fieldContent textarea.fieldInput {
@@ -11993,9 +11995,9 @@ a.rbk-link-button--primary-inverse:focus:not(:hover) {
 /*=====Field input with prefix =====*/
 .postfix, .prefix {
     border: none !important;
-    font-weight: bold !important;
+    font-weight: 600 !important;
     color: var(--color-black) !important;
-    line-height: 35px;
+    line-height: 4.5rem;
 }
 
 .input-group {
