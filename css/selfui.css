@@ -816,6 +816,11 @@ p.lead {
     background: var(--color-rbk-blue);
 }
 
+/* ========= Hide nav-toggle on desktop ========= */
+input#rbk-nav-toggle {
+    display: none;
+}
+
 /* ========== Mobile Toggle Logic ========== */
 #rbk-nav-toggle:checked~.rbk-nav--default {
     display: none;
