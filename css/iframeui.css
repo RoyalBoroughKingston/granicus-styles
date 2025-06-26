@@ -10678,19 +10678,19 @@ html._AF .achieveform a:focus {
     border-radius: 8px;
 }
 /* Sido add new button styles 16th May 2025 */
-.achieveforms-container .fillinButtons .btn-af.previousbutton, .achieveforms-container .fillinButtons .btn-af.repeat-subform-btn {
+.achieveforms-container .fillinButtons .btn-af.previousbutton, .achieveforms-container .fillinButtons .btn-af.submitbutton.repeat-subform-btn {
     color: var(--color-white);
     background-color: var(--color-blue);
     box-shadow: 0px 4px var(--color-rbk-blue);
     border-radius: 8px;
 }
 
-.achieveforms-container .fillinButtons .btn-af.previousbutton:hover, .achieveforms-container .fillinButtons .btn-af.repeat-subform-btn:hover {
+.achieveforms-container .fillinButtons .btn-af.previousbutton:hover, .achieveforms-container .fillinButtons .btn-af.submitbutton.repeat-subform-btn:hover {
     background-color: var(--color-rbk-blue);
     box-shadow: 0px 4px var(--color-blue);
 }
 
-.achieveforms-container .fillinButtons .btn-af.previousbutton:focus, .achieveforms-container .fillinButtons .btn-af.repeat-subform-btn:focus {
+.achieveforms-container .fillinButtons .btn-af.previousbutton:focus, .achieveforms-container .fillinButtons .btn-af.submitbutton.repeat-subform-btn:focus {
     color: var(--color-white);
     background-color: var(--color-blue);
 }
