@@ -11028,6 +11028,14 @@ fieldset.valid .gds-select[type=checkbox] + label:before, fieldset.valid .gds-se
     max-width: 35px;
 }
 
+.horizontal .radio-wrapper{
+    vertical-align: middle;
+}
+
+fieldset.radio.horizontal .radio-wrapper label {
+    margin-bottom: 0 !important;
+}
+
 /* Character Counter*/
 .char-count {
     color: var(--color-text-secondary);
