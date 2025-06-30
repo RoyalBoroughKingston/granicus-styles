@@ -10221,7 +10221,7 @@ input[type='text'] {
 
 .btn-default,
 .btn-af {
-    border-radius: 0;
+    border-radius: 8px;
     padding: 10px 25px;
     color: var(--color-white);
     border: 0;
