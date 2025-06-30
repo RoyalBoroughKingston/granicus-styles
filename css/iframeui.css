@@ -6,6 +6,10 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body._AF a, body._AF div, body._AF h1, body._AF h2, body._AF h3, body._AF h4, body._AF h5, body._AF p, body._AF span:not(.fa), div._AF a, div._AF div, div._AF h1, div._AF h2, div._AF h3, div._AF h4, div._AF h5, div._AF p, div._AF span:not(.fa), html._AF a, html._AF div, html._AF h1, html._AF h2, html._AF h3, html._AF h4, html._AF h5, html._AF p, html._AF span:not(.fa) {
     font-family: "Open Sans", sans-serif;
 }
