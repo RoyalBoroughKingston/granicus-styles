@@ -621,7 +621,7 @@ p.lead {
 
 /* For old html */
 .warning-text p > span {
-    margin-left: -100px;
+    margin-left: -50px !important;
 }
 
 .warning-text__icon {
