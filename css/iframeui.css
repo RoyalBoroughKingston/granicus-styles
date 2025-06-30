@@ -869,15 +869,16 @@ pre code {
     padding-right: 10px;
 }
 
-#self-content.container {
+/* Commenting out mobile max width */
+/* #self-content.container {
     max-width: 390px;
-}
+} */
 
-#rbk-header .container, 
+/* #rbk-header .container, 
 #rbk-footer .container {
     max-width: 390px;
     width: 100%;
-}
+} */
 
 @media (min-width: 768px) {
     #rbk-header .container, 

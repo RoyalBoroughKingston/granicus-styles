@@ -223,9 +223,6 @@ ul#session-badge > li {
   margin-left: -12px;
 }*/
 
-#navigation.container {
-    width: 100% !important;
-}
 
 /*=====Fix focus styles on active menu===========*/
 
@@ -701,7 +698,7 @@ p.lead {
 
 .rbk-nav {
     background: var(--color-white);
-    padding: 1.6rem 3rem;
+    padding: 1.6rem 1rem;
     display: flex;
     align-items: center;
 }
@@ -920,7 +917,7 @@ input#rbk-nav-toggle {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -942,7 +939,7 @@ input#rbk-nav-toggle {
 
 @media(min-width: 40.0625em) {
     #rbk-footer {
-        padding: 3.2rem 5rem;
+        padding: 3.2rem 1rem;
     }
 }
 
