@@ -734,6 +734,10 @@ p.lead {
     gap: 1rem;
 }
 
+.rbk-nav__item i.fa.fa-user {
+    font-size: 1.8rem;
+}
+
 .rbk-nav__item {
     margin-bottom: 1.25rem;
 }
