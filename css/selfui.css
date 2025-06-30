@@ -381,9 +381,9 @@ ul.registerList > li::before {
 
 p.lead {
     width: 100%;
-    font-size: 14px;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin: 24px;
+    margin: 1.2rem;
 }
 
 .registerButton {
