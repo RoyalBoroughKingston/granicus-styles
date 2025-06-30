@@ -306,77 +306,18 @@ a.btn.btn-lg.btn-primary.top > .caret {
 }
 
 /*==============================HOMEPAGE_ANON(LANDING_PAGE)================================*/
-
 #anon_container {
-    padding-bottom: 42px;
-    background-color: #eef1e6;
-    height: auto;
-}
-
-#anon_container > h1, #anon_container > p {
+    padding: 3rem 0;
     text-align: center;
-    padding: 12px;
 }
 
 #anon_container > h1 {
-    font-size: 30px;
-}
-
-#anon_container > p {
-    font-size: 16px;
+    font-size: 3.5rem;
 }
 
 .row.anonWrapper {
     width: 90%;
-    min-height: 300px;
     margin: 24px auto;
-    position: relative;
-    padding-bottom: 14px;
-}
-
-.row.anonWrapper:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 25px;
-    z-index: 0;
-}
-
-.firstCol, .secondCol {
-    height: auto;
-}
-
-ul.registerList > li {
-    list-style: none;
-    margin-bottom: 10px !important;
-}
-
-ul.registerList > li::before {
-    content: "\2713";
-    color: #fdb945;
-    font-weight: bold;
-    display: inline-block;
-    width: 1.3em;
-    margin-left: -1em;
-}
-
-.firstCol {
-    top: 24px;
-}
-
-.secondCol {
-    width: 45%;
-    min-height: 250px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    text-align: center;
-    border-left: 3px solid #fdb945;
 }
 
 p.lead {
@@ -385,38 +326,6 @@ p.lead {
     font-weight: bold;
     margin: 1.2rem;
 }
-
-.registerButton {
-    color: var(--color-white) !important;
-    background-color: #A0505C;
-    border-radius: 25px;
-    border: none;
-    padding: 10px 20px 10px !important;
-}
-
-.registerButton:focus {
-    background-color: #09509d !important;
-}
-
-.registerButton:hover {
-    background-color: var(--color-white) !important;
-    color: #A0505C !important;
-    border: 3px solid #A0505C;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}
-
-.registerButton:active {
-    background-color: var(--color-white) !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}
-
-.secondCol > p {
-    margin: 24px;
-    font-weight: bold;
-}
-
 /*==============================HOMEPAGE_AUTH(LANDING_PAGE)================================*/
 
 #homepageContent {
