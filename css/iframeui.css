@@ -881,6 +881,10 @@ pre code {
 } */
 
 @media (min-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+
     #rbk-header .container, 
     #rbk-footer .container {
         max-width: 768px;
@@ -892,6 +896,9 @@ pre code {
 }
 
 @media (min-width: 992px) {
+     .container{
+        max-width: 1200px;
+    }
     
     #rbk-header .container, 
     #rbk-footer .container {
