@@ -235,7 +235,7 @@ ul#session-badge > li {
 
 a.btn.btn-lg.btn-primary.top {
     height: auto !important;
-    font-size: 12px;
+    font-size: 1.6rem;
     background: transparent !important;
     color: #3c3c3c !important;
     border: none !important;
