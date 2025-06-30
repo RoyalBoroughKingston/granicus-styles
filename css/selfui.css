@@ -1571,11 +1571,12 @@ ul.registerList > li::before {
     margin-top: 60px !important;
 }
 
+
+/* Email verification content */
 #email_verification__header{
     border-radius: 8px 8px 0 0;
 }
 
-/* Email verification content */
 .email_verification__header {
     background-color: #005ea5; 
     color: #ffffff;
