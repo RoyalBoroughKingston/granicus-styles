@@ -11969,58 +11969,6 @@ submission-message-content h4 {
     background-color: var(--color-white);
 }
 
-/* Sido added 16th May 2025 */
-a.rbk-link-button--primary-inverse {
-    color: var(--color-rbk-blue) !important;
-    background-color: var(--color-white);
-    border: 2px solid transparent;
-    border-radius: 8px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 1.8rem;
-    padding: 1.2rem 2.4rem !important;
-    text-align: center;
-    text-decoration: none !important;
-    line-height: 26px;
-    transition: all 200ms ease-out;
-}
-
-#rbk-footer a.rbk-link-button--primary-inverse,
-#rbk-header a.rbk-link-button--primary-inverse,
-a.rbk-link-button--primary-inverse {
-    width: 100%;
-}
-
-a.rbk-link-button--primary-inverse:hover {
-    color: var(--color-white) !important;
-    background-color: var(--color-blue);
-    outline-color: var(--color-text-primary);
-    box-shadow: none;
-    border: 2px solid var(--color-text-primary);
-
-}
-
-a.rbk-link-button--primary-inverse:focus:not(:hover) {
-    color: var(--color-rbk-blue) !important;
-    background-color: var(--color-white);
-    outline: 4px solid var(--color-focus);
-    box-shadow: none;
-}
-
-@media (min-width: 40em) {
-    a.rbk-link-button--primary-inverse {
-        font-size: 1.6rem;
-        padding: 0.8rem 1.6rem !important;
-    }
-
-    #rbk-footer a.rbk-link-button--primary-inverse {
-        max-width: 250px;
-    }
-
-}
-
 /*Map box border*/
 #mapIframe {
     border: 2px solid var(--color-black) !important;
