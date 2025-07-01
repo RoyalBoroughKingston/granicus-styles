@@ -10282,18 +10282,6 @@ button:hover {
     border-color: #162755 !important;
 }
 
-.btn-login, .btn-anon {
-    color: #162755 !important;
-}
-
-#anonymousLoginScreen .btn-custom {
-    color: #162755 !important;
-}
-
-#anonymousLoginScreen, #btn-anon {
-    display: none;
-}
-
 /*remove favicons*/
 .fillinButtons .fa {
     display: none;

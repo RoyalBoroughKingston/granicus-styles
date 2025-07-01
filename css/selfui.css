@@ -1067,59 +1067,6 @@ ul.rbk-useful-links__list {
     transform: translateX(-120%);
 }
 
-#anonymousLoginScreen > a {
-    width: 20%;
-}
-
-#anonymousLoginScreen .btn-custom {
-    color: #005ea5 !important;
-    border: none !important;
-    text-decoration: underline !important;
-}
-
-#anonymousLoginScreen .btn-custom:hover {
-    background: inherit;
-    border: none;
-    box-shadow: none;
-    margin-top: 15px;
-    padding: 5px 10px;
-    color: #2b8cc4 !important;
-    text-decoration: underline !important;
-}
-
-#anonymousLoginScreen > #btn-login {
-    border-radius: 25px;
-    padding: 10px 20px 10px;
-    border: none;
-    background-color: #A0505C !important;
-    color: var(--color-white) !important;
-    margin-top: 20px;
-    letter-spacing: 0;
-    position: absolute;
-    right: 50%;
-    transform: translateX(120%);
-    margin-top: 0;
-}
-
-#btn-register:hover, #anonymousLoginScreen > #btn-login:hover {
-    border-radius: 25px;
-    padding: 10px 20px 10px;
-    border: 2px solid #A0505C;
-    color: #A0505C !important;
-    background-color: var(--color-white) !important;
-    box-shadow: none;
-}
-
-#anonymousLoginScreen > h1 {
-    text-align: center;
-    font-size: 30px;
-    margin-top: -50px;
-    margin-bottom: 80px;
-}
-
-#anonymousLoginScreen > p.registration-text {
-    margin-top: -35px !important;
-}
 
 .landing_page_container {
     width: 100%;
@@ -1219,29 +1166,7 @@ ul.registerList > li::before {
     margin: 0 auto;
 }
 
-#anonReturnToMain > a {
-    color: var(--color-white);
-    background: #A0505C;
-    padding: 10px 20px 10px;
-    border-radius: 25px;
-
-}
-
-#anonReturnToMain > a:hover {
-    color: #A0505C;
-    background: var(--color-white);
-    border: 3px solid #A0505C;
-}
-
-#anonPageRedirect {
-    width: 100%;
-    height: auto;
-    background: rgb(255, 255, 255, 0);
-}
-
-
 #coverBox {
-
     width: 100%;
     height: 200px;
     background-color: #eef1e6;
@@ -1258,14 +1183,6 @@ ul.registerList > li::before {
 
     .landing_page_container {
         padding: 2rem;
-    }
-
-    #anonymousLoginScreen > h1 {
-        font-size: 35px;
-    }
-
-    #anonymousLoginScreen > a {
-        width: 100% !important;
     }
 
     #first_column {
@@ -1529,45 +1446,13 @@ ul.registerList > li::before {
         font-weight: bold;
     }
 
-
     ul.rbk-useful-links__list {
         padding-left: 0;
     }
 
-    /* Sido comment out 16th May 2025 */
-    /* .rbk-useful-links__list > li:first-child {
-        margin-left: 14px;
-    } */
-
     .rbk-useful-links__list > li {
         display: block;
     }
-
-    .navbar-session {
-        position: relative !important;
-        margin-top: 115px !important;
-        width: 92%;
-        margin: auto;
-    }
-
-    #header_logo {
-        left: 50vw !important;
-        transform: translateX(-45%);
-        top: 5px !important;
-        width: 6.9375rem !important;
-    }
-
-    #anon_container > h1 {
-        font-size: 20px;
-    }
-
-    #anon_container > p {
-        font-size: 14px;
-    }
-}
-
-#anonymousLoginScreen #btn-anon {
-    margin-top: 60px !important;
 }
 
 
