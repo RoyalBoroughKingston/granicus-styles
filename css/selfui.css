@@ -1501,3 +1501,7 @@ ul.registerList > li::before {
 .login-form a.resetLink {
     padding-bottom: 3.2rem;
 }
+
+.logout-form h2 {
+    display: none;
+}
