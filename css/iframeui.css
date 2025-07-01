@@ -2754,7 +2754,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 .btn-danger {
     color: var(--color-white);
     border: none;
-    background-color: var(----color-error);
+    background-color: var(--color-error);
     box-shadow: 0px 4px var(--color-error-hover);
 
 }
@@ -2788,11 +2788,11 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-danger.disabled:hover, .btn-danger[disabled]:hover, fieldset[disabled] .btn-danger:hover, .btn-danger.disabled:focus, .btn-danger[disabled]:focus, fieldset[disabled] .btn-danger:focus, .btn-danger.disabled.focus, .btn-danger[disabled].focus, fieldset[disabled] .btn-danger.focus {
-    background-color: var(----color-error);
+    background-color: var(--color-error);
 }
 
 .btn-danger .badge {
-    color: var(----color-error);
+    color: var(--color-error);
     background-color: var(--color-white);
 }
 
@@ -4379,7 +4379,7 @@ a.label:hover, a.label:focus {
 }
 
 .label-danger {
-    background-color: var(----color-error);
+    background-color: var(--color-error);
 }
 
 .label-danger[href]:hover, .label-danger[href]:focus {
@@ -4696,7 +4696,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
 .progress-bar-danger {
-    background-color: var(----color-error);
+    background-color: var(--color-error);
 }
 
 .progress-striped .progress-bar-danger {
