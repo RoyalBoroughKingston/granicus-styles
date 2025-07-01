@@ -54,9 +54,8 @@ a, a:visited {
 }
 
 /*-----Change the main contain background color-----*/
-/* Sido remove bgc 16th May 2025  */
 #main-content {
-    /* background: #eef1e6 !important; */
+    min-height: 50vh;
     margin-bottom: 0px;
 }
 
@@ -1573,19 +1572,18 @@ ul.registerList > li::before {
 
 
 /* Email verification content */
-#email_verification__header{
-    border-radius: 8px 8px 0 0;
+#email_verification{
+    margin: 3rem 0;
 }
 
-.email_verification__header {
-    background-color: #005ea5; 
-    color: #ffffff;
-    padding: 15px 15px 15px;
-    text-align: center;
-    margin-bottom: 0;
- }
+@media (min-width: 768px) {
+   #email_verification{
+    margin: 6rem 0;
+    }
+}
 
- .email_verification__content {
-    border-radius: 0 0 8px 8px;
-    border: 5px solid #005ea5;
- }
+@media (min-width: 992px){
+    #email_verification{
+    margin: 10rem 0;
+    }
+}
