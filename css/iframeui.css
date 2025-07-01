@@ -2472,8 +2472,7 @@ textarea.input-lg, select[multiple].input-lg {
     margin-right: 1rem;
 }
 
-.btn,
-.achieveforms-container .fillinButtons-wrapper .fillinButtons .btn {
+.btn, .achieveforms-container .fillinButtons-wrapper .fillinButtons .btn {
     display: inline-block;
     margin-bottom: 0;
     font-weight: 400;
@@ -2485,18 +2484,22 @@ textarea.input-lg, select[multiple].input-lg {
     border: 1px solid transparent;
     white-space: normal;
     padding: 1.2rem 2.4rem;
-    font-size: 1.9rem;
+    font-size: 2rem !important;
     line-height: 1.42857143;
     border-radius: 4px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
-    /* Sido add 16th May 2025 */
     padding: 1.2rem 2.4rem;
     border-radius: 0.8rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 3.2rem;
+}
+
+@media (min-width: 768px){
+    .achieveforms-container .fillinButtons-wrapper .fillinButtons .btn {
+        margin-bottom: 0;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
@@ -2537,6 +2540,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
     box-shadow: 0px 4px var(--color-rbk-blue);
     border-radius: 8px;
     border-color: unset;
+
 }
 
 .btn-default:focus, .btn-default.focus {
