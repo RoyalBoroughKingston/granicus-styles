@@ -12348,18 +12348,18 @@ label.prefix, span.prefix {
 }
 
 /* Force margin bottom */
-.rbk-mb-0 {
+.force-mb-0 {
     margin-bottom: 0 !important;
 }
 
-.rbk-mb-1 {
+.force-mb-1 {
     margin-bottom: 1rem !important;
 }
 
-.rbk-mb-2 {
+.force-mb-2 {
     margin-bottom: 2rem !important;
 }
 
-.rbk-mb-3 {
+.force-mb-3 {
     margin-bottom: 3rem !important;
 }
