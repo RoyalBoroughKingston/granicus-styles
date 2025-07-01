@@ -2472,6 +2472,11 @@ textarea.input-lg, select[multiple].input-lg {
     margin-right: 1rem;
 }
 
+._AF .btn, .achieveforms-container .btn, .btn{
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
+}
+
 ._AF .btn, .achieveforms-container .btn, .btn, .achieveforms-container .fillinButtons-wrapper .fillinButtons .btn {
     display: inline-block;
     margin-bottom: 0;
@@ -2493,11 +2498,15 @@ textarea.input-lg, select[multiple].input-lg {
     user-select: none;
     padding: 1.2rem 2.4rem;
     border-radius: 0.8rem;
+}
+
+.achieveforms-container .fillinButtons-wrapper .fillinButtons .btn {
     margin-bottom: 3.2rem;
 }
 
 @media (min-width: 768px){
     .achieveforms-container .fillinButtons-wrapper .fillinButtons .btn {
+        margin-top: 0;
         margin-bottom: 0;
         font-size: 2rem !important;
     }
