@@ -1397,7 +1397,7 @@ ul.rbk-useful-links__list {
     width: 100%;
 }
 
-#anonymousLoginScreen #btn-loginm {
+#anonymousLoginScreen #btn-login {
     border: 2px solid var(--color-blue);
     color: var(--color-rbk-blue) !important;
     background-color: var(--color-white);
