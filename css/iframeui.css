@@ -2484,7 +2484,7 @@ textarea.input-lg, select[multiple].input-lg {
     border: 1px solid transparent;
     white-space: normal;
     padding: 1.2rem 2.4rem;
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
     line-height: 1.42857143;
     border-radius: 4px;
     -webkit-user-select: none;
@@ -2499,6 +2499,7 @@ textarea.input-lg, select[multiple].input-lg {
 @media (min-width: 768px){
     .achieveforms-container .fillinButtons-wrapper .fillinButtons .btn {
         margin-bottom: 0;
+        font-size: 2rem !important;
     }
 }
 
