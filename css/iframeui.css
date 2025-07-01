@@ -35,6 +35,10 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
     margin-bottom: 3.2rem;
 }
 
+.achieveforms-container .all-sections .field .fieldContent:has([data-type="line"]) {
+  margin-bottom: 0;
+}
+
 @media (min-width: 992px){
     .achieveforms-container .all-sections .field .fieldContent {
         margin-bottom: 4.8rem;
