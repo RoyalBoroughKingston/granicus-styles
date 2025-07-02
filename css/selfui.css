@@ -916,7 +916,7 @@ a.rbk-logo_link:focus {
     margin-bottom: 4rem;
 }
 
-@media(min-width: 40.0625em) {
+@media(min-width: 992px) {
     #rbk-footer .govuk-grid-column-full.govuk-grid-column-one-half-from-desktop .rbk-link-button.rbk-link-button--primary-inverse {
         margin-bottom: 0rem;
     }
