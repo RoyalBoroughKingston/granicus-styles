@@ -1349,6 +1349,7 @@ ul.rbk-useful-links__list {
     margin: 10rem 0;
     }
 }
+
 /* Login form */
 .login-form > h1 {
     margin-bottom: 3.2rem;
@@ -1377,6 +1378,22 @@ ul.rbk-useful-links__list {
 
 .login-form a.resetLink {
     padding-bottom: 3.2rem;
+}
+
+/* Login type selection page */
+.login-form .thumbnail > .logonimg {
+    width: 50px;
+    height: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.login-form .thumbnail > .logonimg + p {
+    font-size: 1.6rem;
+    min-height: 76px;
+    position: static;
+    width: 100%;
+    padding: 0;
 }
 
 .logout-form h2 {
