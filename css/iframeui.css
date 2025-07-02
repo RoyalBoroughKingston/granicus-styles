@@ -11553,12 +11553,12 @@ span.form-link-color {
 
 
 /*===========Cancel, Previous, Submit Buttons=============*/
-.achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutton {
+.achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutton,.achieveforms-container .btn-af.upload-button {
     width: 100%;
 }
 
 @media (min-width: 768px) {
-    .achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutton {
+    .achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutto,.achieveforms-container .btn-af.upload-button {
         width: auto;
     }
 }
@@ -11569,24 +11569,9 @@ li.form-actions-list-element.save-element {
 }
 
 @media (min-width: 768px) {
-
     li.form-actions-list-element.save-element {
         width: 100% !important;
         margin: 5px 0 !important;
-    }
-}
-
-.achieveforms-container .btn-af.upload-button {
-    width: 100% !important;
-    margin-top: 2rem;
-    margin-left: 0;
-}
-
-@media (min-width: 768px) {
-    .achieveforms-container .btn-af.upload-button {
-        width: 100% !important;
-        margin-top: 2rem;
-        margin-left: 0;
     }
 }
 
