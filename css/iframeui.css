@@ -10940,19 +10940,31 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
 
 .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .check2:focus+label.btn, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .radio2:focus+label.btn, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .check2:focus+label.btn, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .radio2:focus+label.btn {
     box-shadow: none;
-    border-color: var(--color-blue) !important;
+    border-color: unset;
+    outline: 4px solid var(--color-focus);
+    background: var(--color-blue);
+    color: var(--color-white) !important;
 }
 
 .no-touch .achieveforms-container .field fieldset.fieldInput.inlineSubform.non-mandatory fieldset.fieldInput.error input[type=checkbox]+label.btn:hover, .no-touch .achieveforms-container .field fieldset.fieldInput.inlineSubform.non-mandatory fieldset.fieldInput.error input[type=radio]+label.btn:hover, .no-touch .achieveforms-container .field label.btn:hover,
 input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     color: var(--color-white) !important;
     background-color: var(--color-blue);
-
 }
 
 .no-touch .achieveforms-container .field fieldset.fieldInput.valid input[type=checkbox]+label.btn:hover, .no-touch .achieveforms-container .field fieldset.fieldInput.valid input[type=radio]+label.btn:hover {
     background-color: var(--color-rbk-blue) !important;
 }
+
+.achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput.error input[data-type=date-subfield], .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput.error input[type=checkbox]+label.btn, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput.error input[type=radio]+label.btn, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput.error+input.other-input {
+    border-color: var(--color-error) !important;
+
+}
+
+.no-touch .achieveforms-container .field fieldset.fieldInput.error input[type=checkbox]+label.btn:hover, .no-touch .achieveforms-container .field fieldset.fieldInput.error input[type=radio]+label.btn:hover {
+    background-color: var(--color-rbk-blue);
+}
+
 
 
 .gds-select input {
