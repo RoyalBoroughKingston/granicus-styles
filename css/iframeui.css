@@ -2582,6 +2582,12 @@ a.btn.disabled, fieldset[disabled] a.btn {
     background-image: none;
 }
 
+.btn-default.disabled, .btn-default[disabled] {
+    color: var(--color-text-secondary);
+    background: var(--color-teal-pale);
+    border: 1px solid var(--color-light-grey);
+}
+
 .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default.focus {
     color: var(--color-text-secondary);
     background-color: var(--color-blue-pale);
