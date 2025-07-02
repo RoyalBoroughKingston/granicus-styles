@@ -521,7 +521,6 @@ p.lead {
     display: flex;
     align-items: flex-start;
     gap: 0.8rem;
-    margin-top: 0.5rem;
 }
 
 .warning-text p, .warning-text span {
@@ -553,6 +552,7 @@ p.lead {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-top: 0.5rem;
 }
 
 
