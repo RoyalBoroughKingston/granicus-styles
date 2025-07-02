@@ -10890,11 +10890,6 @@ fieldset.valid input[type=checkbox] + label:before {
     border-color: var(--color-text-primary) !important;
 }
 
-fieldset.valid input[type=radio] + label:before {
-    border-color: var(--color-text-primary) !important;
-    border: 0px;
-}
-
 .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .check2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .radio2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .check2:focus + label:before, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .radio2:focus + label:before {
     color: #064d84;
     /* Sido change focus colour 16th May 2025 */
@@ -10937,6 +10932,10 @@ fieldset.radio.vertical .radio-wrapper:not(:last-of-type) label:not([hidden]):no
     color: var(--color-text-primary);
     border-color: var(--color-blue) !important;
     display: inline-block !important;
+}
+
+.achieveforms-container .all-sections .field .fieldContent .fieldInput label.btn::before {
+    display: none;
 }
 
 .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .check2:focus+label.btn, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper .radio2:focus+label.btn, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .check2:focus+label.btn, .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper .radio2:focus+label.btn {
