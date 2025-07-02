@@ -11553,12 +11553,12 @@ span.form-link-color {
 
 
 /*===========Cancel, Previous, Submit Buttons=============*/
-.fillinButtonsLeft, .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutton {
+.achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutton {
     width: 100%;
 }
 
 @media (min-width: 768px) {
-    .fillinButtonsLeft, .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutton {
+    .achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutton {
         width: auto;
     }
 }
