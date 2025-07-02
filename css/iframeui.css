@@ -11558,7 +11558,7 @@ span.form-link-color {
 }
 
 @media (min-width: 768px) {
-    .achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutto,.achieveforms-container .btn-af.upload-button {
+    .achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutton,.achieveforms-container .btn-af.upload-button {
         width: auto;
     }
 }
