@@ -2474,7 +2474,6 @@ textarea.input-lg, select[multiple].input-lg {
 
 ._AF .btn, .achieveforms-container .btn, .btn{
     margin-bottom: 1.2rem;
-    margin-top: 1.2rem;
 }
 
 ._AF .btn, .achieveforms-container .btn, .btn, .achieveforms-container .fillinButtons-wrapper .fillinButtons .btn {
@@ -11553,46 +11552,46 @@ span.form-link-color {
 }
 
 
-@media (max-width: 525px) {
+/*===========Cancel, Previous, Submit Buttons=============*/
+.fillinButtonsLeft, .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutton {
+    width: 100%;
+}
 
-    .achieveforms-container .sectionsHead {
-        background: var(--color-white);
-        border-bottom: 1px solid #ccc !important;
-        border-radius: 0 !important;
+@media (min-width: 768px) {
+    .fillinButtonsLeft, .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element, button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton,   button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutton {
+        width: auto;
     }
+}
 
+li.form-actions-list-element.save-element {
+    width: 100% !important;
+    margin: 5px 0 !important;
+}
 
-    li.sectionNameWrapper.active.valid a::before {
-        display: none;
-        background-color: transparent !important;
-        border-radius: 50%;
-    }
-
-    /*===========Cancel, Previous, Submit Buttons=============*/
-    .fillinButtonsLeft, .fillinButtonsRight, .form-actions-list-element.submit-element, .form-actions-list-element.next-element {
-        width: 100% !important;
-    }
+@media (min-width: 768px) {
 
     li.form-actions-list-element.save-element {
         width: 100% !important;
         margin: 5px 0 !important;
     }
+}
 
-    button.btn.btn-af.previousbutton, button.btn.btn-af.cancelbutton {
-        width: 100% !important;
-    }
+.achieveforms-container .btn-af.upload-button {
+    width: 100% !important;
+    margin-top: 2rem;
+    margin-left: 0;
+}
 
-    button.btn.btn-af.submitbutton, button.btn.btn-af.nextbutton,button.btn.btn-af.savebutton {
-        width: 100% !important;
-    }
-
+@media (min-width: 768px) {
     .achieveforms-container .btn-af.upload-button {
         width: 100% !important;
         margin-top: 2rem;
         margin-left: 0;
     }
+}
 
-    /*===========Download PDF, Return to Website, Leave a Review Buttons============*/
+@media (max-width: 525px) {
+    /* Download PDF, Return to Website, Leave a Review Buttons */
     .submission-message-btn-wrapper {
         margin-top: -24px !important;
     }
@@ -11721,7 +11720,7 @@ span.form-link-color {
 
 }
 
-submission-message-content h4 {
+.submission-message-content h4 {
     color: var(--color-white) !important;
 }
 
