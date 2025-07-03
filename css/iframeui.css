@@ -12138,6 +12138,7 @@ label.prefix, span.prefix {
     padding: 0;
     margin: 0 1.2rem 1.2rem 0;
     border-radius: 0;
+    text-align: left;
 }
 
 /* Sido add GOVUK STYLES 16th May 2025 */
