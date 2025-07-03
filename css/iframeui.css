@@ -10267,7 +10267,7 @@ input[type='text'] {
 }
 
 .btn.btn-af:hover {
-    background: #213773;
+    background: var(--color-link-hover);
     color: var(--color-white);
 }
 
@@ -10801,9 +10801,9 @@ button.btn.submitbutton.btn-af.btn-sm.repeat-subform-btn {
 /*****/
 
 
-._AF .btn-af.active, ._AF .btn-af:active, ._AF .btn-af:hover, .achieveforms-container .btn-af.active, .achieveforms-container .btn-af:active, .achieveforms-container .btn-af:hover, .open .dropdown-toggle._AF .btn-af, .open .dropdown-toggle.achieveforms-container .btn-af {
+/* ._AF .btn-af.active, ._AF .btn-af:active, ._AF .btn-af:hover, .achieveforms-container .btn-af.active, .achieveforms-container .btn-af:active, .achieveforms-container .btn-af:hover, .open .dropdown-toggle._AF .btn-af, .open .dropdown-toggle.achieveforms-container .btn-af {
     background-color: #2C498E;
-}
+} */
 
 .achieveforms-container .fillinButtons .btn:focus, ._AF .btn-af:focus, .achieveforms-container .btn-af:focus {
     outline: 4px solid var(--color-focus);
