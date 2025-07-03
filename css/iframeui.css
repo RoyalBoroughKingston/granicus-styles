@@ -11070,6 +11070,10 @@ fieldset.valid .gds-select[type=checkbox] + label:before, fieldset.valid .gds-se
     border-color: var(--color-black);
 }
 
+fieldset.valid input[type=radio]+label:before {
+    border-color: var(--color-black) !important;
+}
+
 /*Check box and radio button*/
 .gds-select[type=checkbox].checked + label:before, .gds-select[type=checkbox]:checked + label:before, .gds-select[type=radio].checked + label:before, .gds-select[type=radio]:checked + label:before {
     opacity: 1;
