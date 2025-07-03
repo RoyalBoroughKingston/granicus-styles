@@ -10820,6 +10820,12 @@ button.btn.submitbutton.btn-af.btn-sm.repeat-subform-btn {
     border: none;
 }
 
+a.btn:focus:not(:active):not(:hover), a.btn-af:focus:not(:active):not(:hover) {
+    background-color: var(--color-focus);
+    color: var(--color-link-hover) !important;
+    border-radius: 0;
+}
+
 .btn.btn-danger:focus:not(:active):not(:hover), .btn-af.btn-danger:focus:not(:active):not(:hover) {
     background-color: var(--color-error);
 }
@@ -12121,8 +12127,15 @@ label.prefix, span.prefix {
     display: none;
 }
 
+.achieveforms-container .resumable-list i.remove-upload:before {
+    font-size: 1.8rem;
+}
+
 .achieveforms-container .resumable-file .resumable-file-name {
     max-width: 70% !important;
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 0 1.2rem 1.2rem 0;
 }
 
 /* Sido add GOVUK STYLES 16th May 2025 */
