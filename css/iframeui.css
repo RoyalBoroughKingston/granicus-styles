@@ -12133,7 +12133,7 @@ label.prefix, span.prefix {
 }
 
 .achieveforms-container .resumable-file .resumable-file-name {
-    max-width: 70% !important;
+    max-width: 85% !important;
     font-size: 1.8rem;
     padding: 0;
     margin: 0 1.2rem 1.2rem 0;
