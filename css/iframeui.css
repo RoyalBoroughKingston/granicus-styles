@@ -10735,7 +10735,7 @@ html._AF .achieveform a:focus {
 }
 
 .achieveforms-container .fillinButtons .btn-af.cancelbutton:focus {
-    color: var(--color-text-primary);
+    color: var(--color-text-primary) !important;
     background-color: var(--color-light-grey);
 }
 
