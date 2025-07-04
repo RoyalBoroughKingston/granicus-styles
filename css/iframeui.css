@@ -10871,6 +10871,7 @@ a.btn:focus:not(:active):not(:hover), a.btn-af:focus:not(:active):not(:hover) {
 .achieveforms-container .help-text {
     padding-bottom: 0;
     margin-bottom: 0.8rem;
+    line-height: 2.4rem;
 }
 
 .help-text span {
