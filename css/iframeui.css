@@ -12465,6 +12465,7 @@ label.prefix, span.prefix {
     box-sizing: border-box;
     display: inline-block;
     min-width: 35px;
+    max-width: 35px;
     min-height: 35px;
     border: 3px solid var(--color-text-primary);
     border-radius: 50%;
