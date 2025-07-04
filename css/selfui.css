@@ -281,6 +281,11 @@ a.btn.btn-lg.btn-primary.top > .caret {
     display: none !important;
 }
 
+/* Hide register button on Login self page */
+.login-btn-group a[href*="/ssauth/register"] {
+    display: none;
+}
+
 #registerLink, #loginLink {
     display: none;
     color: #A0505C !important;
