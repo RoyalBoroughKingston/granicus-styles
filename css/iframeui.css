@@ -12453,6 +12453,14 @@ label.prefix, span.prefix {
     font-weight: 600;
 }
 
+.warning-text__thinner {
+    margin-top: 1.6rem;
+}
+
+.warning-text__text .warning-text__thinner p {
+    font-weight: 400;
+}
+
 /* For old html */
 .warning-text p > span {
     margin-left: -50px !important;
