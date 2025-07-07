@@ -11764,7 +11764,7 @@ li.form-actions-list-element.save-element {
     line-height: 2.6rem;
     color: var(--color-text-primary);
     margin: 0;
-    margin-bottom: 1.7rem;
+    /* margin-bottom: 1.7rem; */
     padding-left: 0px !important;
 }
 
@@ -11848,7 +11848,7 @@ li.form-actions-list-element.save-element {
 
 @media (min-width: 40.0625em) {
     .gds-summary-list, .govuk-summary-list {
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
 }
 
@@ -11962,7 +11962,7 @@ li.form-actions-list-element.save-element {
 }
 
 @media (max-width: 40.0525em) {
-    .gds-summary-list--no-border .gds-summary-list__row, .govuk-summary-list__row {
+    .gds-summary-list--no-border .gds-summary-list__row {
         border: 0;
     }
 }
