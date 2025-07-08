@@ -12426,17 +12426,8 @@ label.prefix, span.prefix {
 
 
 .warning-text {
-    /* position: relative;
+    position: relative;
     padding: 10px 0;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.8rem; */
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto auto;
-    column-gap: 0.8rem;
-    row-gap: 0.5rem;
-    align-items: start;
 }
 
 /* If there is only ONE <p> element inside .warning-text__text */
@@ -12473,9 +12464,11 @@ label.prefix, span.prefix {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: inline-block;
+    position: absolute;
+    left: 0;
     min-width: 35px;
-    max-width: 35px;
     min-height: 35px;
+    margin-top: -7px;
     border: 3px solid var(--color-text-primary);
     border-radius: 50%;
     color: var(--color-white);
@@ -12498,6 +12491,7 @@ label.prefix, span.prefix {
     line-height: 2.6rem;
     color: var(--color-text-primary);
     display: block;
+    padding-left: 45px;
 }
 
 .warning-text__assistive {
