@@ -12458,7 +12458,6 @@ label.prefix, span.prefix {
     left: 0;
     min-width: 35px;
     min-height: 35px;
-    margin-top: -7px;
     border: 3px solid var(--color-text-primary);
     border-radius: 50%;
     color: var(--color-white);
@@ -12470,7 +12469,6 @@ label.prefix, span.prefix {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-top: 0.5rem;
 }
 
 
