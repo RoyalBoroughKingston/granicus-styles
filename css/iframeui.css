@@ -12430,16 +12430,6 @@ label.prefix, span.prefix {
     padding: 10px 0;
 }
 
-/* If there is only ONE <p> element inside .warning-text__text */
-/* .warning-text:has(.warning-text__text ):not(:has(.warning-text__text p + p)) , .warning-text:has(.warning-text__text p):not(:has(.warning-text__text p + p)) {
-    align-items: center;
-} */
-
-/* If there are multiple <p> elements */
-.warning-text:has(.warning-text__text p + p) .warning-text__icon {
-  margin-top: 0.5rem;
-}
-
 .warning-text p, .warning-text span {
     font-weight: 600;
 }
@@ -12480,6 +12470,7 @@ label.prefix, span.prefix {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-top: 0.5rem;
 }
 
 
