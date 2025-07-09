@@ -11226,7 +11226,7 @@ div#page-container {
 
 .sectionNameWrapper {
     width: auto !important;
-    height: 40px;
+    min-height: 40px;
 }
 
 /*Remove the form sections border*/
