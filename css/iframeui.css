@@ -12428,10 +12428,7 @@ label.prefix, span.prefix {
 .warning-text {
     position: relative;
     padding: 10px 0;
-}
-
-.warning-text > * {
-    padding-left: 50px;
+    padding-left: 45px;
 }
 
 .warning-text p, .warning-text span {
