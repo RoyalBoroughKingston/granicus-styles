@@ -10323,14 +10323,86 @@ button:hover {
     display: none;
 }
 
+.achieveforms-container table.repeatable-table {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
 /* subforms icons need to show */
 div.repeatable-table-wrapper .fa:before,
 div.repeatable-table-wrapper .fa-chevron-left:before {
     display: block !important;
 }
 
-tr.repeatable-value-totals {
+.repeatable-value-header {
+    background-color: var(--color-light-grey);
+}
+
+.repeatable-value-header > tr:first-child > th {
+    border-top: 0;
+    max-width: 108px !important;
+    min-width: 108px !important;
+    vertical-align: text-top;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    word-wrap: break-word;
+}
+
+@media (min-width: 992px) {
+    .repeatable-value-header > tr:first-child > th {
+        max-width: 130px !important;
+        min-width: 130px !important;
+    }
+}
+
+.repeatable-value-header > tr:first-child > th.edit-column {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+} 
+
+.achieveforms-container table.repeatable-table > tbody >  tr.repeatable-value {
     font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.repeatable-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 0.8rem;
+}
+
+@media (min-width: 992px) {
+    .repeatable-actions {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+}
+
+.achieveforms-container table .repeatable-value-totals {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+
+.repeatable-value-totals > td.edit-column {
+    min-width: 57px !important;
+    max-width: 70px !important;
+    text-align: left !important;   
+    padding-left: 0.8rem !important;
+}
+
+@media (min-width: 992px) {
+    .repeatable-value-totals > td.edit-column {
+        min-width: 130px !important;
+        max-width: 130px  !important;
+    }
 }
 
 h1.formName{
