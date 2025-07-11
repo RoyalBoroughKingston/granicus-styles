@@ -10345,7 +10345,7 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     vertical-align: text-top;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    text-align: left;
+    text-align: left !important;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 2.4rem;
