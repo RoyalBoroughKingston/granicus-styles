@@ -11046,8 +11046,8 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     background-color: var(--color-rbk-blue);
 }
 
-.fieldContent fieldset.radio.gds-select .radio-wrapper:first-of-type,
-.fieldContent fieldset.checkbox.gds-select .checkbox-wrapper:first-of-type {
+.fieldContent fieldset.radio .radio-wrapper:first-of-type,
+.fieldContent fieldset.checkbox .checkbox-wrapper:first-of-type {
   margin-top: 0.8rem;
 }
 
