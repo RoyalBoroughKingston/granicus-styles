@@ -33,6 +33,7 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
 
 .achieveforms-container .all-sections .field .fieldContent {
     margin-bottom: 3.2rem;
+    /* margin-bottom: 1.8rem; */
 }
 
 .achieveforms-container .all-sections .field .fieldContent:has([data-type="line"]) {
@@ -10615,16 +10616,10 @@ li.sectionNameWrapper.valid a {
     display: flex !important;
 }
 
-@media (max-width: 767px) {
 
-
-    ul.sectionsHeadInner {
-        display: inline !important;
-    }
-
-    .sections-toggle-wrapper.visible-xs {
-        display: none !important;
-    }
+ul.sectionsHeadInner {
+    display: flex !important;
+    flex-wrap: wrap;
 }
 
 .glyphicon {
