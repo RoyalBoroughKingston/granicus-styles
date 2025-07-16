@@ -12571,11 +12571,13 @@ label.prefix, span.prefix {
 }
 
 /* Rating page */
-.ratingstar.far.fa-star.fa-4x.star-off {
-    font-size: 4rem;
+.ratingStarPanel.text-center.col-md-4.col-md-offset-4.col-sm-4.col-sm-offset-4 {
+    width: 100% ;
+    margin-left: 0;
 }
 
 button.skipRatingStep.btn.btn-primary, button.submitRating.btn.btn-success {
     border-radius: 8px !important;
     margin-bottom: 2rem;
+    width: 100%;
 }
