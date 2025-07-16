@@ -306,6 +306,11 @@ a {
     text-decoration: none;
 }
 
+.fieldInput.content.html.non-input a {
+    text-decoration: underline !important;
+
+}
+
 a:hover, a:focus {
     color: var(--color-link-hover);
     text-decoration: underline;
