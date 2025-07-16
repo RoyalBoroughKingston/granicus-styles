@@ -2650,32 +2650,32 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-success {
     color: var(--color-white);
-    background-color: #5cb85c;
-    border-color: #4cae4c;
+    background-color: var(--color-green-normal);
+    box-shadow: 0px 4px var(--color-green-hover);
+
 }
 
 .btn-success:focus, .btn-success.focus {
     color: var(--color-white);
-    background-color: #449d44;
-    border-color: #255625;
+    background-color: var(--color-green-normal);
 }
 
 .btn-success:hover {
     color: var(--color-white);
-    background-color: #449d44;
-    border-color: #398439;
+    background-color: var(--color-green-hover);
+    box-shadow: 0px 4px var(--color-green-normal);
 }
 
 .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
     color: var(--color-white);
-    background-color: #449d44;
-    border-color: #398439;
+    background-color: var(--color-green-normal);
+    border-color: var(--color-green-normal);
 }
 
 .btn-success:active:hover, .btn-success.active:hover, .open > .dropdown-toggle.btn-success:hover, .btn-success:active:focus, .btn-success.active:focus, .open > .dropdown-toggle.btn-success:focus, .btn-success:active.focus, .btn-success.active.focus, .open > .dropdown-toggle.btn-success.focus {
     color: var(--color-white);
-    background-color: #398439;
-    border-color: #255625;
+    background-color: var(--color-green-normal);
+    border-color: var(--color-green-normal);
 }
 
 .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
@@ -2683,8 +2683,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-success.disabled:hover, .btn-success[disabled]:hover, fieldset[disabled] .btn-success:hover, .btn-success.disabled:focus, .btn-success[disabled]:focus, fieldset[disabled] .btn-success:focus, .btn-success.disabled.focus, .btn-success[disabled].focus, fieldset[disabled] .btn-success.focus {
-    background-color: #5cb85c;
-    border-color: #4cae4c;
+    background-color: var(--color-green-disabled);
+    border-color: var(--color-green-disabled);
 }
 
 .btn-success .badge {
