@@ -12569,3 +12569,13 @@ label.prefix, span.prefix {
     border: 0 !important;
     white-space: nowrap !important;
 }
+
+/* Rating page */
+.ratingstar.far.fa-star.fa-4x.star-off {
+    font-size: 4rem;
+}
+
+button.skipRatingStep.btn.btn-primary, button.submitRating.btn.btn-success {
+    border-radius: 8px !important;
+    margin-bottom: 2rem;
+}
