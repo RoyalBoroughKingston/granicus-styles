@@ -11046,8 +11046,8 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     background-color: var(--color-rbk-blue);
 }
 
-.fieldContent fieldset.radio .radio-wrapper:first-of-type,
-.fieldContent fieldset.checkbox .checkbox-wrapper:first-of-type {
+.fieldContent fieldset.radio:not(.horizontal) .radio-wrapper:first-of-type,
+.fieldContent fieldset.checkbox:not(.horizontal) .checkbox-wrapper:first-of-type {
   margin-top: 0.8rem;
 }
 
