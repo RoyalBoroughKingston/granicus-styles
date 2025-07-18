@@ -427,8 +427,7 @@ h1, .h1, body._AF h1, div._AF h1, html._AF h1 {
     font-size: 2.8rem;
     line-height: 3.2rem;
 }
-/* 45em = 760px */
-@media (min-width: 45em) {
+@media (min-width: 768px) {
     h1, .h1, body._AF h1, div._AF h1, html._AF h1 {
         font-size: 3.2rem;
         line-height: 3.8rem;
@@ -447,16 +446,14 @@ h2, .h2, body._AF h2, div._AF h2, html._AF h2 {
     font-size: 2.4rem;
     line-height: 2.8rem;
 }
-/* 45em = 760px */
-@media (min-width: 45em) {
+@media (min-width: 768px) {
     h2, .h2, body._AF h2, div._AF h2, html._AF h2 {
         font-size: 2.8rem;
         line-height: 3.4rem;
     } 
 }
 
-/* 50em = 992px */
-@media (min-width: 50em) {
+@media (min-width: 992px) {
      h2, .h2, body._AF h2, div._AF h2, html._AF h2 {
         font-size: 3.2rem;
         line-height: 4rem;
@@ -467,16 +464,14 @@ h3, .h3, body._AF h3, div._AF h3, html._AF h3 {
     font-size: 2rem;
     line-height: 2.4rem;
 }
-/* 45em = 760px */
-@media (min-width: 45em) {
+@media (min-width: 768px) {
     h3, .h3, body._AF h3, div._AF h3, html._AF h3 {
         font-size: 2.2rem;
         line-height: 2.8rem;
     } 
 }
 
-/* 50em = 992px */
-@media (min-width: 50em) {
+@media (min-width: 992px) {
      h3, .h3, body._AF h3, div._AF h3, html._AF h3 {
         font-size: 2.4rem;
         line-height: 3.2rem;
@@ -487,16 +482,14 @@ h4, .h4, body._AF h4, div._AF h4, html._AF h4 {
     font-size: 1.8rem;
     line-height: 2.2rem;
 }
-/* 45em = 760px */
-@media (min-width: 45em) {
+@media (min-width: 768px) {
     h4, .h4, body._AF h4, div._AF h4, html._AF h4 {
         font-size: 2rem;
         line-height: 2.6rem;
     } 
 }
 
-/* 50em = 992px */
-@media (min-width: 50em) {
+@media (min-width: 992px) {
      h4, .h4, body._AF h4, div._AF h4, html._AF h4 {
         line-height: 2.8rem;
     } 
@@ -506,16 +499,14 @@ h5, .h5, body._AF h5, div._AF h5, html._AF h5 {
     font-size: 1.8rem;
     line-height: 2.2rem;
 }
-/* 45em = 760px */
-@media (min-width: 45em) {
+@media (min-width: 768px) {
     h5, .h5, body._AF h5, div._AF h5, html._AF h5 {
         font-size: 2rem;
         line-height: 2.6rem;
     } 
 }
 
-/* 50em = 992px */
-@media (min-width: 50em) {
+@media (min-width: 992px) {
      h5, .h5, body._AF h5, div._AF h5, html._AF h5 {
         line-height: 2.8rem;
     } 
@@ -525,16 +516,14 @@ h6, .h6, body._AF h6, div._AF h6, html._AF h6 {
     font-size: 1.8rem;
     line-height: 2.2rem;
 }
-/* 45em = 760px */
-@media (min-width: 45em) {
+@media (min-width: 768px) {
     h6, .h6, body._AF h6, div._AF h6, html._AF h6 {
         font-size: 2rem;
         line-height: 2.6rem;
     } 
 }
 
-/* 50em = 992px */
-@media (min-width: 50em) {
+@media (min-width: 992px) {
      h6, .h6, body._AF h6, div._AF h6, html._AF h6 {
         line-height: 2.8rem;
     } 
@@ -10420,8 +10409,7 @@ span._formName {
     font-weight: 600;
 }
 
-/* 45em = 760px */
-@media (min-width: 45em) {
+@media (min-width: 768px) {
     span._formName {
         font-size: 3.2rem;
         line-height: 3.8rem;
