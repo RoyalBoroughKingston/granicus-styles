@@ -11909,7 +11909,7 @@ h1 + .gds-summary-list, .h1 + .gds-summary-list, body._AF h1 + .gds-summary-list
     }
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 992px) {
     .gds-summary-list, .govuk-summary-list {
         display: table;
         width: 100%;
@@ -11917,20 +11917,20 @@ h1 + .gds-summary-list, .h1 + .gds-summary-list, body._AF h1 + .gds-summary-list
     }
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 992px) {
     .gds-summary-list, .govuk-summary-list {
         /* margin-bottom: 30px; */
     }
 }
 
-@media (max-width: 40.0525em) {
+@media (max-width: 992px) {
     .gds-summary-list__row, .govuk-summary-list__row {
         margin-bottom: 15px;
         border-bottom: 1px solid var(--color-mid-grey);
     }
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 992px) {
     .gds-summary-list__row, .govuk-summary-list__row {
         display: table-row;
     }
@@ -11940,14 +11940,18 @@ h1 + .gds-summary-list, .h1 + .gds-summary-list, body._AF h1 + .gds-summary-list
     margin: 0;
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 992px) {
     .gds-summary-list__key, .govuk-summary-list__key, .gds-summary-list__value, .govuk-summary-list__value, .gds-summary-list__actions, .govuk-summary-list__actions {
         display: table-cell;
         padding-right: 20px;
     }
+
+    .gds-summary-list__value, .govuk-summary-list__value {
+        padding-right: 0;
+    }
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 992px) {
     .gds-summary-list__key, .govuk-summary-list__key, .gds-summary-list__value, .govuk-summary-list__value, .gds-summary-list__actions, .govuk-summary-list__actions {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -11959,7 +11963,7 @@ h1 + .gds-summary-list, .h1 + .gds-summary-list, body._AF h1 + .gds-summary-list
     margin-bottom: 15px;
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 992px) {
     .gds-summary-list__actions, .govuk-summary-list__actions {
         width: 20%;
         padding-right: 0;
@@ -11977,26 +11981,26 @@ h1 + .gds-summary-list, .h1 + .gds-summary-list, body._AF h1 + .gds-summary-list
     font-weight: 600;
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 992px) {
     .gds-summary-list__key, .govuk-summary-list__key {
-        width: 30%;
+        width: 50%;
     }
 }
 
-@media (max-width: 40.0525em) {
+@media (max-width: 992px) {
     .gds-summary-list__value, .govuk-summary-list__value {
         margin-bottom: 15px;
         font-size: 1.8rem !important;
     }
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 992px) {
     .gds-summary-list__value, .govuk-summary-list__value {
         width: 50%;
     }
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 992px) {
     .gds-summary-list__value:last-child, .govuk-summary-list__value:last-child {
         width: 70%;
     }
@@ -12032,26 +12036,26 @@ h1 + .gds-summary-list, .h1 + .gds-summary-list, body._AF h1 + .gds-summary-list
     border: 0;
 }
 
-@media (max-width: 40.0525em) {
+@media (max-width: 992px) {
     .gds-summary-list--no-border .gds-summary-list__row {
         border: 0;
     }
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 992px) {
     .gds-summary-list--no-border .gds-summary-list__key, .gds-summary-list--no-border .gds-summary-list__value, .gds-summary-list--no-border .gds-summary-list__actions {
         padding-bottom: 11px;
         border: 0;
     }
 }
 
-@media (max-width: 40.0525em) {
+@media (max-width: 992px) {
     .gds-summary-list__row--no-border {
         border: 0;
     }
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 992px) {
     .gds-summary-list__row--no-border .gds-summary-list__key, .gds-summary-list__row--no-border .gds-summary-list__value, .gds-summary-list__row--no-border .gds-summary-list__actions {
         padding-bottom: 11px;
         border: 0;
