@@ -11820,6 +11820,10 @@ li.form-actions-list-element.save-element {
 }
 
 /*summary page elements start */
+h1 + .gds-summary-list, .h1 + .gds-summary-list, body._AF h1 + .gds-summary-list, div._AF h1 + .gds-summary-list, html._AF h1 + .gds-summary-list, h2 + .gds-summary-list, .h2 + .gds-summary-list, body._AF h2 + .gds-summary-list, div._AF h2 + .gds-summary-list, html._AF h2 + .gds-summary-list, h3 + .gds-summary-list, .h3 + .gds-summary-list, body._AF h3 + .gds-summary-list, div._AF h3 + .gds-summary-list, html._AF h3 + .gds-summary-list, h4 + .gds-summary-list, .h4 + .gds-summary-list, body._AF h4 + .gds-summary-list, div._AF h4 + .gds-summary-list, html._AF h4 + .gds-summary-list, h5 + .gds-summary-list, .h5 + .gds-summary-list, body._AF h5 + .gds-summary-list, div._AF h5 + .gds-summary-list, html._AF h5 + .gds-summary-list, h6 + .gds-summary-list, .h6 + .gds-summary-list, body._AF h6 + .gds-summary-list, div._AF h6 + .gds-summary-list, html._AF h6 + .gds-summary-list  {
+    margin-top: 1.6rem;
+}
+
 .gds-summary-list, .govuk-summary-list {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
