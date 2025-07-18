@@ -886,6 +886,10 @@ pre code {
     width: 100%;
 } */
 
+#rbk-footer h1, #rbk-footer h2, #rbk-footer h3, #rbk-footer h4, #rbk-footer h5, #rbk-footer h6 {
+    color: var(--color-white);
+}
+
 @media (min-width: 768px) {
     .container{
         max-width: 768px;
