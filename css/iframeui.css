@@ -12449,6 +12449,26 @@ label.prefix, span.prefix {
     text-decoration: underline;
 }
 
+.summary-table {
+    border: 1px solid var(--color-text-primary);
+    width: 100%;
+}
+
+.summary-table th .summary-table td{
+    text-align: left;
+    padding: 0.8rem;
+}
+
+.summary-table td{
+    min-width: 20%;
+    min-height: 18px;
+}
+
+.summary-table tr:nth-child(even) {
+  background-color: var(--color-teal-pale);
+}
+
+
 .govuk-details__text > div {
     border-left: 4px solid var(--color-mid-grey);
     padding: 1.6rem 2.4rem;
