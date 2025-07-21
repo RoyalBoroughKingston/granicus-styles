@@ -129,9 +129,9 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 1.42857143;
-    color: #333;
+    color: var(--color-text-primary) !important;
     background-color: var(--color-white);
     counter-reset: section;
 }
@@ -12152,6 +12152,11 @@ h1 + .gds-summary-list, .h1 + .gds-summary-list, body._AF h1 + .gds-summary-list
 
 .achieveforms-container .all-sections .field .fieldContent .prefix-suffix-mode {
     margin-bottom: 0;
+}
+
+.achieveforms-container .all-sections .field .fieldContent .fieldInput.hasPostfix, .achieveforms-container .all-sections .field .fieldContent .prefix-suffix-mode.hasPostfix {
+    border-radius: 8px !important;
+    border-right: 2px solid var(--color-text-primary);
 }
 
 .achieveforms-container .all-sections .field .fieldContent textarea.fieldInput {
