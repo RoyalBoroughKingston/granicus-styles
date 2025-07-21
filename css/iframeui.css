@@ -38,7 +38,11 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
 
 .field[data-field-type="button"] {
         margin-top: -2rem;
-    }
+}
+
+.field[data-field-type="html"] h1 + .field[data-field-type="radio"], .field[data-field-type="html"] + .field[data-field-type="input"] {
+    /* minus top margin */
+}
 
 .achieveforms-container .all-sections .field .fieldContent:has([data-type="line"]) {
   margin-bottom: 0;
@@ -62,6 +66,10 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
     margin-bottom: 0 !important;
 }
 
+
+ .field[data-field-type="subform"] > .fieldContent .field-btn.launchSubform {
+    margin-bottom: 4.8rem;
+ }
 
 .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper label, .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper label {
     font-size: 20px;
