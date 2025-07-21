@@ -12454,7 +12454,7 @@ label.prefix, span.prefix {
     width: 100%;
 }
 
-.summary-table th .summary-table td{
+.summary-table th, .summary-table td{
     text-align: left;
     padding: 0.8rem;
 }
