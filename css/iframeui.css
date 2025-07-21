@@ -12460,7 +12460,7 @@ label.prefix, span.prefix {
 }
 
 .summary-table td{
-    min-width: 20%;
+    width: 20%;
     min-height: 18px;
 }
 
