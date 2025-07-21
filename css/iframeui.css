@@ -10520,13 +10520,6 @@ body {
 /**To re-align £ signs for prefixes**/
 .prefix, .postfix {
     padding-top: 6.75px !important;
-    line-height: 1em;
-}
-
-.prefix-wrapper.readonly .prefix {
-    top: -5.5px;
-    padding-top: 1px !important;
-    line-height: 2.3125em !important;
 }
 
 .field .fieldContent .fieldInput.hasCurrencyPrefix {
