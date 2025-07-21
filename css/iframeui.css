@@ -12634,3 +12634,8 @@ button.skipRatingStep.btn.btn-primary, button.submitRating.btn.btn-success {
     margin-bottom: 2rem;
     width: 100%;
 }
+
+.help-image {
+    border: 1px solid var(--color-text-primary);
+    margin: 5px;
+}
