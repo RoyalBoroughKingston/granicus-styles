@@ -11704,6 +11704,10 @@ li.form-actions-list-element.save-element {
     }
 }
 
+.achieveforms-container .submission-message .submission-message-btn-wrapper {
+    margin-top: 4.8rem;
+}
+
 @media (max-width: 525px) {
     /* Download PDF, Return to Website, Leave a Review Buttons */
     .submission-message-btn-wrapper {
