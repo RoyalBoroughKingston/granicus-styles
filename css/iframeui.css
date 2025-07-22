@@ -12640,3 +12640,7 @@ button.skipRatingStep.btn.btn-primary, button.submitRating.btn.btn-success {
     border: 1px solid var(--color-text-primary);
     margin: 5px;
 }
+
+.text-blue-highlight {
+    color: var(--color-link-primary);
+}
