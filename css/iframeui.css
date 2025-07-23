@@ -10382,6 +10382,7 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.8rem;
+    border-bottom: 1px solid var(--color-mid-grey);
 }
 
 .repeatable-actions {
