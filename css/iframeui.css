@@ -415,7 +415,7 @@ hr {
     margin: 0;
 }
 
-h1 + p, .h1 + p, body._AF h1 + p, div._AF h1 + p, html._AF h1 + p, h2 + p, .h2 + p, body._AF h2 + p, div._AF h2 + p, html._AF h2 + p, h3 + p, .h3 + p, body._AF h3 + p, div._AF h3 + p, html._AF h3 + p, h4 + p, .h4 + p, body._AF h4 + p, div._AF h4 + p, html._AF h4 + p, h5 + p, .h5 + p, body._AF h5 + p, div._AF h5 + p, html._AF h5 + p, h6 + p, .h6 + p, body._AF h6 + p, div._AF h6 + p, html._AF h6 + p {
+h1 + p, .h1 + p, body._AF h1 + p, div._AF h1 + p, html._AF h1 + p, h2 + p, .h2 + p, body._AF h2 + p, div._AF h2 + p, html._AF h2 + p, h3 + p, .h3 + p, body._AF h3 + p, div._AF h3 + p, html._AF h3 + p, h4 + p, .h4 + p, body._AF h4 + p, div._AF h4 + p, html._AF h4 + p, h5 + p, .h5 + p, body._AF h5 + p, div._AF h5 + p, html._AF h5 + p, h6 + p, .h6 + p, body._AF h6 + p, div._AF h6 + p, html._AF h6 + p, h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul {
     margin-top: 1.6rem;
 }
 
