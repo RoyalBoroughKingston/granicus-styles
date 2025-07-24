@@ -5399,10 +5399,13 @@ button.close {
     overflow-y: unset;
 }
 
-.modal-dialog {
-    position: relative;
+.modal.af-modal .modal-dialog {
     width: auto;
     margin: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
 }
 
 .modal-content {
@@ -5428,11 +5431,6 @@ button.close {
     background-color: var(--color-black);
 }
 
-.modal-backdrop.fade {
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-
 .modal-backdrop.in {
     opacity: .5;
     filter: alpha(opacity=50);
@@ -5455,6 +5453,14 @@ button.close {
 .modal-body {
     position: relative;
     padding: 15px;
+}
+
+.render-subform-modal.col-xs-12.col-sm-12 {
+    padding-right: 15px !important;
+}
+
+.render-subform-modal > .achieveforms-container.render.col-xs-12.col-sm-12 {
+    padding-left: 0px !important
 }
 
 .modal-footer {
