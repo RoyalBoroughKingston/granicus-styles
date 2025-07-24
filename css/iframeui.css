@@ -12470,8 +12470,8 @@ label.prefix, span.prefix {
     padding: 0.8rem;
 }
 
-.summary-table td{
-    width: 20%;
+.summary-table th, .summary-table td {
+    width: 30%;
     min-height: 18px;
 }
 
