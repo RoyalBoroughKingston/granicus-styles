@@ -12455,7 +12455,7 @@ label.prefix, span.prefix {
     text-decoration: underline;
 }
 
-.summary-table-wrapper {
+.summary-table__wrapper {
     overflow-x: auto;
 }
 
