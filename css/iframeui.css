@@ -5400,7 +5400,6 @@ button.close {
 }
 
 .modal.af-modal .modal-dialog {
-    width: auto;
     margin: 10px;
     position: absolute;
     top: 50%;
