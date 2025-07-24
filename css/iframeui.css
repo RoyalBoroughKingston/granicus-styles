@@ -12455,6 +12455,10 @@ label.prefix, span.prefix {
     text-decoration: underline;
 }
 
+.summary-table-wrapper {
+    overflow-x: auto;
+}
+
 .summary-table {
     border: 1px solid var(--color-text-primary);
     width: 100%;
@@ -12470,7 +12474,7 @@ label.prefix, span.prefix {
     min-height: 18px;
 }
 
-.summary-table tr:nth-child(even) {
+.summary-table>tbody>tr:nth-child(odd) {
   background-color: var(--color-teal-pale);
 }
 
