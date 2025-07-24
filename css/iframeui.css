@@ -12462,6 +12462,7 @@ label.prefix, span.prefix {
 .summary-table {
     border: 1px solid var(--color-text-primary);
     width: 100%;
+    table-layout: fixed;
 }
 
 .summary-table th, .summary-table td{
@@ -12478,13 +12479,13 @@ label.prefix, span.prefix {
   background-color: var(--color-teal-pale);
 }
 
-.summary-table td.width-40 {
+.summary-table th.width-40, .summary-table td.width-40 {
   width: 40%;
 }
-.summary-table td.width-50 {
+.summary-table th.width-50, .summary-table td.width-50 {
   width: 50%;
 }
-.summary-table td.width-80 {
+.summary-table th.width-80, .summary-table td.width-80 {
   width: 80%;
 }
 
