@@ -12664,6 +12664,10 @@ button.skipRatingStep.btn.btn-primary, button.submitRating.btn.btn-success {
     color: var(--color-link-primary);
 }
 
+table.custom-table {
+     width: 100%;
+}
+
 thead.custom-thead {
     background: var(--color-light-grey);
     font-size: 1.6rem;
