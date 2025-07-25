@@ -10649,7 +10649,7 @@ ul.sectionsHeadInner {
 
 /* Change of address select box error ******/
 .achieveforms-container select {
-    padding: 0.8rem;
+    padding: 0 0.8rem;
 }
 
 @media only screen and (max-width: 367px) {
