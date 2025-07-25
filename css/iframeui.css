@@ -10430,6 +10430,10 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     }
 }
 
+h1 + .repeatable-table-wrapper, .h1 + .repeatable-table-wrapper, body._AF h1 + .repeatable-table-wrapper, div._AF h1 + .repeatable-table-wrapper, html._AF h1 + .repeatable-table-wrapper, h2 + .repeatable-table-wrapper, .h2 + .repeatable-table-wrapper, body._AF h2 + .repeatable-table-wrapper, div._AF h2 + .repeatable-table-wrapper, html._AF h2 + .repeatable-table-wrapper, h3 + .repeatable-table-wrapper, .h3 + .repeatable-table-wrapper, body._AF h3 + .repeatable-table-wrapper, div._AF h3 + .repeatable-table-wrapper, html._AF h3 + .repeatable-table-wrapper, h4 + .repeatable-table-wrapper, .h4 + .repeatable-table-wrapper, body._AF h4 + .repeatable-table-wrapper, div._AF h4 + .repeatable-table-wrapper, html._AF h4 + .repeatable-table-wrapper, h5 + .repeatable-table-wrapper, .h5 + .repeatable-table-wrapper, body._AF h5 + .repeatable-table-wrapper, div._AF h5 + .repeatable-table-wrapper, html._AF h5 + .repeatable-table-wrapper, h6 + .repeatable-table-wrapper, .h6 + .repeatable-table-wrapper, body._AF h6 + .repeatable-table-wrapper, div._AF h6 + .repeatable-table-wrapper, html._AF h6 + .repeatable-table-wrapper {
+    margin-top: 1.6rem;
+}
+
 h1.formName{
     margin-bottom: 0;
 }
