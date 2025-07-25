@@ -10356,11 +10356,12 @@ div.repeatable-table-wrapper .fa:before,
 div.repeatable-table-wrapper .fa-chevron-left:before {
     display: block !important;
 }
-
-.repeatable-value-header {
+.achieveforms-container table.repeatable-table thead, .repeatable-value-header {
     background-color: var(--color-light-grey);
+    font-size: 1.6rem;
 }
 
+ .achieveforms-container table.repeatable-table thead > tr:first-child > th,
 .repeatable-value-header > tr:first-child > th {
     border-top: 0;
     max-width: 108px !important;
@@ -10376,7 +10377,7 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
 }
 
 @media (min-width: 992px) {
-    .repeatable-value-header > tr:first-child > th {
+    .achieveforms-container table.repeatable-table thead > tr:first-child > th, .repeatable-value-header > tr:first-child > th {
         max-width: 130px !important;
         min-width: 130px !important;
     }
@@ -10387,6 +10388,7 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     padding-right: 0.8rem;
 } 
 
+.achieveforms-container table.repeatable-table > tbody > tr,
 .achieveforms-container table.repeatable-table > tbody >  tr.repeatable-value {
     font-size: 2rem;
     font-weight: 400;
