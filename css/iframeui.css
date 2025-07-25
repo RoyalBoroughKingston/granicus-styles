@@ -11066,8 +11066,7 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
 .fieldContent fieldset.checkbox:not(.horizontal) .checkbox-wrapper:first-of-type {
   margin-top: 0.8rem;
 }
-
-
+.modal-subform.af-modal input,
 .gds-select input {
     cursor: pointer;
     left: 0;
@@ -11081,12 +11080,14 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     background-color: var(--color-white) !important;
 }
 
+.modal-subform.af-modal input,
 .gds-select {
     display: block;
     clear: left;
     position: relative;
 }
 
+.modal-subform.af-modal input[type=checkbox] + label::before, input[type=radio] + label::before,
 .gds-select [type=checkbox] + label::before, .gds-select [type=radio] + label::before {
     content: "";
     border: 2px solid var(--color-black);
@@ -11101,11 +11102,12 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     float: left;
 }
 
+.modal-subform.af-modal input[type=radio] + label::before,
 .gds-select [type=radio] + label::before {
     border-radius: 50%;
 }
 
-
+.modal-subform.af-modal input[type=checkbox] + label::after ,
 .gds-select [type=checkbox] + label::after {
     content: "";
     border: solid;
@@ -11127,6 +11129,7 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     opacity: 0;
 }
 
+.modal-subform.af-modal input[type=radio] + label::after,
 .gds-select [type=radio] + label::after {
     content: "";
     border: 10px solid var(--color-black);
@@ -11147,6 +11150,7 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     border-radius: 50%;
 }
 
+.modal-subform.af-modal input:checked + label::after,
 .gds-select:checked + label::after {
     zoom: 1;
     filter: alpha(opacity=100);
@@ -11154,28 +11158,32 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
 }
 
 /*Below styles replace the green color on this fields and prevent text wrapping with flex*/
+.modal-subform.af-modal fieldset.valid input[type=checkbox] + label:before, .modal-subform.af-modal fieldset.valid input[type=radio] + label:before,
 fieldset.valid .gds-select[type=checkbox] + label:before, fieldset.valid .gds-select[type=radio] + label:before {
     flex: 1 0 auto;
     border: 2px solid var(--color-text-primary);
 }
 
+.modal-subform.af-modal input[type=checkbox].checked + label:before, .modal-subform.af-modal input[type=checkbox]:checked + label:before, 
 .gds-select[type=checkbox].checked + label:before, .gds-select[type=checkbox]:checked + label:before {
     content: "";
     border-color: #0c0c0c;
 }
 
-
+.modal-subform.af-modal input[type=radio].checked + label:before, .modal-subform.af-modal input[type=radio]:checked + label:before
 .gds-select[type=radio].checked + label:before, .gds-select[type=radio]:checked + label:before {
     content: "\00a0";
     background-color: var(--color-white) !important;
     border-color: var(--color-black);
 }
 
+.modal-subform.af-modal fieldset.valid input[type=radio]+label:before,
 fieldset.valid input[type=radio]+label:before {
     border-color: var(--color-black) !important;
 }
 
 /*Check box and radio button*/
+.modal-subform.af-modal input[type=checkbox].checked + label:before, .modal-subform.af-modal input[type=checkbox]:checked + label:before, .modal-subform.af-modal input[type=radio].checked + label:before, .modal-subform.af-modal input[type=radio]:checked + label:before,
 .gds-select[type=checkbox].checked + label:before, .gds-select[type=checkbox]:checked + label:before, .gds-select[type=radio].checked + label:before, .gds-select[type=radio]:checked + label:before {
     opacity: 1;
     max-width: 35px;
