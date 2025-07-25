@@ -12693,9 +12693,16 @@ tbody.custom-tbody > tr > td {
     padding-left: 10px;
 }
 
-.ddg-box {
-    padding: 10px 20px 20px 20px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.09), 0 3px 3px rgba(0, 0, 0, 0.23);
+.ddg-box.blue {
+    border: 5px solid var(--color-blue);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.ddg-box.green {
+    border: 5px solid var(--color-green-normal);
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .ddg-pageLogo {
@@ -12704,8 +12711,8 @@ tbody.custom-tbody > tr > td {
 
 .ddg-pageLogo img {
     position: absolute;
-    top: 10px;
-    right: 30px;
+    top: 20px;
+    right: 50px;
     margin-bottom: 20px;
 }
 
@@ -12721,7 +12728,7 @@ tbody.custom-tbody > tr > td {
 
 @media screen and (max-width: 450px) {
     .ddg-pageLogo>img {
-    display: block;
-    margin-top: 50px;
+        display: block;
+        margin-top: 50px;
     }
 }
