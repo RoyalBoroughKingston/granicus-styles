@@ -10647,11 +10647,6 @@ ul.sectionsHeadInner {
 }
 
 
-/* Change of address select box error ******/
-.achieveforms-container select {
-    padding: 0 0.8rem;
-}
-
 @media only screen and (max-width: 367px) {
     .achieveforms-container .fillinButtons-wrapper .fillinButtons .btn {
         padding: .9em !important;
@@ -10729,7 +10724,7 @@ html._AF .achieveform a:focus {
 .achieveforms-container select {
     border-radius: 8px;
     border: 2px solid var(--color-black);
-    padding: 0.8rem;
+    padding: 0 0.8rem;
     color: var(--color-black);
 }
 
