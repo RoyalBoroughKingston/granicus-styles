@@ -12464,6 +12464,11 @@ label.prefix, span.prefix {
 
 .govuk-details__summary {
     cursor: pointer;
+    color: var(--color-link-primary);
+}
+
+.govuk-details__summary-text {
+    text-decoration: underline;
 }
 
 .govuk-details__summary:focus .govuk-details__summary-text, .govuk-details[open] .govuk-details__summary-text {
