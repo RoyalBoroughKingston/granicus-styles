@@ -10241,7 +10241,7 @@ form#feedback-form .form-type-radio:last-child {
 }
 
 /*CUSTOM SELF*/
-#main-content ol, #main-content ul {
+#submission_summary ol, #submission_summary ul {
     list-style-position: outside;
 }
 
