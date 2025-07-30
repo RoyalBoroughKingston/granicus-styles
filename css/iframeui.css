@@ -10241,6 +10241,10 @@ form#feedback-form .form-type-radio:last-child {
 }
 
 /*CUSTOM SELF*/
+#main-content ol, #main-content ul {
+    list-style-position: outside;
+}
+
 input, span, label, ._fieldName, .fieldInput, p {
     font-family: "Open Sans", sans-serif !important;
     font-weight: 400;
