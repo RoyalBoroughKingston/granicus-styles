@@ -4,7 +4,7 @@ table {
 	width: 100%;
 	border-spacing: 0;
 	border-collapse: collapse;
-	margin-left: 24px;
+	/* margin-left: 14px; */
 }
 
 img {
@@ -31,9 +31,13 @@ body {
 	margin:0;
 	font-size:17px;
 	color: #333;
-	padding: 15px;
+	/* padding: 15px; */
 }
-a { color:#402C78; text-deoration:underline;}
+
+a { color:#402C78; 
+	text-decoration:underline;
+}
+
 h1 { 
 	font-weight: bold; 
 	border-bottom:0; 
@@ -88,3 +92,7 @@ background-color:#dbdbdb;
 font-size:18px;
 font-weight:bold;
 }
+
+/* .pdf_footer {
+	margin-left: 1.5rem;
+} */
