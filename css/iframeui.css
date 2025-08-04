@@ -12459,8 +12459,8 @@ label.prefix, span.prefix {
 
 @media (min-width: 798px){
     .ratingstar.star-off {
-    font-size: 6.5rem;
-}
+        font-size: 6.5rem;
+    }
 }
 
 .ratingStarPanel.text-center.col-md-4.col-md-offset-4.col-sm-4.col-sm-offset-4 {
