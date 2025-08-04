@@ -11729,10 +11729,6 @@ li.form-actions-list-element.save-element {
 }
 
 @media (max-width: 525px) {
-    /* Download PDF, Return to Website, Leave a Review Buttons */
-    .submission-message-btn-wrapper {
-        margin-top: -24px !important;
-    }
 
     a.save.btn.btn-af {
         display: block;
