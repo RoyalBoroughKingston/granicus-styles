@@ -12454,9 +12454,15 @@ label.prefix, span.prefix {
 
 /* Rating page */
 .ratingstar.star-off {
-    font-size: 6rem;
-
+    font-size: 5rem;
 }
+
+@media (min-width: 798px){
+    .ratingstar.star-off {
+    font-size: 6.5rem;
+}
+}
+
 .ratingStarPanel.text-center.col-md-4.col-md-offset-4.col-sm-4.col-sm-offset-4 {
     width: 100% ;
     margin-left: 0;
