@@ -10799,6 +10799,7 @@ html._AF .achieveform a:not([role="button"]):focus {
     background-color: var(--color-blue);
     box-shadow: 0px 4px var(--color-rbk-blue);
     border-radius: 8px;
+    touch-action: none;
 }
 
 .achieveforms-container .fillinButtons .btn-af.previousbutton:hover, .achieveforms-container .fillinButtons .btn-af.submitbutton.repeat-subform-btn:hover {
@@ -10817,6 +10818,7 @@ html._AF .achieveform a:not([role="button"]):focus {
     box-shadow: 0px 4px var(--color-dark-grey);
     border: 1px solid var(--color-dark-grey);
     border-radius: 8px;
+    touch-action: none;
 }
 
 .achieveforms-container .fillinButtons .btn-af.cancelbutton:hover {
@@ -10835,6 +10837,7 @@ html._AF .achieveform a:not([role="button"]):focus {
     background-color: var(--color-green-normal);
     box-shadow: 0px 4px var(--color-green-hover);
     border-radius: 8px;
+    touch-action: none;
 }
 
 .achieveforms-container .btn-af.nextbutton:hover, 
