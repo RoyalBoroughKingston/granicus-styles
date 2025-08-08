@@ -10812,7 +10812,7 @@ html._AF .achieveform a:not([role="button"]):focus {
     background-color: var(--color-blue);
 }
 
-.achieveforms-container .fillinButtons .btn-af.cancelbutton {
+.achieveforms-container .fillinButtons .btn-af.cancelbutton, .achieveforms-container .btn-af.cancelbutton {
     color: var(--color-text-primary);
     background-color: var(--color-light-grey);
     box-shadow: 0px 4px var(--color-dark-grey);
@@ -10821,18 +10821,19 @@ html._AF .achieveform a:not([role="button"]):focus {
     touch-action: none;
 }
 
-.achieveforms-container .fillinButtons .btn-af.cancelbutton:hover {
+.achieveforms-container .fillinButtons .btn-af.cancelbutton:hover, .achieveforms-container .btn-af.cancelbutton:hover {
     background-color: var(--color-mid-grey);
     box-shadow: 0px 4px var(--color-dark-grey);
 }
 
-.achieveforms-container .fillinButtons .btn-af.cancelbutton:focus {
+.achieveforms-container .fillinButtons .btn-af.cancelbutton:focus, .achieveforms-container .btn-af.cancelbutton:focus {
     color: var(--color-text-primary) !important;
     background-color: var(--color-light-grey);
 }
 
 .achieveforms-container .fillinButtons .btn-af.nextbutton, 
-.achieveforms-container .fillinButtons .btn-af.submitbutton {
+.achieveforms-container .fillinButtons .btn-af.submitbutton, 
+.achieveforms-container .btn-af.submitbutton {
     color: var(--color-white);
     background-color: var(--color-green-normal);
     box-shadow: 0px 4px var(--color-green-hover);
