@@ -462,10 +462,21 @@ p.lead {
     color: var(--color-white) !important;
 }
 
+.confirmation-panel__council {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    display: inline;
+}
+
 @media (min-width: 768px){
     .confirmation-panel__title {
         font-size: 3.2rem !important;
         line-height: 3.8rem !important;
+    }
+    .confirmation-panel__council {
+        display: block;
     }
 }
 
