@@ -12560,3 +12560,9 @@ tbody.custom-tbody > tr > td {
         margin-top: 50px;
     }
 }
+
+/* Datepicker */
+
+.datepicker table tr td span {
+    font-size: 1.6rem;
+}
