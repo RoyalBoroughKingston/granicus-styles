@@ -11734,6 +11734,10 @@ li.form-actions-list-element.save-element {
     margin-top: 4.8rem;
 }
 
+.achieveforms-container .submission-message .submission-message-btn-wrapper button.btn {
+    margin-bottom: 2.8rem;
+}
+
 @media (max-width: 525px) {
 
     a.save.btn.btn-af {
