@@ -882,7 +882,6 @@ a.rbk-logo_link:focus {
 a.rbk-link-button--primary-inverse {
     color: var(--color-rbk-blue) !important;
     background-color: var(--color-white);
-
     border-radius: 8px;
     cursor: pointer;
     display: inline-block;
@@ -894,6 +893,7 @@ a.rbk-link-button--primary-inverse {
     text-decoration: none !important;
     line-height: 26px;
     transition: all 200ms ease-out;
+    border: 2px solid transparent;
 }
 
 #rbk-footer a.rbk-link-button--primary-inverse,
