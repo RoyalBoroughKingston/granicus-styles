@@ -1,10 +1,11 @@
 @import url("https://assets.digital.cabinet-office.gov.uk/static/fonts-607c54f71c7c1f98257595cedaa13a34.css");
+
 table {
-	table-layout: fixed; 
-	width: 100%;
+	table-layout: fixed;
+	width: 95%;
 	border-spacing: 0;
 	border-collapse: collapse;
-	margin-left: 24px;
+	/* margin-left: 14px; */
 }
 
 img {
@@ -13,43 +14,61 @@ img {
 }
 
 table tr td:first-child {
-font-weight: bold;
+	font-weight: bold;
 }
 
-tr{
-border-bottom: 1px solid #ccc;
+tr {
+	border-bottom: 1px solid #ccc;
 }
 
 td {
-width: 50% !important;
-height: auto;
+	width: 50% !important;
+	height: auto;
 }
 
 
 body {
-	font-family:nta, Arial, Helvetica, sans-serif;
-	margin:0;
-	font-size:17px;
+	font-family: nta, Arial, Helvetica, sans-serif;
+	margin: 0;
+	font-size: 17px;
 	color: #333;
-	padding: 15px;
+	/* padding: 15px; */
 }
-a { color:#402C78; text-deoration:underline;}
-h1 { 
-	font-weight: bold; 
-	border-bottom:0; 
-	font-size: 40px; 
-	display:block;
+
+a {
+	color: #402C78;
+	text-decoration: underline;
+}
+
+h1 {
+	font-weight: 600;
+	border-bottom: 0;
+	font-size: 40px;
+	display: block;
 	margin-bottom: 0;
 }
-h2 { 
-	font-size: 20px;  
-	font-weight: bold;
+
+h2 {
+	font-size: 32px;
+	font-weight: 600;
 	margin: 1em 0 0.5em 0;
 }
+
+h3 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+h4, h5, h6 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
 dl {
 	overflow: hidden;
 	margin-bottom: 1em;
 }
+
 dt {
 	font-weight: bold;
 	margin: 0.75em 3% 0 0;
@@ -58,6 +77,7 @@ dt {
 	clear: both;
 	text-align: right;
 }
+
 dd {
 	padding: 0;
 	margin: 0.75em 0 0 0;
@@ -68,23 +88,29 @@ dd {
 th {
 	vertical-align: bottom;
 }
+
 th, td {
 	text-align: left;
 	border-bottom: 1px solid #bfc1c3;
 	padding: 0.75em 1.25em 0.5em 0 !important;
 }
+
 td {
 	vertical-align: top;
 }
-.table-border th, .table-border td
-{
+
+.table-border th, .table-border td {
 	border-collapse: collapse;
-  	border:1px solid #999999;
+	border: 1px solid #999999;
 	padding: 0.25em 1.25em 0.25em 0.5em !important;
 }
-.table-header
-{
-background-color:#dbdbdb;
-font-size:18px;
-font-weight:bold;
+
+.table-header {
+	background-color: #dbdbdb;
+	font-size: 18px;
+	font-weight: bold;
 }
+
+/* .pdf_footer {
+	margin-left: 1.5rem;
+} */
