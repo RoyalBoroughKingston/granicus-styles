@@ -12570,17 +12570,3 @@ tbody.custom-tbody > tr > td {
 .datepicker table tr td span {
     font-size: 1.6rem;
 }
-
-.achieveforms-container .all-sections .field .fieldContent .fieldName {
-    color: var(--color-text-primary);
-}
-
-.question-custom-label {
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 2.8rem;
-}
-
-.alpha-list {
-    list-style: none;
-}
