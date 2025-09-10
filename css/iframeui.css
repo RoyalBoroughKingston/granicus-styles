@@ -2481,6 +2481,34 @@ textarea.input-lg, select[multiple].input-lg {
     width: 100%;
 }
 
+.fillinButtons-wrapper.col-xs-11.col-sm-11 > .fillinButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 998px) {
+    .fillinButtons-wrapper.col-xs-11.col-sm-11 > .fillinButtons {
+        display: unset;
+    }
+}
+
+.achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight {
+    /* width: 90%; */
+    /* I'm not sure if I should decrease the button width from 100% -> 90% */
+    align-self: center;
+}
+
+.achieveforms-container .fillinButtons .fillinButtonsLeft {
+    order: 2;
+}
+
+@media (min-width: 998px) {
+    .achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight {
+        width: auto;
+    }
+}
+
+
 .ui-pnotify button {
     margin-right: 1rem;
 }
