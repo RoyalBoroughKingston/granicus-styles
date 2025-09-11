@@ -2506,6 +2506,9 @@ textarea.input-lg, select[multiple].input-lg {
 @media (min-width: 998px) {
     .achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight {
         width: auto;
+    }
+
+    .achieveforms-container .fillinButtons .fillinButtonsLeft {
         margin-right: auto;
     }
 }
