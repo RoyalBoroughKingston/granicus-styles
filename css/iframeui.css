@@ -2488,7 +2488,8 @@ textarea.input-lg, select[multiple].input-lg {
 
 @media (min-width: 998px) {
     .fillinButtons-wrapper.col-xs-11.col-sm-11 > .fillinButtons {
-        display: unset;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -2506,8 +2507,11 @@ textarea.input-lg, select[multiple].input-lg {
     .achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight {
         width: auto;
     }
-}
 
+    .achieveforms-container .fillinButtons .fillinButtonsRight {
+        margin-right: auto;
+    }
+}
 
 .ui-pnotify button {
     margin-right: 1rem;
