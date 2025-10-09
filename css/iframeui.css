@@ -10403,8 +10403,7 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     max-width: 108px !important;
     min-width: 108px !important;
     vertical-align: text-top;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding: 0.8rem;
     text-align: left !important;
     font-size: 1.6rem;
     font-weight: 600;
@@ -12415,8 +12414,14 @@ label.prefix, span.prefix {
 }
 
 .ui-pnotify-action-bar button {
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
+}
+
+/* Hide 'Yes & Stop Warnings' button */
+.ui-pnotify-action-bar.ui-pnotify-confirm-ml.svelte-1y9suua
+.ui-pnotify-action-button.btn.btn-secondary.mx-1.btn.btn-default.svelte-1y9suua {
+    display: none;
 }
 
 
@@ -12616,3 +12621,5 @@ tbody.custom-tbody > tr > td {
 .alpha-list {
     list-style: none;
 }
+
+
