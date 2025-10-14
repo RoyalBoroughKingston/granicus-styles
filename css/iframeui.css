@@ -10680,6 +10680,8 @@ li.sectionNameWrapper.valid a {
 ul.sectionsHeadInner {
     display: flex !important;
     flex-wrap: wrap;
+    font-size: 1.6rem;
+    line-height: 24px;
 }
 
 .glyphicon {
