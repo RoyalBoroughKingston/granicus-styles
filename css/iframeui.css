@@ -11367,7 +11367,8 @@ div#page-container {
 .achieveforms-container .sectionsHead .sectionsHeadInner {
     border-color: var(--color-mid-grey);
     background: var(--color-light-grey);
-    padding: 8px;
+    padding: 0.8rem;
+    padding-bottom: 0;
 }
 
 .sectionNameWrapper {
