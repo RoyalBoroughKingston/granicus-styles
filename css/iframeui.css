@@ -11366,7 +11366,7 @@ div#page-container {
 
 .achieveforms-container .sectionsHead .sectionsHeadInner {
     border-color: var(--color-mid-grey);
-    background: var(--color-mid-grey);
+    background: var(--color-light-grey);
     padding: 8px;
 }
 
@@ -11392,7 +11392,7 @@ li.sectionNameWrapper:empty {
 }
 
 li.sectionNameWrapper:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 2px;
 }
 
 li.sectionNameWrapper a, li.sectionNameWrapper a:focus, li.sectionNameWrapper a:hover {
