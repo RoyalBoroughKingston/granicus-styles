@@ -12447,7 +12447,7 @@ label.prefix, span.prefix {
     margin-top: 1.6rem;
 }
 
-.warning-text__text .warning-text__thinner p {
+.warning-text__text .warning-text__thinner > * {
     font-weight: 400;
 }
 
