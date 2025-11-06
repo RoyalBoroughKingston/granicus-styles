@@ -1646,3 +1646,19 @@ ul.rbk-useful-links__list {
         width: 100%;
     }
 }
+
+
+table#MyRequestTable + .table_actions > .table_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+@media (min-width: 768px) {
+    table#MyRequestTable + .table_actions > .table_buttons {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
