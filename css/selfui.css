@@ -341,10 +341,16 @@ p.lead {
 /*==============================HOMEPAGE_AUTH(LANDING_PAGE)================================*/
 
 #homepageContent {
-    margin: 0 -15px;
+    margin: 2rem 0 4rem 0;
     padding: 2rem;
     height: auto;
     font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    #homepageContent {
+        margin: 4rem 2rem;
+    }
 }
 
 .inner_text {
