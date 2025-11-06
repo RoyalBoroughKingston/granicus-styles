@@ -1333,7 +1333,7 @@ ul.rbk-useful-links__list {
 }
 
 .login-form a.resetLink {
-    padding-bottom: 3.2rem;
+    margin-bottom: 3.2rem;
 }
 
 /* Login type selection page */
@@ -1618,5 +1618,32 @@ ul.rbk-useful-links__list {
             margin-right: auto;
             margin-left: auto
         }
+    }
+}
+
+.PasswordReset > p:last-of-type {
+    margin-bottom: 2.6rem;
+}
+
+.PasswordReset > .btn-toolbar.btn-toolbar-justified
+
+.PasswordReset.message .btn-group.text-center {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+.PasswordReset.message .btn-group.text-center > a {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .PasswordReset.message .btn-group.text-center {
+        width: auto;
+        margin: 0;
+    }
+
+    .PasswordReset.message .btn-group.text-center > a {
+        width: 100%;
     }
 }
