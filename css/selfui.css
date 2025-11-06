@@ -1364,6 +1364,11 @@ ul.rbk-useful-links__list {
 }
 
 /* Registration page */
+div#anonymousLoginScreen {
+    display: flex;
+    flex-direction: column;
+} 
+
 #anonymousLoginScreen p.registration-text {
     line-height: 2.8rem;
     margin-top: 3rem;
@@ -1377,7 +1382,7 @@ ul.rbk-useful-links__list {
     width: 100%;
 }
 
-#anonymousLoginScreen #btn-login {
+#anonymousLoginScreen a#btn-register {
     border: 2px solid var(--color-blue);
     color: var(--color-rbk-blue) !important;
     background-color: var(--color-white);
@@ -1393,6 +1398,28 @@ ul.rbk-useful-links__list {
     line-height: 26px;
     transition: all 200ms ease-out;
     margin-top: 1.5rem;
+    text-decoration: underline !important;
+    order: 3;
+}
+
+#anonymousLoginScreen #btn-login {
+    border: 2px solid var(--color-blue);
+    color: var(--color-white) !important;
+    background-color: var(--color-blue);
+    box-shadow: 0px 4px var(--color-link-hover) !important;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: 1.2rem 2.4rem !important;
+    text-align: center;
+    text-decoration: none !important;
+    line-height: 26px;
+    transition: all 200ms ease-out;
+    margin-top: 1.5rem;
+    order: 2;
 }
 
 #anonymousLoginScreen > #btn-login:hover {
