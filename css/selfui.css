@@ -62,6 +62,7 @@ a, a:visited {
 #app-content > h1#hello-title {
     text-align: center !important;
     font-size: 4rem !important;
+    padding: 2rem 0;
 }
 
 #headerLogo {
