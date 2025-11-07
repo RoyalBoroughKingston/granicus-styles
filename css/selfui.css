@@ -1655,8 +1655,22 @@ div#anonymousLoginScreen {
     }
 }
 
+/* After submitting your email address on the Forgot Password page */
+.PasswordReset.message {
+    padding: 2em !important;
+}
+
+.PasswordReset > h4 {
+    margin-bottom: 2.6rem;
+}
+
 .PasswordReset > p:last-of-type {
     margin-bottom: 2.6rem;
+}
+
+.PasswordReset.message > h4 + p {
+    display: none;
+
 }
 
 .PasswordReset.message .btn-group.text-center {
@@ -1667,6 +1681,10 @@ div#anonymousLoginScreen {
 
 .PasswordReset.message .btn-group.text-center > a {
     width: 100%;
+}
+
+.PasswordReset.message .btn-group.pull-right {
+    display: none;
 }
 
 @media (min-width: 768px) {
