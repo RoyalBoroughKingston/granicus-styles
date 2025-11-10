@@ -327,6 +327,14 @@ a.btn.btn-lg.btn-primary.top > .caret {
     margin-bottom: 4.8rem;
 }
 
+#anon_container > ul {
+    text-align: left;
+}
+
+#anon_container > ul > li {
+    margin-bottom: 1.5rem;
+}
+
 .row.anonWrapper {
     width: 90%;
     margin: 24px auto;
