@@ -1714,6 +1714,25 @@ table#MyRequestTable + .table_actions > .table_buttons {
     margin: 2rem;
 }
 
+/* Force overflow for the table’s parent container */
+#app-content table#MyRequestTable {
+  display: block;           
+  width: auto !important;   
+  overflow-x: auto;         
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent wrapping inside table cells so overflow occurs */
+#app-content table#MyRequestTable th,
+#app-content table#MyRequestTable td {
+  white-space: nowrap;
+}
+
+#app-content table#MyRequestTable .hidden-mobile {
+    display: table-cell;
+}
+
+
 @media (min-width: 768px) {
     table#MyRequestTable + .table_actions > .table_buttons {
         flex-direction: row;
