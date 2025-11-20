@@ -1721,3 +1721,11 @@ table#MyRequestTable + .table_actions > .table_buttons {
         align-items: center;
     }
 }
+
+.ui-pnotify.ui-pnotify-with-icon.ui-pnotify-in .ui-pnotify-icon.ui-pnotify-icon-bs3 {
+    display: none;
+}
+
+.ui-pnotify.ui-pnotify-with-icon .ui-pnotify-text {
+    margin-left: 0;
+}
