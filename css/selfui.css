@@ -1706,7 +1706,15 @@ div#anonymousLoginScreen {
     }
 }
 
+@media (min-width: 768px) {
+    #app-content .table_filter.form-group {
+        margin-left: 3rem;
+    }
 
+    #app-content .filter.form-control {
+        margin: 0 0.5rem;
+    }
+}
 table#MyRequestTable + .table_actions > .table_buttons {
     display: flex;
     flex-direction: column;
@@ -1723,7 +1731,7 @@ table#MyRequestTable + .table_actions > .table_buttons {
 }
 
 /* Prevent wrapping inside table cells so overflow occurs */
-#app-content table#MyRequestTable th,
+/* #app-content table#MyRequestTable th,
 #app-content table#MyRequestTable td {
   white-space: nowrap;
 }
@@ -1733,12 +1741,31 @@ table#MyRequestTable + .table_actions > .table_buttons {
     #app-content table#MyRequestTable td {
         white-space: initial;
     }
+} */
+
+#app-content table#MyRequestTable {
+    font-size: 1.6rem;
+}
+
+@media (min-width: 992px) {
+    #app-content table#MyRequestTable {
+        font-size: 2rem;
+    }
 }
 
 #app-content table#MyRequestTable .hidden-mobile {
     display: table-cell;
 }
 
+@media (max-width: 570px){
+    #app-content table#MyRequestTable .tasks.hidden-mobile {
+        display: none;
+    }
+}
+
+#app-content table#MyRequestTable .case-row .case-process_name h2 {
+    line-height: 1.42857143;
+}
 
 @media (min-width: 768px) {
     table#MyRequestTable + .table_actions > .table_buttons {
