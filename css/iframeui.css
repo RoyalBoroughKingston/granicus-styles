@@ -11195,6 +11195,11 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     border-radius: 50%;
 }
 
+/* Hide radio bullet and check mark on readonly */
+.gds-select input[type="radio"][readonly] + label::after, .gds-select input[type="checkbox"][readonly] + label::after {
+    border: none;
+}
+
 .gds-select:checked + label::after {
     zoom: 1;
     filter: alpha(opacity=100);
