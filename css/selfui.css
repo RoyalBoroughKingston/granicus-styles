@@ -1728,6 +1728,13 @@ table#MyRequestTable + .table_actions > .table_buttons {
   white-space: nowrap;
 }
 
+@media (min-width: 992px) {
+    #app-content table#MyRequestTable th,
+    #app-content table#MyRequestTable td {
+        white-space: initial;
+    }
+}
+
 #app-content table#MyRequestTable .hidden-mobile {
     display: table-cell;
 }
