@@ -11154,7 +11154,7 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
 }
 
 
-.gds-select [type=checkbox]:not([readonly=readonly]) + label::after {
+.gds-select [type=checkbox] + label::after {
     content: "";
     border: solid;
     border-width: 0 0 5px 5px;
@@ -11175,7 +11175,7 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     opacity: 0;
 }
 
-.gds-select [type=radio]:not([readonly=readonly]) + label::after {
+.gds-select [type=radio] + label::after {
     content: "";
     border: 10px solid var(--color-black);
     background: var(--color-white) !important;
