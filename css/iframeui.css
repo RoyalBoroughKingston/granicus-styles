@@ -2490,7 +2490,7 @@ textarea.input-lg, select[multiple].input-lg {
 @media (min-width: 768px) {
     .fillinButtons-wrapper.col-xs-11.col-sm-11 > .fillinButtons {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 }
 
@@ -2504,7 +2504,7 @@ textarea.input-lg, select[multiple].input-lg {
     order: 2;
 }
 
-@media (min-width: 998px) {
+@media (min-width: 768px) {
     .achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight {
         width: auto;
     }
