@@ -2487,7 +2487,7 @@ textarea.input-lg, select[multiple].input-lg {
     flex-direction: column;
 }
 
-@media (min-width: 998px) {
+@media (min-width: 768px) {
     .fillinButtons-wrapper.col-xs-11.col-sm-11 > .fillinButtons {
         flex-direction: row;
         justify-content: space-between;
