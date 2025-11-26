@@ -1731,17 +1731,17 @@ table#MyRequestTable + .table_actions > .table_buttons {
 }
 
 /* Prevent wrapping inside table cells so overflow occurs */
-/* #app-content table#MyRequestTable th,
+#app-content table#MyRequestTable th,
 #app-content table#MyRequestTable td {
   white-space: nowrap;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 540px) {
     #app-content table#MyRequestTable th,
     #app-content table#MyRequestTable td {
         white-space: initial;
     }
-} */
+}
 
 #app-content table#MyRequestTable {
     font-size: 1.6rem;
@@ -1757,10 +1757,8 @@ table#MyRequestTable + .table_actions > .table_buttons {
     display: table-cell;
 }
 
-@media (max-width: 570px){
-    #app-content table#MyRequestTable .tasks.hidden-mobile {
-        display: none;
-    }
+#app-content table#MyRequestTable .tasks.tasks-mobile.hidden-non-mobile {
+    display: none;
 }
 
 #app-content table#MyRequestTable .case-row .case-process_name h2 {
