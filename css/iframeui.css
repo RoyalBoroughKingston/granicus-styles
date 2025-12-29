@@ -2487,10 +2487,10 @@ textarea.input-lg, select[multiple].input-lg {
     flex-direction: column;
 }
 
-@media (min-width: 998px) {
+@media (min-width: 768px) {
     .fillinButtons-wrapper.col-xs-11.col-sm-11 > .fillinButtons {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 }
 
@@ -2504,7 +2504,7 @@ textarea.input-lg, select[multiple].input-lg {
     order: 2;
 }
 
-@media (min-width: 998px) {
+@media (min-width: 768px) {
     .achieveforms-container .fillinButtons .fillinButtonsLeft, .achieveforms-container .fillinButtons .fillinButtonsRight {
         width: auto;
     }
@@ -10587,7 +10587,7 @@ body {
 }
 
 .sectionNameTab {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border: none;
 }
 
@@ -10618,41 +10618,6 @@ body {
 /* Hover state when tab is active */
 .achieveforms-container .sectionsHead .nav-tabs > li.sectionNameWrapper.active:hover {
     color: var(--color-white);
-}
-
-li.sectionNameWrapper a::before {
-    background-color: #959595;
-    border-radius: 50%;
-    color: var(--color-white)fff;
-    content: "\f00c";
-    display: block;
-    padding: 16px 20px;
-    width: 55px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: FontAwesome;
-}
-
-li.sectionNameWrapper a {
-    color: #959595 !important;
-    font-family: "Open Sans", sans-serif !important;
-    font-size: 17px !important;
-    height: 50px;
-}
-
-li.sectionNameWrapper.active a::before {
-    background-color: var(--color-black);
-    border-radius: 50%;
-    color: var(--color-white)fff;
-    content: "\f00c";
-    padding: 16px 20px;
-    font-family: FontAwesome;
-    height: 50px;
-}
-
-li.sectionNameWrapper.active a {
-    color: #162755 !important;
-    height: 50px;
 }
 
 /* green colour on form navigation circle button */
@@ -11195,6 +11160,11 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     border-radius: 50%;
 }
 
+/* Hide radio bullet and check mark on readonly */
+.gds-select input[type="radio"][readonly] + label::after, .gds-select input[type="checkbox"][readonly] + label::after {
+    border: none;
+}
+
 .gds-select:checked + label::after {
     zoom: 1;
     filter: alpha(opacity=100);
@@ -11397,23 +11367,6 @@ li.sectionNameWrapper:not(:last-child) {
     margin-right: 2px;
 }
 
-li.sectionNameWrapper a, li.sectionNameWrapper a:focus, li.sectionNameWrapper a:hover {
-    color: #3c3c3c !important;
-    outline: none !important;
-}
-
-li.sectionNameWrapper a::before {
-    display: block;
-    background-color: lightgrey;
-    border-radius: 50%;
-    color: transparent;
-    content: " ";
-    width: 45px;
-    height: 45px;
-    margin: 14px auto;
-    padding: 16px 20px;
-}
-
 /* Resetting default active state */
 .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.active, .achieveforms-container .sectionsHead .sectionsHeadInner .sectionNameWrapper.valid.active {
     border-bottom: unset;
@@ -11447,6 +11400,7 @@ li.sectionNameWrapper {
     border-bottom: 2px solid var(--color-mid-grey);
 }
 
+/* Removing this style in the future */
 li.sectionNameWrapper.valid a::before {
     background-color: transparent !important;
     border-radius: 50%;
@@ -11460,6 +11414,7 @@ li.sectionNameWrapper.valid a::before {
     background-size: cover;
 }
 
+/* Removing this style in the future */
 li.sectionNameWrapper.active.valid a::before {
     background-color: transparent !important;
     border-radius: 50%;
@@ -11479,20 +11434,7 @@ li.sectionNameWrapper.active.valid a::before {
     animation-fill-mode: forwards;
 }
 
-li.sectionNameWrapper.active a::before {
-    background-color: transparent !important;
-    border-radius: 50%;
-    border: 3px solid #09509d;
-    color: var(--color-white)fff;
-    content: " ";
-    width: 45px;
-    height: 45px;
-    margin-bottom: 14px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='isolation:isolate' viewBox='0 0 50 50' width='50pt' height='50pt'%3E%3Cdefs%3E%3CclipPath id='_clipPath_lRS6p0V1RshUYWkxqJRplbvMcfBQbZ94'%3E%3Crect width='50' height='50'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23_clipPath_lRS6p0V1RshUYWkxqJRplbvMcfBQbZ94)'%3E%3Cg opacity='0'%3E%3Crect x='1' y='1' width='48' height='48' transform='matrix(1,0,0,1,0,0)' fill='rgb(255,255,255)'/%3E%3C/g%3E%3Ccircle vector-effect='non-scaling-stroke' cx='25' cy='25' r='20' fill='rgb(255,255,255)' stroke-width='3' stroke='rgb(9,80,157)' stroke-linejoin='miter' stroke-linecap='square' stroke-miterlimit='3'/%3E%3Cpath d=' M 11 25 C 11 22.792 12.792 21 15 21 C 17.208 21 19 22.792 19 25 C 19 27.208 17.208 29 15 29 C 12.792 29 11 27.208 11 25 L 11 25 Z M 31 25 C 31 22.792 32.792 21 35 21 C 37.208 21 39 22.792 39 25 C 39 27.208 37.208 29 35 29 C 32.792 29 31 27.208 31 25 L 31 25 Z M 21 25 C 21 22.792 22.792 21 25 21 C 27.208 21 29 22.792 29 25 C 29 27.208 27.208 29 25 29 C 22.792 29 21 27.208 21 25 Z ' fill-rule='evenodd' fill='rgb(9,80,157)'/%3E%3C/g%3E%3C/svg%3E");
-    background-position: center;
-    background-size: cover;
-}
-
+/* Removing this style in the future */
 li.sectionNameWrapper.active.invalid.erroricon a::before {
     border-radius: 50%;
     color: var(--color-white)fff;
@@ -11507,6 +11449,7 @@ li.sectionNameWrapper.active.invalid.erroricon a::before {
 
 }
 
+/* Removing this style in the future */
 li.sectionNameWrapper.invalid.erroricon a::before {
     background-color: transparent !important;
     border-radius: 50%;
@@ -11811,7 +11754,7 @@ li.form-actions-list-element.save-element {
         margin: 0px !important;
     }
 
-    li.sectionNameWrapper a::before {
+    /* li.sectionNameWrapper a::before {
         display: none;
         background-color: lightgrey;
         border-radius: 50%;
@@ -11821,9 +11764,9 @@ li.form-actions-list-element.save-element {
         height: 45px;
         margin: 14px auto;
         padding: 16px 20px;
-    }
+    } */
 
-    li.sectionNameWrapper.valid a::before {
+    /* li.sectionNameWrapper.valid a::before {
         display: none;
         background-color: transparent !important;
         border-radius: 50%;
@@ -11835,9 +11778,9 @@ li.form-actions-list-element.save-element {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='isolation:isolate' viewBox='0 0 50 50' width='50pt' height='50pt'%3E%3Cdefs%3E%3CclipPath id='_clipPath_sitYRUwCsIjYS1jAxlv4bAm2w5BrRkuX'%3E%3Crect width='50' height='50'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23_clipPath_sitYRUwCsIjYS1jAxlv4bAm2w5BrRkuX)'%3E%3Cg opacity='0'%3E%3Crect x='1' y='1' width='48' height='48' transform='matrix(1,0,0,1,0,0)' fill='rgb(255,255,255)'/%3E%3C/g%3E%3Ccircle id='outerCircle' vector-effect='non-scaling-stroke' cx='25' cy='25' r='20' fill='rgb(255,255,255)' stroke-width='3' stroke='rgb(34,164,115)' stroke-linejoin='miter' stroke-linecap='square' stroke-miterlimit='3'/%3E%3Cpath id='checkMark' d='M 22.09 33.286 L 22.153 33.352 L 36.528 18.165 L 34.837 16.379 L 21.809 30.144 L 15.135 23.093 L 13.472 24.85 L 21.773 33.621 L 22.09 33.286 Z ' fill-rule='forwards' fill='rgb(34,164,115)' vector-effect='non-scaling-stroke' stroke-width='1' stroke='rgb(34,164,115)' stroke-linejoin='miter' stroke-linecap='square' stroke-miterlimit='3'/%3E%3C/g%3E%3C/svg%3E");
         background-position: center;
         background-size: cover;
-    }
+    } */
 
-    li.sectionNameWrapper.active.valid a::before {
+    /* li.sectionNameWrapper.active.valid a::before {
         display: none;
         background-color: transparent !important;
         border-radius: 50%;
@@ -11855,9 +11798,9 @@ li.form-actions-list-element.save-element {
         animation-duration: 1000ms;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
-    }
+    } */
 
-    li.sectionNameWrapper.active a::before {
+    /* li.sectionNameWrapper.active a::before {
         display: none;
         background-color: transparent !important;
         border-radius: 50%;
@@ -11870,9 +11813,9 @@ li.form-actions-list-element.save-element {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='isolation:isolate' viewBox='0 0 50 50' width='50pt' height='50pt'%3E%3Cdefs%3E%3CclipPath id='_clipPath_lRS6p0V1RshUYWkxqJRplbvMcfBQbZ94'%3E%3Crect width='50' height='50'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23_clipPath_lRS6p0V1RshUYWkxqJRplbvMcfBQbZ94)'%3E%3Cg opacity='0'%3E%3Crect x='1' y='1' width='48' height='48' transform='matrix(1,0,0,1,0,0)' fill='rgb(255,255,255)'/%3E%3C/g%3E%3Ccircle vector-effect='non-scaling-stroke' cx='25' cy='25' r='20' fill='rgb(255,255,255)' stroke-width='3' stroke='rgb(9,80,157)' stroke-linejoin='miter' stroke-linecap='square' stroke-miterlimit='3'/%3E%3Cpath d=' M 11 25 C 11 22.792 12.792 21 15 21 C 17.208 21 19 22.792 19 25 C 19 27.208 17.208 29 15 29 C 12.792 29 11 27.208 11 25 L 11 25 Z M 31 25 C 31 22.792 32.792 21 35 21 C 37.208 21 39 22.792 39 25 C 39 27.208 37.208 29 35 29 C 32.792 29 31 27.208 31 25 L 31 25 Z M 21 25 C 21 22.792 22.792 21 25 21 C 27.208 21 29 22.792 29 25 C 29 27.208 27.208 29 25 29 C 22.792 29 21 27.208 21 25 Z ' fill-rule='evenodd' fill='rgb(9,80,157)'/%3E%3C/g%3E%3C/svg%3E");
         background-position: center;
         background-size: cover;
-    }
+    } */
 
-    li.sectionNameWrapper.active.invalid.erroricon a::before {
+    /* li.sectionNameWrapper.active.invalid.erroricon a::before {
         display: none;
         border-radius: 50%;
         color: var(--color-white)fff;
@@ -11885,9 +11828,9 @@ li.form-actions-list-element.save-element {
         background-position: center;
         background-size: cover;
 
-    }
+    } */
 
-    li.sectionNameWrapper.invalid.erroricon a::before {
+    /* li.sectionNameWrapper.invalid.erroricon a::before {
         display: none;
         background-color: transparent !important;
         border-radius: 50%;
@@ -11899,7 +11842,7 @@ li.form-actions-list-element.save-element {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='isolation:isolate' viewBox='0 0 50 50' width='50pt' height='50pt'%3E%3Cdefs%3E%3CclipPath id='_clipPath_gkKjMMWuUMaSdSJEz3iKbZW6Bq4Sz0lp'%3E%3Crect width='50' height='50'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23_clipPath_gkKjMMWuUMaSdSJEz3iKbZW6Bq4Sz0lp)'%3E%3Cg opacity='0'%3E%3Crect x='1' y='1' width='48' height='48' transform='matrix(1,0,0,1,0,0)' fill='rgb(255,255,255)'/%3E%3C/g%3E%3Ccircle vector-effect='non-scaling-stroke' cx='25' cy='25' r='20' fill='rgb(255,255,255)' stroke-width='3' stroke='rgb(235,101,121)' stroke-linejoin='miter' stroke-linecap='square' stroke-miterlimit='3'/%3E%3Cpath d=' M 26.662 24.778 L 33.917 17.524 L 32.263 15.87 L 25.008 23.124 L 17.54 15.656 L 15.656 17.54 L 23.124 25.008 L 15.656 32.476 L 17.31 34.13 L 24.778 26.662 L 32.46 34.344 L 34.344 32.46 L 26.662 24.778 Z ' fill-rule='evenodd' fill='rgb(235,101,121)' vector-effect='non-scaling-stroke' stroke-width='1' stroke='rgb(235,101,121)' stroke-linejoin='miter' stroke-linecap='square' stroke-miterlimit='3'/%3E%3C/g%3E%3C/svg%3E");
         background-position: center;
         background-size: cover;
-    }
+    } */
 
 
 }

@@ -62,6 +62,7 @@ a, a:visited {
 #app-content > h1#hello-title {
     text-align: center !important;
     font-size: 4rem !important;
+    padding: 2rem 0;
 }
 
 #headerLogo {
@@ -326,6 +327,14 @@ a.btn.btn-lg.btn-primary.top > .caret {
     margin-bottom: 4.8rem;
 }
 
+#anon_container > ul {
+    text-align: left;
+}
+
+#anon_container > ul > li {
+    margin-bottom: 1.5rem;
+}
+
 .row.anonWrapper {
     width: 90%;
     margin: 24px auto;
@@ -340,10 +349,16 @@ p.lead {
 /*==============================HOMEPAGE_AUTH(LANDING_PAGE)================================*/
 
 #homepageContent {
-    margin: 0 -15px;
+    margin: 2rem 0 4rem 0;
     padding: 2rem;
     height: auto;
     font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    #homepageContent {
+        margin: 4rem 2rem;
+    }
 }
 
 .inner_text {
@@ -1333,7 +1348,7 @@ ul.rbk-useful-links__list {
 }
 
 .login-form a.resetLink {
-    padding-bottom: 3.2rem;
+    margin-bottom: 3.2rem;
 }
 
 /* Login type selection page */
@@ -1357,6 +1372,11 @@ ul.rbk-useful-links__list {
 }
 
 /* Registration page */
+div#anonymousLoginScreen {
+    display: flex;
+    flex-direction: column;
+} 
+
 #anonymousLoginScreen p.registration-text {
     line-height: 2.8rem;
     margin-top: 3rem;
@@ -1370,7 +1390,7 @@ ul.rbk-useful-links__list {
     width: 100%;
 }
 
-#anonymousLoginScreen #btn-login {
+#anonymousLoginScreen a#btn-register {
     border: 2px solid var(--color-blue);
     color: var(--color-rbk-blue) !important;
     background-color: var(--color-white);
@@ -1386,6 +1406,28 @@ ul.rbk-useful-links__list {
     line-height: 26px;
     transition: all 200ms ease-out;
     margin-top: 1.5rem;
+    text-decoration: underline !important;
+    order: 3;
+}
+
+#anonymousLoginScreen #btn-login {
+    border: 2px solid var(--color-blue);
+    color: var(--color-white) !important;
+    background-color: var(--color-blue);
+    box-shadow: 0px 4px var(--color-link-hover) !important;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: 1.2rem 2.4rem !important;
+    text-align: center;
+    text-decoration: none !important;
+    line-height: 26px;
+    transition: all 200ms ease-out;
+    margin-top: 1.5rem;
+    order: 2;
 }
 
 #anonymousLoginScreen > #btn-login:hover {
@@ -1619,4 +1661,122 @@ ul.rbk-useful-links__list {
             margin-left: auto
         }
     }
+}
+
+/* After submitting your email address on the Forgot Password page */
+.PasswordReset.message {
+    padding: 2em !important;
+}
+
+.PasswordReset > h4 {
+    margin-bottom: 2.6rem;
+}
+
+.PasswordReset > p:last-of-type {
+    margin-bottom: 2.6rem;
+}
+
+.PasswordReset.message > h4 + p {
+    display: none;
+
+}
+
+.PasswordReset.message .btn-group.text-center {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+.PasswordReset.message .btn-group.text-center > a {
+    width: 100%;
+}
+
+.PasswordReset.message .btn-group.pull-right {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .PasswordReset.message .btn-group.text-center {
+        width: auto;
+        margin: 0;
+    }
+
+    .PasswordReset.message .btn-group.text-center > a {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    #app-content .table_filter.form-group {
+        margin-left: 3rem;
+    }
+
+    #app-content .filter.form-control {
+        margin: 0 0.5rem;
+    }
+}
+table#MyRequestTable + .table_actions > .table_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+/* Force overflow for the table’s parent container */
+#app-content table#MyRequestTable {
+  display: block;           
+  width: auto !important;   
+  overflow-x: auto;         
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent wrapping inside table cells so overflow occurs */
+#app-content table#MyRequestTable th,
+#app-content table#MyRequestTable td {
+  white-space: nowrap;
+}
+
+@media (min-width: 540px) {
+    #app-content table#MyRequestTable th,
+    #app-content table#MyRequestTable td {
+        white-space: initial;
+    }
+}
+
+#app-content table#MyRequestTable {
+    font-size: 1.6rem;
+}
+
+@media (min-width: 992px) {
+    #app-content table#MyRequestTable {
+        font-size: 2rem;
+    }
+}
+
+#app-content table#MyRequestTable .hidden-mobile {
+    display: table-cell;
+}
+
+#app-content table#MyRequestTable .tasks.tasks-mobile.hidden-non-mobile {
+    display: none;
+}
+
+#app-content table#MyRequestTable .case-row .case-process_name h2 {
+    line-height: 1.42857143;
+}
+
+@media (min-width: 768px) {
+    table#MyRequestTable + .table_actions > .table_buttons {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.ui-pnotify.ui-pnotify-with-icon.ui-pnotify-in .ui-pnotify-icon.ui-pnotify-icon-bs3 {
+    display: none;
+}
+
+.ui-pnotify.ui-pnotify-with-icon .ui-pnotify-text {
+    margin-left: 0;
 }
