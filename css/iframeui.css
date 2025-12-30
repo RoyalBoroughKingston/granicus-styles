@@ -10366,8 +10366,15 @@ button:hover {
 
 .service-groups a.fsservice-pretty-link.active,
 .service-groups a.fsservice-pretty-link:hover {
-    background-color: #162755 !important;
+    background-color: var(--color-rbk-blue) !important;
     border-color: #162755 !important;
+    color: var(--color-white) !important;
+}
+
+.service-groups a.fsservice-pretty-link.active h2,
+.service-groups a.fsservice-pretty-link:hover h2{
+    color: var(--color-white) !important;
+    overflow: hidden;
 }
 
 /*remove favicons*/
