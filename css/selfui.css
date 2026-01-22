@@ -1391,10 +1391,11 @@ div#anonymousLoginScreen {
 }
 
 #anonymousLoginScreen a#btn-register {
-    border: 2px solid var(--color-blue);
+    border: none;
     color: var(--color-rbk-blue) !important;
     background-color: var(--color-white);
-    border-radius: 8px;
+    box-shadow: none;
+    border-radius: 0;
     cursor: pointer;
     display: inline-block;
     font-family: inherit;
@@ -1402,13 +1403,17 @@ div#anonymousLoginScreen {
     font-size: 1.8rem;
     padding: 1.2rem 2.4rem !important;
     text-align: center;
-    text-decoration: none !important;
     line-height: 26px;
     transition: all 200ms ease-out;
     margin-top: 1.5rem;
     text-decoration: underline !important;
     order: 3;
 }
+
+#anonymousLoginScreen a#btn-register:focus {
+    background-color: var(--color-focus);
+}
+
 
 #anonymousLoginScreen #btn-login {
     border: 2px solid var(--color-blue);
