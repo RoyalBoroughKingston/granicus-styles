@@ -10394,7 +10394,7 @@ button:hover {
     border-top: none;
     border-left: none;
     border-right: none;
-}
+    }
 /* subforms icons need to show */
 div.repeatable-table-wrapper .fa:before,
 div.repeatable-table-wrapper .fa-chevron-left:before {
@@ -11154,8 +11154,8 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     width: 0px;
     height: 0px;
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 0.77rem;
+    left: 0.75rem;
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -11205,6 +11205,65 @@ fieldset.valid input[type=radio]+label:before {
     opacity: 1;
     max-width: 35px;
 }
+
+/* ================================
+   LOOKUP radios: make them behave like .gds-select
+   (no HTML changes required)
+   ================================ */
+
+/* Hide the native AchieveForms radio for lookup options (this removes the green dot) */
+fieldset.gds-select .lookup-option.radio-wrapper > input[type="radio"] {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Make label the positioning anchor (like your working "label.gds-select") */
+fieldset.gds-select .lookup-option.radio-wrapper > label.radio-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-left: 45px; /* space for 35px circle + gap */
+}
+
+/* Draw the outer circle (same look as your .gds-select rules) */
+fieldset.gds-select .lookup-option.radio-wrapper > input[type="radio"] + label::before {
+  content: "";
+  border: 2px solid var(--color-black);
+  border-radius: 50%;
+  background: transparent;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+/* Draw the inner dot (hidden by default) */
+fieldset.gds-select .lookup-option.radio-wrapper > input[type="radio"] + label::after {
+  content: "";
+  border: 10px solid var(--color-black);
+  background: var(--color-white) !important;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0.75rem;
+  top: 0.77rem; /* 5px (outer top) + 8px (inner offset) */
+  border-radius: 50%;
+  opacity: 0;
+}
+
+/* Show inner dot when checked */
+fieldset.gds-select .lookup-option.radio-wrapper > input[type="radio"]:checked + label::after {
+  opacity: 1;
+}
+
 
 .horizontal .radio-wrapper{
     vertical-align: middle;
