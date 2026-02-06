@@ -1839,8 +1839,11 @@ th {
     background-color: var(--color-white);
 }
 
-.table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
+.achieveforms-container table.repeatable-table tr td, .table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
     padding: 5px;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    text-align: left !important;
 }
 
 .table-bordered {
@@ -10394,7 +10397,9 @@ button:hover {
     border-top: none;
     border-left: none;
     border-right: none;
-    }
+    margin-bottom: 0 !important;
+}
+
 /* subforms icons need to show */
 div.repeatable-table-wrapper .fa:before,
 div.repeatable-table-wrapper .fa-chevron-left:before {
