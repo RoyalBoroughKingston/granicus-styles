@@ -12645,16 +12645,19 @@ tbody.custom-tbody > tr > td {
     list-style: none;
 }
 
-/* .row-fluid.spinner-outer {
+/* ===== Loading overlay (Granicus spinner) ===== */
+.spinner-outer.row-fluid,
+.spinner-outer {
     position: fixed !important;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1048;
+    inset: 0 !important;
+    z-index: 1048 !important;
+    background: rgba(0, 0, 0, 0.35) !important;
 }
 
 .spinner-outer .spinner {
-    left: 50% !important;
+    position: relative !important;
+    left: 50%!important;
     top: 50% !important;
-    transform: translate(-50%, -50%) scale(6);
-    transform-origin: center;
-} */
+    transform: scale(3);
+    z-index: 1049 !important;
+}
