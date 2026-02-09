@@ -12645,11 +12645,11 @@ tbody.custom-tbody > tr > td {
     list-style: none;
 }
 
-.row-fluid.spinner-outer {
+/* .row-fluid.spinner-outer {
     position: fixed !important;
     inset: 0;
     background: rgba(0, 0, 0, 0.3);
-    z-index: 1048; /* just below spinner (yours is 1049) */
+    z-index: 1048;
 }
 
 .spinner-outer .spinner {
@@ -12657,4 +12657,4 @@ tbody.custom-tbody > tr > td {
     top: 50% !important;
     transform: translate(-50%, -50%) scale(6);
     transform-origin: center;
-}
+} */
