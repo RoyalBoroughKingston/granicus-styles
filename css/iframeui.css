@@ -12646,7 +12646,7 @@ tbody.custom-tbody > tr > td {
 }
 
 /* ===== Loading overlay (Granicus spinner) ===== */
-.spinner-outer.row-fluid,
+/* .spinner-outer.row-fluid,
 .spinner-outer {
     position: fixed !important;
     inset: 0 !important;
@@ -12660,4 +12660,4 @@ tbody.custom-tbody > tr > td {
     top: 50% !important;
     transform: scale(3);
     z-index: 1049 !important;
-}
+} */
