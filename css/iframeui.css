@@ -11213,7 +11213,6 @@ fieldset.valid input[type=radio]+label:before {
 
 /* ================================
    LOOKUP radios: make them behave like .gds-select
-   (no HTML changes required)
    ================================ */
 
 /* Hide the native AchieveForms radio for lookup options (this removes the green dot) */
@@ -11234,7 +11233,7 @@ fieldset.gds-select .lookup-option.radio-wrapper > label.radio-label {
   position: relative;
   display: block;
   cursor: pointer;
-  padding-left: 45px; /* space for 35px circle + gap */
+  padding-left: 45px;
 }
 
 /* Draw the outer circle (same look as your .gds-select rules) */
@@ -11259,13 +11258,82 @@ fieldset.gds-select .lookup-option.radio-wrapper > input[type="radio"] + label::
   height: 0;
   position: absolute;
   left: 0.75rem;
-  top: 0.77rem; /* 5px (outer top) + 8px (inner offset) */
+  top: 0.77rem;
   border-radius: 50%;
   opacity: 0;
 }
 
 /* Show inner dot when checked */
 fieldset.gds-select .lookup-option.radio-wrapper > input[type="radio"]:checked + label::after {
+  opacity: 1;
+}
+
+/* =========================================
+   LOOKUP checkboxes: make them behave like .gds-select
+   ========================================= */
+
+/* Each option becomes a positioning context */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper {
+  position: relative !important;
+  display: block !important;
+}
+
+/* Label spacing + anchor for pseudo-elements */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > label.checkbox-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-left: 45px; /* 35px box + gap */
+}
+
+/* IMPORTANT: don't let pseudo-elements block clicks */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > label.checkbox-label::before,
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > label.checkbox-label::after {
+  pointer-events: none;
+}
+
+/* Hide native checkbox, but keep it clickable in the right place */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Draw the box */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--color-black);
+  border-radius: 8px;
+  background: transparent;
+}
+
+/* Draw tick (hidden until checked) */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > input[type="checkbox"] + label::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 16px;
+  width: 20px;
+  height: 10px;
+  border: solid;
+  border-width: 0 0 5px 5px;
+  border-top-color: transparent;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }
 
