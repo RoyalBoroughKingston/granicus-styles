@@ -11215,19 +11215,6 @@ fieldset.valid input[type=radio]+label:before {
    LOOKUP radios: make them behave like .gds-select
    ================================ */
 
-/* Hide the native AchieveForms radio for lookup options (this removes the green dot) */
-fieldset.gds-select .lookup-option.radio-wrapper > input[type="radio"] {
-  cursor: pointer;
-  position: absolute;
-  left: 0;
-  top: 5px;
-  width: 35px;
-  height: 35px;
-  margin: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
 /* Make label the positioning anchor (like your working "label.gds-select") */
 fieldset.gds-select .lookup-option.radio-wrapper > label.radio-label {
   position: relative;
