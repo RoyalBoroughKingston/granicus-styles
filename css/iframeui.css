@@ -1839,8 +1839,11 @@ th {
     background-color: var(--color-white);
 }
 
-.table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
+.achieveforms-container table.repeatable-table tr td, .table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
     padding: 5px;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    text-align: left !important;
 }
 
 .table-bordered {
@@ -10394,7 +10397,9 @@ button:hover {
     border-top: none;
     border-left: none;
     border-right: none;
+    margin-bottom: 0 !important;
 }
+
 /* subforms icons need to show */
 div.repeatable-table-wrapper .fa:before,
 div.repeatable-table-wrapper .fa-chevron-left:before {
@@ -11154,8 +11159,8 @@ input[type=checkbox]:checked+label.btn, input[type=radio]:checked+label.btn {
     width: 0px;
     height: 0px;
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 0.77rem;
+    left: 0.75rem;
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -11205,6 +11210,120 @@ fieldset.valid input[type=radio]+label:before {
     opacity: 1;
     max-width: 35px;
 }
+
+/* ================================
+   LOOKUP radios: make them behave like .gds-select
+   ================================ */
+
+/* Make label the positioning anchor (like your working "label.gds-select") */
+fieldset.gds-select .lookup-option.radio-wrapper > label.radio-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-left: 45px;
+}
+
+/* Draw the outer circle (same look as your .gds-select rules) */
+fieldset.gds-select .lookup-option.radio-wrapper > input[type="radio"] + label::before {
+  content: "";
+  border: 2px solid var(--color-black);
+  border-radius: 50%;
+  background: transparent;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+/* Draw the inner dot (hidden by default) */
+fieldset.gds-select .lookup-option.radio-wrapper > input[type="radio"] + label::after {
+  content: "";
+  border: 10px solid var(--color-black);
+  background: var(--color-white) !important;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0.75rem;
+  top: 0.77rem;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+/* Show inner dot when checked */
+fieldset.gds-select .lookup-option.radio-wrapper > input[type="radio"]:checked + label::after {
+  opacity: 1;
+}
+
+/* =========================================
+   LOOKUP checkboxes: make them behave like .gds-select
+   ========================================= */
+
+/* Each option becomes a positioning context */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper {
+  position: relative !important;
+  display: block !important;
+}
+
+/* Label spacing + anchor for pseudo-elements */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > label.checkbox-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-left: 45px; /* 35px box + gap */
+}
+
+/* IMPORTANT: don't let pseudo-elements block clicks */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > label.checkbox-label::before,
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > label.checkbox-label::after {
+  pointer-events: none;
+}
+
+/* Hide native checkbox, but keep it clickable in the right place */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Draw the box */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--color-black);
+  border-radius: 8px;
+  background: transparent;
+}
+
+/* Draw tick (hidden until checked) */
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > input[type="checkbox"] + label::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 16px;
+  width: 20px;
+  height: 10px;
+  border: solid;
+  border-width: 0 0 5px 5px;
+  border-top-color: transparent;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+fieldset.gds-select[data-lookup] .lookup-option.checkbox-wrapper > input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
+
 
 .horizontal .radio-wrapper{
     vertical-align: middle;
@@ -12581,4 +12700,19 @@ tbody.custom-tbody > tr > td {
     list-style: none;
 }
 
+/* ===== Loading overlay (Granicus spinner) ===== */
+/* .spinner-outer.row-fluid,
+.spinner-outer {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 1048 !important;
+    background: rgba(0, 0, 0, 0.35) !important;
+}
 
+.spinner-outer .spinner {
+    position: relative !important;
+    left: 50%!important;
+    top: 50% !important;
+    transform: scale(3);
+    z-index: 1049 !important;
+} */

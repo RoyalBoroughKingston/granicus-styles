@@ -83,6 +83,13 @@ div#header {
 
 /*=======================TOOLBAR=================================*/
 
+#toolbar #registerLink, #toolbar #loginLink {
+    padding: 1rem;
+    color: inherit;
+    margin-top: inherit;
+    display: none;
+}
+
 /*-----RIGHT NAVBAR---------*/
 
 .top-right-navbar {
@@ -198,18 +205,6 @@ a.dropdown-toggle:hover {
 
 }
 
-/* Comment out by Sido */
-ul#session-badge {
-    /* margin-top: 15px;
-    margin-right: 15.5%; */
-    margin-top: 0;
-    margin-right: 0;
-}
-
-ul#session-badge > li {
-    margin: 0;
-}
-
 /*------LOGOUT MAIN CONTENT HEIGHT---------------*/
 .container.container-form {
     min-height: 250px;
@@ -285,24 +280,6 @@ a.btn.btn-lg.btn-primary.top > .caret {
 /* Hide register button on Login self page */
 .login-btn-group a[href*="/ssauth/register"] {
     display: none;
-}
-
-#registerLink, #loginLink {
-    display: none;
-    color: #A0505C !important;
-    background-color: var(--color-white) !important;
-    border-radius: 25px;
-    transition: all 300ms fade-in;
-}
-
-#loginLink {
-    margin-left: 10px;
-}
-
-#registerLink:hover, #loginLink:hover {
-    color: #A0505C !important;
-    background: var(--color-white);
-    border: 2px solid #A0505C;
 }
 
 #inner_warning_text > a {
@@ -614,11 +591,42 @@ p.lead {
     margin-bottom: 1.25rem;
 }
 
+ul#session-badge > li {
+    margin-bottom: 1.25rem;
+}
+
+ul#session-badge > li > a {
+    color: var(--color-rbk-blue) !important;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: 1.2rem 2.4rem !important;
+    text-align: center;
+    text-decoration: none !important;
+    line-height: 26px;
+    transition: all 200ms ease-out;
+    border: 2px solid transparent;
+    width: 100%;
+}
+
 @media(min-width: 767px) {
     .rbk-nav__item {
         margin-bottom: 0;
     }
 
+    ul#session-badge > li {
+        margin-bottom: 0;
+    }
+
+    ul#session-badge > li > a {
+        font-weight: 600;
+        font-size: 2rem;
+        padding: 1rem !important;
+    }
 }
 
 .rbk-nav__list {
@@ -770,6 +778,11 @@ input#rbk-nav-toggle {
         color: var(--color-white);
         text-decoration: none;
     }
+
+    #toolbar #registerLink, #toolbar #loginLink {
+        font-size: 2rem;
+    }
+
 
 }
 
@@ -1176,23 +1189,6 @@ ul.rbk-useful-links__list {
 
     ul#session-badge {
         margin: 0px auto !important;
-    }
-
-    ul#session-badge > li {
-        margin: 0px auto !important;
-        text-align: center;
-        background-color: var(--color-white) !important;
-    }
-
-    ul#session-badge > li:hover {
-        /* Sido syntax error fix 16th May 2025 */
-        color: #3c3c3c !important;
-    }
-
-    a#loginLink, a#registerLink {
-        width: 70%;
-        display: none;
-        margin: 0 auto !important;
     }
 
     #header_logo {
