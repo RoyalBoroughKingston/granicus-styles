@@ -87,6 +87,7 @@ div#header {
     padding: 1rem;
     color: inherit;
     margin-top: inherit;
+    display: none;
 }
 
 /*-----RIGHT NAVBAR---------*/
