@@ -120,6 +120,10 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
     margin-bottom: 4.8rem !important;
 }
 
+.achieveforms-container .all-sections .field[data-field-type="subform"] > .fieldContent.bg-subform .repeatable-value-header {
+    background: var(--color-mid-grey);
+}
+
 
  .field[data-field-type="subform"] > .fieldContent .field-btn.launchSubform {
     margin-bottom: 4.8rem;
@@ -10459,6 +10463,7 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     font-weight: 400;
     line-height: 2.8rem;
     border-bottom: 1px solid var(--color-mid-grey);
+    background: var(--color-white);
 }
 
 .repeatable-actions {
@@ -10496,6 +10501,7 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     border-radius: 8px;
     font-family: var(--font-main);
 }
+
 .achieveforms-container .repeatable-actions .repeat-remove-btn,
 .achieveforms-container .repeatable-actions .repeat-edit-btn,
 .achieveforms-container .repeatable-actions i {
