@@ -10481,6 +10481,14 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     }
 }
 
+.repeatable-table button.btn-danger,
+.repeatable-table button.btn-success {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    overflow: hidden;
+    background-clip: padding-box;
+}
+
 .edit-row-button .fa-pencil-square-o:before {
     content: "Edit";
     font-size: 1.6rem;
