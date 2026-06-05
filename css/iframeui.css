@@ -10486,7 +10486,7 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     font-size: 1.6rem;
     background: var(--color-green-normal);
     color: var(--color-white);
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 0.5rem;
     border-radius: 8px;
     font-family: var(--font-main);
 }
@@ -10497,7 +10497,7 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     font-size: 1.6rem;
     background: var(--color-error);
     color: var(--color-white);
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 0.5rem;
     border-radius: 8px;
     font-family: var(--font-main);
 }
