@@ -10481,8 +10481,8 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     }
 }
 
-.repeatable-table button.btn-danger,
-.repeatable-table button.btn-success {
+.achieveforms-container .repeatable-actions .repeat-remove-btn,
+.achieveforms-container .repeatable-actions .repeat-edit-btn {
     -webkit-appearance: none !important;
     appearance: none !important;
     overflow: hidden;
