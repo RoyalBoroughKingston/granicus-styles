@@ -1,6 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
+:root {
+    /* Primary brand colours */
+    --color-rbk-blue: #162655;
+    --color-blue: #0060AC;
+    --color-blue-pale: #E8F1F8;
+
+    /* Secondary and utility colours */
+    --color-text-primary: #0B0C0C;
+    --color-text-secondary: #475054;
+    --color-text-disabled: #B1B4B6;
+
+    /* UI/UX feedback colours */
+    --color-green-normal: #00681F;
+    --color-green-hover: #004E17;
+    --color-green-disabled: #99B8A2;
+
+    --color-orange: #EC6719;
+    --color-orange-pale: #FDF0E8;
+
+    --color-error: #AD0000;
+    --color-error-hover: #7A0000;
+    --color-error-disabled: #FFADAD;
+
+    /* Focus and selection */
+    --color-focus: #FFDD00;
+
+    /* Teal shades */
+    --color-teal: #5EBEBF;
+    --color-teal-pale: #EFF8F9;
+
+    --color-link-primary: #0060AC;
+    --color-link-hover: #003078;
+    --color-link-visited: #4C2C92;
+
+    /* Neutrals */
+    --color-white: #ffffff;
+    --color-light-grey: #F3F2F1;
+    --color-mid-grey: #B1B4B6;
+    --color-dark-grey: #505A5F;
+
+    --color-black: #000000;
+
+    /* Typography */
+    --font-main: 'Open Sans', sans-serif;
+
+    --color-border-light: #B1B4B6;
+}
+
 html {
     font-size: 10px !important;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -66,6 +114,16 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
     margin-bottom: 0 !important;
 }
 
+.achieveforms-container .all-sections .field[data-field-type="subform"] > .fieldContent.bg-subform {
+    background: var(--color-light-grey);
+    padding: 1rem; 
+    margin-bottom: 4.8rem !important;
+}
+
+.achieveforms-container .all-sections .field[data-field-type="subform"] > .fieldContent.bg-subform .repeatable-value-header {
+    background: var(--color-mid-grey);
+}
+
 
  .field[data-field-type="subform"] > .fieldContent .field-btn.launchSubform {
     margin-bottom: 4.8rem;
@@ -76,56 +134,6 @@ body._AF article, body._AF footer, body._AF form, body._AF header, body._AF inpu
     line-height: 3.45rem;
 }
 
-:root {
-    /* Primary brand colours */
-    --color-rbk-blue: #162655;
-    --color-blue: #0060AC;
-    --color-blue-pale: #E8F1F8;
-
-    /* Secondary and utility colours */
-    --color-text-primary: #0B0C0C;
-    --color-text-secondary: #475054;
-    --color-text-disabled: #B1B4B6;
-
-    /* UI/UX feedback colours */
-    --color-green-normal: #00681F;
-    --color-green-hover: #004E17;
-    --color-green-disabled: #99B8A2;
-
-    --color-orange: #EC6719;
-    --color-orange-pale: #FDF0E8;
-
-    --color-error: #AD0000;
-    --color-error-hover: #7A0000;
-    --color-error-disabled: #FFADAD;
-
-    /* Focus and selection */
-    --color-focus: #FFDD00;
-
-    /* Teal shades */
-    --color-teal: #5EBEBF;
-    --color-teal-pale: #EFF8F9;
-
-    --color-link-primary: #0060AC;
-    --color-link-hover: #003078;
-    --color-link-visited: #4C2C92;
-
-    /* Neutrals */
-    --color-white: #ffffff;
-    --color-light-grey: #F3F2F1;
-    --color-mid-grey: #B1B4B6;
-    --color-dark-grey: #505A5F;
-
-    --color-black: #000000;
-
-    /* Typography */
-    --font-main: 'Open Sans', sans-serif;
-
-    --color-border-light: #B1B4B6;
-}
-
-
-
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
@@ -134,6 +142,10 @@ body {
     color: var(--color-text-primary) !important;
     background-color: var(--color-white);
     counter-reset: section;
+}
+
+.achieveforms-container header.formHeader .formDescription, .achieveforms-container header.formHeader .formName, .achieveforms-container header.formHeader .processDescription, .achieveforms-container header.formHeader .processName, .achieveforms-container header.processHeader .formDescription, .achieveforms-container header.processHeader .formName, .achieveforms-container header.processHeader .processDescription, .achieveforms-container header.processHeader .processName {
+    color: var(--color-text-primary);
 }
 
 * {
@@ -2504,7 +2516,7 @@ textarea.input-lg, select[multiple].input-lg {
 }
 
 .achieveforms-container .fillinButtons .fillinButtonsLeft {
-    order: 2;
+    order: 1;
 }
 
 @media (min-width: 768px) {
@@ -2513,7 +2525,11 @@ textarea.input-lg, select[multiple].input-lg {
     }
 
     .achieveforms-container .fillinButtons .fillinButtonsRight {
-        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .achieveforms-container .fillinButtons .fillinButtonsLeft {
+        order: unset;
     }
 }
 
@@ -5439,7 +5455,7 @@ button.close {
     padding: 0 10px;
     position: relative;
     width: auto;
-    top: 10%;
+    top: 25%;
 }
 
 /* Display subfom at the center position of the form */
@@ -10451,6 +10467,7 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
     font-weight: 400;
     line-height: 2.8rem;
     border-bottom: 1px solid var(--color-mid-grey);
+    background: var(--color-white);
 }
 
 .repeatable-actions {
@@ -10466,6 +10483,46 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
         flex-direction: row;
         align-items: baseline;
     }
+}
+
+.achieveforms-container .repeatable-actions .btn-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.achieveforms-container .repeatable-actions .repeat-remove-btn,
+.achieveforms-container .repeatable-actions .repeat-edit-btn {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    overflow: hidden;
+    background-clip: padding-box;
+}
+
+.edit-row-button .fa-pencil-square-o:before {
+    content: "Edit";
+    font-size: 1.6rem;
+    background: var(--color-green-normal);
+    color: var(--color-white);
+    padding: 0.8rem 0.5rem;
+    border-radius: 8px;
+    font-family: var(--font-main);
+}
+
+
+.delete-row-button.repeat-remove-btn .fa-times:before {
+    content: "Delete";
+    font-size: 1.6rem;
+    background: var(--color-error);
+    color: var(--color-white);
+    padding: 0.8rem 0.1rem;
+    border-radius: 8px;
+    font-family: var(--font-main);
+}
+
+.achieveforms-container .repeatable-actions .repeat-remove-btn,
+.achieveforms-container .repeatable-actions .repeat-edit-btn,
+.achieveforms-container .repeatable-actions i {
+    width: 100%;
 }
 
 .achieveforms-container table .repeatable-value-totals {
@@ -11039,7 +11096,14 @@ fieldset.valid input[type=checkbox] + label:before {
     font-size: 2rem;
 }
 
-.product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper:not(:last-of-type) label, .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper:not(:last-of-type) label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper:not(:last-of-type) label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper:not(:last-of-type) label {
+.product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper label.btn, 
+.product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper label.btn, 
+.product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .checkbox-wrapper label.btn, 
+.product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput .radio-wrapper label.btn {
+    justify-content: center;
+}
+
+.product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput.vertical .checkbox-wrapper:not(:last-of-type) label, .product_self .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput.vertical .radio-wrapper:not(:last-of-type) label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput.vertical .checkbox-wrapper:not(:last-of-type) label, .product_service .achieveforms-container .all-sections .field .fieldContent fieldset.fieldInput.vertical .radio-wrapper:not(:last-of-type) label {
     margin-bottom: 1.6rem;
 }
 
@@ -12528,11 +12592,6 @@ label.prefix, span.prefix {
 
 .warning-text__text .warning-text__thinner > * {
     font-weight: 400;
-}
-
-/* For old html */
-.warning-text p > span {
-    margin-left: -50px !important;
 }
 
 .warning-text__icon {
