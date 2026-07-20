@@ -2516,7 +2516,7 @@ textarea.input-lg, select[multiple].input-lg {
 }
 
 .achieveforms-container .fillinButtons .fillinButtonsLeft {
-    order: 2;
+    order: 1;
 }
 
 @media (min-width: 768px) {
@@ -2526,6 +2526,10 @@ textarea.input-lg, select[multiple].input-lg {
 
     .achieveforms-container .fillinButtons .fillinButtonsRight {
         margin-right: auto;
+    }
+
+    .achieveforms-container .fillinButtons .fillinButtonsLeft {
+        order: unset;
     }
 }
 
