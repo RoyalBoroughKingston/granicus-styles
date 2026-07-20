@@ -2525,7 +2525,7 @@ textarea.input-lg, select[multiple].input-lg {
     }
 
     .achieveforms-container .fillinButtons .fillinButtonsRight {
-        margin-right: auto;
+        margin-left: auto;
     }
 
     .achieveforms-container .fillinButtons .fillinButtonsLeft {
