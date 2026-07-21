@@ -1785,32 +1785,3 @@ table#MyRequestTable + .table_actions > .table_buttons {
 .ui-pnotify.ui-pnotify-with-icon .ui-pnotify-text {
     margin-left: 0;
 }
-
-
-.lbs-footer {
-    border-block-start: 5px solid #00856a;
-    margin: 0;
-    background: #f5f5f5;
-}
-
-.lbs-footer .lbs-footer__footer {
-    padding: 16px 20px;
-    background: #f5f5f5;
-}
-
-.lbs-footer__footer {
-    padding-block: clamp(1rem, 10vw, 1rem);
-    color: #0b0c0c;
-    background-color: #fff;
-}
-
-@media only screen and (min-width: 48rem) {
-    .lbs-footer .lbs-footer__footer {
-        padding: 44px 30px;
-    }
-}
-
-.lbs-container {
-    max-width: 83.75rem;
-    margin-inline: auto;
-}
