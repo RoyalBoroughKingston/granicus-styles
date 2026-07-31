@@ -2064,16 +2064,16 @@ output {
 }
 
 .form-control::-moz-placeholder {
-    color: #999;
+    color: var(--color-mid-grey);
     opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-    color: #999;
+    color: var(--color-mid-grey);
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #999;
+    color: var(--color-mid-grey);
 }
 
 .form-control::-ms-expand {
@@ -2665,6 +2665,90 @@ a.btn.disabled, fieldset[disabled] a.btn {
 .btn-default .badge {
     color: var(--color-white);
     background-color: var(--color-blue);
+}
+
+.btn-default--reverse {
+    color: var(--color-rbk-blue);
+    background-color: var(--color-white);
+    border: 2px solid transparent;
+}
+
+.btn-default--reverse:focus, .btn-default--reverse.focus {
+    outline: 4px solid var(--color-focus);
+}
+
+.btn-default--reverse:hover {
+    color: var(--color-white);
+    background-color: var(--color-blue) !important;
+    outline-color: var(--color-text-primary);
+    border: 2px solid var(--color-text-primary);
+}
+
+.btn-default--reverse:active, .btn-default--reverse.active, .open > .dropdown-toggle.btn-default--reverse {
+    color: var(--color-rbk-blue);
+    background-color: var(--color-white);
+}
+
+.btn-default--reverse:active:hover, .btn-default--reverse.active:hover, .open > .dropdown-toggle.btn-default--reverse:hover, .btn-default--reverse:active:focus, .btn-default--reverse.active:focus, .open > .dropdown-toggle.btn-default--reverse:focus, .btn-default--reverse:active.focus, .btn-default--reverse.active.focus, .open > .dropdown-toggle.btn-default--reverse.focus {
+   color: var(--color-white);
+    background-color: var(--color-blue);
+    outline-color: var(--color-text-primary);
+    border: 2px solid var(--color-text-primary);
+}
+
+.btn-default--reverse.disabled:hover, .btn-default--reverse[disabled]:hover, fieldset[disabled] .btn-default--reverse:hover, .btn-default--reverse.disabled:focus, .btn-default--reverse[disabled]:focus, fieldset[disabled] .btn-default--reverse:focus, .btn-default--reverse.disabled.focus, .btn-default--reverse[disabled].focus, fieldset[disabled] .btn-default--reverse.focus {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    outline-color: var(--color-text-primary);
+    border: 2px solid var(--color-text-primary);
+}
+
+.btn-default--reverse .badge {
+    color: var(--color-rbk-blue);
+    background-color: var(--color-white);
+}
+
+.btn-default--outline {
+    color: var(--color-white);
+    background-color: transparent;
+    border: 2px solid  var(--color-white) !important;
+}
+
+.btn-default--outline:focus, .btn-default--outline.focus {
+    color: var(--color-white);
+    background-color: var(--color-blue) !important;
+    outline: 4px solid var(--color-focus);
+    border: 2px solid transparent !important;
+}
+
+.btn-default--outline:hover {
+    color: var(--color-rbk-blue) !important;
+    background-color: var(--color-white) !important;
+    outline-color: var(--color-white);
+    border: 2px solid var(--color-white);
+}
+
+.btn-default--outline:active, .btn-default--outline.active, .open > .dropdown-toggle.btn-default--outline {
+    color: var(--color-white);
+    background-color: var(--color-rbk-blue);
+}
+
+.btn-default--outline:active:hover, .btn-default--outline.active:hover, .open > .dropdown-toggle.btn-default--outline:hover, .btn-default--outline:active:focus, .btn-default--outline.active:focus, .open > .dropdown-toggle.btn-default--outline:focus, .btn-default--outline:active.focus, .btn-default--outline.active.focus, .open > .dropdown-toggle.btn-default--outline.focus {
+    background-color: var(--color-white) !important;
+    outline-color: var(--color-white);
+    border: 2px solid var(--color-white);
+}
+
+.btn-default--outline.disabled:hover, .btn-default--outline[disabled]:hover, fieldset[disabled] .btn-default--outline:hover, .btn-default--outline.disabled:focus, .btn-default--outline[disabled]:focus, fieldset[disabled] .btn-default--outline:focus, .btn-default--outline.disabled.focus, .btn-default--outline[disabled].focus, fieldset[disabled] .btn-default--outline.focus {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    outline-color: var(--color-text-primary);
+    border: 2px solid var(--color-text-primary);
+}
+
+.btn-default--outline .badge {
+    color: var(--color-rbk-blue);
+    background-color: var(--color-white);
 }
 
 .btn-primary {
@@ -10756,12 +10840,6 @@ ul.sectionsHeadInner {
         padding: 2px !important;
     }
 }
-
-/* Reduce size of date on calendar booking buttons ****************************************************************/
-.day {
-    font-size: 13px !important;
-}
-
 
 ._AF input[type=date].error:focus, ._AF input[type=date]:focus, ._AF input[type=datetime-local].error:focus, ._AF input[type=datetime-local]:focus, ._AF input[type=datetime].error:focus, ._AF input[type=datetime]:focus, ._AF input[type=email].error:focus, ._AF input[type=email]:focus, ._AF input[type=month].error:focus, ._AF input[type=month]:focus, ._AF input[type=number].error:focus, ._AF input[type=number]:focus, ._AF input[type=password].error:focus, ._AF input[type=password]:focus, ._AF input[type=search].error:focus, ._AF input[type=search]:focus, ._AF input[type=tel].error:focus, ._AF input[type=tel]:focus, ._AF input[type=text].error:focus, ._AF input[type=text]:focus, ._AF input[type=time].error:focus, ._AF input[type=time]:focus, ._AF input[type=url].error:focus, ._AF input[type=url]:focus, ._AF input[type=week].error:focus, ._AF input[type=week]:focus, ._AF select.error:focus, ._AF select:focus, ._AF textarea.error:focus, ._AF textarea:focus, .achieveforms-container input[type=date].error:focus, .achieveforms-container input[type=date]:focus, .achieveforms-container input[type=datetime-local].error:focus, .achieveforms-container input[type=datetime-local]:focus, .achieveforms-container input[type=datetime].error:focus, .achieveforms-container input[type=datetime]:focus, .achieveforms-container input[type=email].error:focus, .achieveforms-container input[type=email]:focus, .achieveforms-container input[type=month].error:focus, .achieveforms-container input[type=month]:focus, .achieveforms-container input[type=number].error:focus, .achieveforms-container input[type=number]:focus, .achieveforms-container input[type=password].error:focus, .achieveforms-container input[type=password]:focus, .achieveforms-container input[type=search].error:focus, .achieveforms-container input[type=search]:focus, .achieveforms-container input[type=tel].error:focus, .achieveforms-container input[type=tel]:focus, .achieveforms-container input[type=text].error:focus, .achieveforms-container input[type=text]:focus, .achieveforms-container input[type=time].error:focus, .achieveforms-container input[type=time]:focus, .achieveforms-container input[type=url].error:focus, .achieveforms-container input[type=url]:focus, .achieveforms-container input[type=week].error:focus, .achieveforms-container input[type=week]:focus, .achieveforms-container select.error:focus, .achieveforms-container select:focus, .achieveforms-container textarea.error:focus, .achieveforms-container textarea:focus {
     box-shadow: none;
