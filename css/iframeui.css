@@ -10900,6 +10900,10 @@ ul.sectionsHeadInner {
     margin-top: 3rem !important;
 }
 
+.bootstrap-datetimepicker-widget > .help-text {
+    max-width: 300px;
+}
+
 .achieveforms-container .all-sections .field .fieldContent textarea.fieldInput {
     border: 2px solid var(--color-text-primary);
     border-radius: 8px;
