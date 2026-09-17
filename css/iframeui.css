@@ -10439,12 +10439,13 @@ input[type='text'] {
     border-radius: 0;
 }
 
-.btn-default,
-.btn-af {
+.btn-default, .btn.btn-default,
+.btn-af, .btn.btn-af {
     border-radius: 8px;
     padding: 10px 25px;
     color: var(--color-white);
     border: 0;
+    outline: none;
 }
 
 /*Added by Merizza 18/02/2021 to add button styles on focus*/
