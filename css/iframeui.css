@@ -10543,8 +10543,8 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
  .achieveforms-container table.repeatable-table thead > tr:first-child > th,
 .repeatable-value-header > tr:first-child > th {
     border-top: 0;
-    max-width: 108px !important;
-    min-width: 108px !important;
+    min-width: 100px !important;
+    max-width: none !important;
     vertical-align: text-top;
     padding: 0.8rem;
     text-align: left !important;
@@ -10556,10 +10556,11 @@ div.repeatable-table-wrapper .fa-chevron-left:before {
 
 @media (min-width: 992px) {
     .achieveforms-container table.repeatable-table thead > tr:first-child > th, .repeatable-value-header > tr:first-child > th {
-        max-width: 130px !important;
-        min-width: 130px !important;
+        min-width: 120px;
+        max-width: none !important;
     }
 }
+
 
 .repeatable-value-header > tr:first-child > th.edit-column {
     padding-left: 0.8rem;
