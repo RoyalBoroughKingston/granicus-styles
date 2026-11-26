@@ -1377,6 +1377,10 @@ ul.rbk-useful-links__list {
 }
 
 /* Registration page */
+#anonymousLoginScreen h1 {
+    font-weight: 600 !important;
+}
+
 div#anonymousLoginScreen {
     display: flex;
     flex-direction: column;
