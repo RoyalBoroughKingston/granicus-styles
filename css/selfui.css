@@ -28,7 +28,7 @@
     --color-teal: #5EBEBF;
     --color-teal-pale: #EFF8F9;
 
-     --color-link-primary: #0060AC;
+    --color-link-primary: #0060AC;
     --color-link-hover: #003078;
     --color-link-visited: #4C2C92;
 
@@ -59,7 +59,17 @@ a, a:visited {
     margin-bottom: 0px;
 }
 
-#app-content > h1#hello-title {
+#main-content li {
+    font-size: 1.8rem;
+}
+
+@media (min-width: 768px){
+    #main-content li {
+    font-size: 2rem;
+}
+}
+
+#app-content>h1#hello-title {
     text-align: center !important;
     font-size: 4rem !important;
     padding: 2rem 0;
@@ -100,28 +110,28 @@ div#header {
     margin-bottom: 14px;
 }
 
-.nav > li > a {
+.nav>li>a {
     position: unset !important;
 }
 
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
     background-color: #3c3c3c !important;
     color: var(--color-white) !important;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav>li>a {
     color: var(--color-black) !important;
 }
 
 /*Updated by Merizza 04/03/2021 to fix dropdown menu styles on focus*/
 /* Sido fix syntax 16th May 2025  */
-.navbar-inverse .navbar-nav > li > a:hover {
+.navbar-inverse .navbar-nav>li>a:hover {
     color: #3c3c3c !important;
     background-color: var(--color-white);
 }
 
-.navbar-inverse .navbar-nav > li > a:focus {
+.navbar-inverse .navbar-nav>li>a:focus {
     outline: 3px solid transparent;
     color: var(--color-white) !important;
     background-color: #09509d;
@@ -136,7 +146,7 @@ div#header {
     border-bottom: 1px solid transparent;
 }
 
-.navbar.main.navbar-static-top.navbar-inverse > .container {
+.navbar.main.navbar-static-top.navbar-inverse>.container {
     position: relative;
 }
 
@@ -163,7 +173,7 @@ a#toolbar_logo:focus {
 
 /*============Added by Merizza 04/02/21 - changing focus styles of dropdown menu==============*/
 
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
     color: var(--color-white) !important;
     background-color: #09509d !important;
 }
@@ -185,12 +195,12 @@ a#toolbar_logo:focus {
     font-size: 20px;
 }
 
-.toolbar_nav > li {
+.toolbar_nav>li {
     display: inline-block;
     text-decoration: none;
 }
 
-.toolbar_nav > li > a {
+.toolbar_nav>li>a {
     color: #3c3c3c;
 }
 
@@ -273,7 +283,7 @@ a.btn.btn-lg.btn-primary.top.active {
 
 }
 
-a.btn.btn-lg.btn-primary.top > .caret {
+a.btn.btn-lg.btn-primary.top>.caret {
     display: none !important;
 }
 
@@ -282,13 +292,13 @@ a.btn.btn-lg.btn-primary.top > .caret {
     display: none;
 }
 
-#inner_warning_text > a {
+#inner_warning_text>a {
     font-size: 12px !important;
     color: var(--color-white);
     text-decoration: none;
 }
 
-#inner_warning_text > a:hover {
+#inner_warning_text>a:hover {
     background-color: var(--color-white);
     color: #09509D;
 }
@@ -299,16 +309,16 @@ a.btn.btn-lg.btn-primary.top > .caret {
     text-align: center;
 }
 
-#anon_container > h1 {
+#anon_container>h1 {
     font-size: 3.5rem;
     margin-bottom: 4.8rem;
 }
 
-#anon_container > ul {
+#anon_container>ul {
     text-align: left;
 }
 
-#anon_container > ul > li {
+#anon_container>ul>li {
     margin-bottom: 1.5rem;
 }
 
@@ -323,13 +333,13 @@ p.lead {
     font-weight: bold;
     margin: 1.2rem;
 }
+
 /*==============================HOMEPAGE_AUTH(LANDING_PAGE)================================*/
 
 #homepageContent {
     margin: 2rem 0 4rem 0;
     padding: 2rem;
     height: auto;
-    font-size: 16px;
 }
 
 @media (min-width: 768px) {
@@ -342,7 +352,7 @@ p.lead {
     text-align: center;
 }
 
-.inner_text > h2 {
+.inner_text>h2 {
     margin-top: 0;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -438,7 +448,7 @@ p.lead {
     margin-bottom: 2rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .confirmation-panel {
         padding: 3.2rem;
     }
@@ -462,18 +472,19 @@ p.lead {
     display: inline;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .confirmation-panel__title {
         font-size: 3.2rem !important;
         line-height: 3.8rem !important;
     }
+
     .confirmation-panel__council {
         display: block;
     }
 }
 
-@media (min-width: 992px){
-     .confirmation-panel__title {
+@media (min-width: 992px) {
+    .confirmation-panel__title {
         font-size: 4rem !important;
         line-height: 4.8rem !important;
     }
@@ -488,14 +499,14 @@ p.lead {
     color: var(--color-white) !important;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .confirmation-panel__body {
         font-size: 2rem;
         line-height: 2.8rem;
     }
 }
 
-.confirmation-panel__body + p {
+.confirmation-panel__body+p {
     margin-top: 1.6rem !important;
 }
 
@@ -510,7 +521,7 @@ p.lead {
     border-radius: 8px;
 }
 
-.prepayment_alert > p:not(:last-of-type) {
+.prepayment_alert>p:not(:last-of-type) {
     margin-bottom: 0.8rem;
 }
 
@@ -595,11 +606,11 @@ p.lead {
     margin-bottom: 1.25rem;
 }
 
-ul#session-badge > li {
+ul#session-badge>li {
     margin-bottom: 1.25rem;
 }
 
-ul#session-badge > li > a {
+ul#session-badge>li>a {
     color: var(--color-rbk-blue) !important;
     background-color: var(--color-white);
     border-radius: 8px;
@@ -622,11 +633,11 @@ ul#session-badge > li > a {
         margin-bottom: 0;
     }
 
-    ul#session-badge > li {
+    ul#session-badge>li {
         margin-bottom: 0;
     }
 
-    ul#session-badge > li > a {
+    ul#session-badge>li>a {
         font-weight: 600;
         font-size: 2rem;
         padding: 1rem !important;
@@ -660,11 +671,11 @@ ul#session-badge > li > a {
     color: var(--color-rbk-blue);
 }
 
-.open > .rbk-nav__item {
+.open>.rbk-nav__item {
     display: block;
 }
 
-.open .rbk-nav__item > .rbk-nav__item--link {
+.open .rbk-nav__item>.rbk-nav__item--link {
     text-decoration: none;
     color: inherit;
 }
@@ -689,7 +700,7 @@ ul#session-badge > li > a {
     cursor: pointer;
 }
 
-.rbk-nav__button:hover{
+.rbk-nav__button:hover {
     background-color: var(--color-blue);
 }
 
@@ -742,7 +753,7 @@ input#rbk-nav-toggle {
         height: 112px;
     }
 
-    .rbk-nav__menu-wrapper > .rbk-nav__button {
+    .rbk-nav__menu-wrapper>.rbk-nav__button {
         display: none;
     }
 
@@ -763,22 +774,22 @@ input#rbk-nav-toggle {
         padding-right: 1.6rem;
     }
 
-    .rbk-nav__list > .rbk-nav__item > a {
+    .rbk-nav__list>.rbk-nav__item>a {
         color: var(--color-rbk-blue);
         text-decoration: none;
         font-size: 2rem;
     }
 
-      .rbk-nav__list > .rbk-nav__item > a:hover {
-        color: var(--color-blue) !important; 
+    .rbk-nav__list>.rbk-nav__item>a:hover {
+        color: var(--color-blue) !important;
     }
 
-    .rbk-nav__list > .rbk-nav__item > a:focus {
-        color: var(--color-link-hover); 
+    .rbk-nav__list>.rbk-nav__item>a:focus {
+        color: var(--color-link-hover);
         background-color: var(--color-focus);
     }
 
-    .dark .rbk-nav__list > .rbk-nav__item > a {
+    .dark .rbk-nav__list>.rbk-nav__item>a {
         color: var(--color-white);
         text-decoration: none;
     }
@@ -810,6 +821,7 @@ input#rbk-nav-toggle {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
 /* ========== END Header Navigation ========== */
 
 /*===============MAIN FOOTER===================*/
@@ -861,6 +873,7 @@ input#rbk-nav-toggle {
     width: 100%;
     cursor: pointer;
 }
+
 a.rbk-nav__logo-link:focus,
 a.rbk-logo_link:focus {
     background-color: transparent;
@@ -980,25 +993,25 @@ ul.rbk-useful-links__list {
     margin-bottom: 1.6rem;
 }
 
-.rbk-useful-links__list > li > a {
+.rbk-useful-links__list>li>a {
     color: var(--color-white);
     text-decoration: underline !important;
 }
 
-.rbk-useful-links__list > li > a:focus {
+.rbk-useful-links__list>li>a:focus {
     color: #333 !important;
     background-color: var(--color-focus);
     text-decoration: underline !important;
     box-shadow: none;
 }
 
-.rbk-useful-links__list > li > a:hover {
+.rbk-useful-links__list>li>a:hover {
     color: var(--color-white) !important;
     text-decoration: none !important;
     text-decoration-thickness: 1px;
 }
 
-.rbk-useful-links__list > li > a:hover:focus {
+.rbk-useful-links__list>li>a:hover:focus {
     color: #333 !important;
     text-decoration: none !important;
     text-decoration-thickness: 1px;
@@ -1006,7 +1019,7 @@ ul.rbk-useful-links__list {
 
 /*---------------SOCIAL MEDIA ICONS---------------*/
 
-.rbk-socials > p {
+.rbk-socials>p {
     margin: 3rem 0 2rem 0;
 }
 
@@ -1075,7 +1088,7 @@ ul.rbk-useful-links__list {
     margin-bottom: 4rem;
 }
 
-@media (min-width: 40.0625em){
+@media (min-width: 40.0625em) {
     #rbk-footer .govuk-grid-row.align-bottom {
         margin-bottom: 3.2rem;
     }
@@ -1091,6 +1104,7 @@ ul.rbk-useful-links__list {
     width: 100%;
     text-align: center;
 }
+
 /*=============== END MAIN FOOTER===================*/
 
 /*======================MEDIA QUERIES=====================*/
@@ -1128,7 +1142,7 @@ ul.rbk-useful-links__list {
         width: 100%;
     }
 
-    .mobileNav > a {
+    .mobileNav>a {
         width: 80%;
         margin: 5px auto;
         display: block;
@@ -1147,7 +1161,7 @@ ul.rbk-useful-links__list {
         padding-left: 18px;
     } */
 
-    .environment-banner > div {
+    .environment-banner>div {
         max-width: 720px !important;
     }
 }
@@ -1160,7 +1174,7 @@ ul.rbk-useful-links__list {
         padding-left: 18px;
     } */
 
-    .environment-banner > div {
+    .environment-banner>div {
         max-width: 940px !important;
     }
 
@@ -1168,7 +1182,7 @@ ul.rbk-useful-links__list {
 
 @media (min-width: 1200px) {
 
-    .environment-banner > div {
+    .environment-banner>div {
         max-width: 1170px !important;
         padding-left: 18px;
     }
@@ -1202,7 +1216,7 @@ ul.rbk-useful-links__list {
         top: 10px !important;
     }
 
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
         color: var(--color-black);
     }
 
@@ -1212,7 +1226,7 @@ ul.rbk-useful-links__list {
         background-color: inherit;
     }
 
-    .environment-banner > div {
+    .environment-banner>div {
         max-width: 710px !important;
         padding-left: 18px;
     }
@@ -1239,15 +1253,15 @@ ul.rbk-useful-links__list {
         color: #3c3c3c;
     }
 
-    div#navbar-collapse > ul.nav.navbar-nav {
+    div#navbar-collapse>ul.nav.navbar-nav {
         margin-top: 0px;
     }
 
-    div#navbar-collapse > ul.nav.navbar-nav > li > a {
+    div#navbar-collapse>ul.nav.navbar-nav>li>a {
         color: #3c3c3c;
     }
 
-    div#navbar-collapse > ul.nav.navbar-nav > li > a:focus {
+    div#navbar-collapse>ul.nav.navbar-nav>li>a:focus {
         /*font-weight: bold;*/
         outline: 3px solid transparent;
         color: var(--color-white) !important;
@@ -1255,10 +1269,9 @@ ul.rbk-useful-links__list {
         -webkit-box-shadow: 0 -2px #fd0, 0 4px var(--color-text-primary);
         box-shadow: 0 -2px #09509d, 0 4px var(--color-text-primary);
         text-decoration: none !important
-
     }
 
-    #navigation > .container, #navigation > .row {
+    #navigation>.container, #navigation>.row {
         width: 100%;
         margin: 0 auto !important;
     }
@@ -1271,12 +1284,12 @@ ul.rbk-useful-links__list {
         height: auto;
     }
 
-    .warningText > p {
+    .warningText>p {
         width: 85%;
         font-size: 12px;
     }
 
-    .warningText > a {
+    .warningText>a {
         font-size: 12px;
     }
 
@@ -1287,7 +1300,7 @@ ul.rbk-useful-links__list {
         margin: 0 auto;
     }
 
-    .inner_text > h2 {
+    .inner_text>h2 {
         margin-bottom: 10px;
         text-align: center;
         font-size: 20px;
@@ -1298,35 +1311,36 @@ ul.rbk-useful-links__list {
         padding-left: 0;
     }
 
-    .rbk-useful-links__list > li {
+    .rbk-useful-links__list>li {
         display: block;
     }
 }
 
 
 /* Email verification content */
-#email_verification{
+#email_verification {
     margin: 3rem 0;
 }
 
 @media (min-width: 768px) {
-   #email_verification{
-    margin: 6rem 0;
+    #email_verification {
+        margin: 6rem 0;
     }
 }
 
-@media (min-width: 992px){
-    #email_verification{
-    margin: 10rem 0;
+@media (min-width: 992px) {
+    #email_verification {
+        margin: 10rem 0;
     }
 }
 
 /* Login form */
-.login-form > h1 {
+.login-form>h1 {
     margin-bottom: 3.2rem;
 }
+
 @media (min-width: 992px) {
- .login-form > h1 {
+    .login-form>h1 {
         margin-bottom: 4.8rem;
     }
 }
@@ -1352,14 +1366,14 @@ ul.rbk-useful-links__list {
 }
 
 /* Login type selection page */
-.login-form .thumbnail > .logonimg {
+.login-form .thumbnail>.logonimg {
     width: 50px;
     height: 50px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.login-form .thumbnail > .logonimg + p {
+.login-form .thumbnail>.logonimg+p {
     font-size: 1.6rem;
     min-height: 76px;
     position: static;
@@ -1372,10 +1386,14 @@ ul.rbk-useful-links__list {
 }
 
 /* Registration page */
+#anonymousLoginScreen h1 {
+    font-weight: 600 !important;
+}
+
 div#anonymousLoginScreen {
     display: flex;
     flex-direction: column;
-} 
+}
 
 #anonymousLoginScreen p.registration-text {
     line-height: 2.8rem;
@@ -1385,37 +1403,12 @@ div#anonymousLoginScreen {
     font-weight: 400;
 }
 
-#anonymousLoginScreen #btn-register, #anonymousLoginScreen #btn-login  {
+#anonymousLoginScreen #btn-register, #anonymousLoginScreen #btn-login {
     display: block;
     width: 100%;
 }
 
 #anonymousLoginScreen a#btn-register {
-    border: none;
-    color: var(--color-rbk-blue) !important;
-    background-color: var(--color-white);
-    box-shadow: none;
-    border-radius: 0;
-    cursor: pointer;
-    display: inline-block;
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 1.8rem;
-    padding: 1.2rem 2.4rem !important;
-    text-align: center;
-    line-height: 26px;
-    transition: all 200ms ease-out;
-    margin-top: 1.5rem;
-    text-decoration: underline !important;
-    order: 3;
-}
-
-#anonymousLoginScreen a#btn-register:focus {
-    background-color: var(--color-focus);
-}
-
-
-#anonymousLoginScreen #btn-login {
     border: 2px solid var(--color-blue);
     color: var(--color-white) !important;
     background-color: var(--color-blue);
@@ -1425,17 +1418,25 @@ div#anonymousLoginScreen {
     display: inline-block;
     font-family: inherit;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 1.2rem 2.4rem !important;
     text-align: center;
     text-decoration: none !important;
-    line-height: 26px;
+    line-height: 28px;
     transition: all 200ms ease-out;
-    margin-top: 1.5rem;
+    margin-top: 4.2rem;
     order: 2;
+    width: 100%;
+    max-width: stretch;
 }
 
-#anonymousLoginScreen > #btn-login:hover {
+@media(min-width: 498px) {
+    #anonymousLoginScreen a#btn-register {
+        max-width: 240px;
+    }
+}
+
+#anonymousLoginScreen a#btn-register:hover {
     color: var(--color-white) !important;
     background-color: var(--color-rbk-blue) !important;
     outline-color: var(--color-blue);
@@ -1444,19 +1445,78 @@ div#anonymousLoginScreen {
     padding: 1.2rem 2.4rem;
 }
 
-#anonymousLoginScreen .btn-custom:focus:not(:hover) {
+#anonymousLoginScreen a#btn-register:focus {
+    background-color: var(--color-focus);
+}
+
+#anonymousLoginScreen a#btn-register:focus:not(:hover) {
     color: var(--color-white) !important;
     background-color: var(--color-rbk-blue);
     box-shadow: none !important;
     outline: 4px solid #FFDD00 !important;
 }
 
+
+#anonymousLoginScreen #btn-login .fa:before {
+    display: none;
+    content: "";
+}
+
+
+#anonymousLoginScreen #btn-login {
+    border: 2px solid var(--color-green-normal);
+    color: var(--color-white) !important;
+    background-color: var(--color-green-normal) !important;
+    box-shadow: 0px 4px var(--color-green-hover) !important;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 1.2rem 2.4rem !important;
+    text-align: center;
+    text-decoration: none !important;
+    line-height: 28px;
+    transition: all 200ms ease-out;
+    margin-top: 3.2rem;
+    order: 1;
+    width: 100%;
+    max-width: stretch;
+}
+
+@media(min-width: 498px) {
+    #anonymousLoginScreen #btn-login {
+        max-width: 200px;
+    }
+}
+
+#anonymousLoginScreen>#btn-login:hover {
+    color: var(--color-white) !important;
+    background-color: var(--color-green-hover) !important;
+    box-shadow: 0px 4px var(--color-green-normal) !important;
+    border: 2px solid var(--color-green-hover);
+    padding: 1.2rem 2.4rem;
+}
+
+#anonymousLoginScreen .btn-custom:focus:not(:hover) {
+    color: var(--color-white) !important;
+    background-color: inherit;
+    box-shadow: none !important;
+    outline: 4px solid #FFDD00 !important;
+}
+
 #anonymousLoginScreen #btn-anon {
-    margin-top: 1.6rem;
+    order: 3;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 0rem !important;
+    text-align: left;
+
 }
 
 #anonymousLoginScreen #btn-anon:hover {
-    border: none !important;
+    border: 2px solid transparent;
     box-shadow: none !important;
     color: var(--color-link-hover) !important;
 }
@@ -1467,7 +1527,10 @@ div#anonymousLoginScreen {
     color: var(--color-link-hover) !important;
     text-decoration: underline !important;
     background: #fd0
+}
 
+div#anonymousLoginScreen {
+    align-items: flex-start;
 }
 
 /* Sido add GOVUK STYLES 16th May 2025 */
@@ -1635,8 +1698,8 @@ div#anonymousLoginScreen {
 
 @supports(margin: max(calc(0px))) {
     .govuk-width-container {
-        margin-right: max(15px, calc(15px  +  env(safe-area-inset-right)));
-        margin-left: max(15px, calc(15px  +  env(safe-area-inset-left)))
+        margin-right: max(15px, calc(15px + env(safe-area-inset-right)));
+        margin-left: max(15px, calc(15px + env(safe-area-inset-left)))
     }
 }
 
@@ -1648,8 +1711,8 @@ div#anonymousLoginScreen {
 
     @supports(margin: max(calc(0px))) {
         .govuk-width-container {
-            margin-right: max(30px, calc(15px  +  env(safe-area-inset-right)));
-            margin-left: max(30px, calc(15px  +  env(safe-area-inset-left)))
+            margin-right: max(30px, calc(15px + env(safe-area-inset-right)));
+            margin-left: max(30px, calc(15px + env(safe-area-inset-left)))
         }
     }
 }
@@ -1673,15 +1736,15 @@ div#anonymousLoginScreen {
     padding: 2em !important;
 }
 
-.PasswordReset > h4 {
+.PasswordReset>h4 {
     margin-bottom: 2.6rem;
 }
 
-.PasswordReset > p:last-of-type {
+.PasswordReset>p:last-of-type {
     margin-bottom: 2.6rem;
 }
 
-.PasswordReset.message > h4 + p {
+.PasswordReset.message>h4+p {
     display: none;
 
 }
@@ -1692,7 +1755,7 @@ div#anonymousLoginScreen {
     margin-bottom: 3rem;
 }
 
-.PasswordReset.message .btn-group.text-center > a {
+.PasswordReset.message .btn-group.text-center>a {
     width: 100%;
 }
 
@@ -1706,7 +1769,7 @@ div#anonymousLoginScreen {
         margin: 0;
     }
 
-    .PasswordReset.message .btn-group.text-center > a {
+    .PasswordReset.message .btn-group.text-center>a {
         width: 100%;
     }
 }
@@ -1720,7 +1783,8 @@ div#anonymousLoginScreen {
         margin: 0 0.5rem;
     }
 }
-table#MyRequestTable + .table_actions > .table_buttons {
+
+table#MyRequestTable+.table_actions>.table_buttons {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -1729,19 +1793,20 @@ table#MyRequestTable + .table_actions > .table_buttons {
 
 /* Force overflow for the table’s parent container */
 #app-content table#MyRequestTable {
-  display: block;           
-  width: auto !important;   
-  overflow-x: auto;         
-  -webkit-overflow-scrolling: touch;
+    display: block;
+    width: auto !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Prevent wrapping inside table cells so overflow occurs */
 #app-content table#MyRequestTable th,
 #app-content table#MyRequestTable td {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 @media (min-width: 540px) {
+
     #app-content table#MyRequestTable th,
     #app-content table#MyRequestTable td {
         white-space: initial;
@@ -1771,7 +1836,7 @@ table#MyRequestTable + .table_actions > .table_buttons {
 }
 
 @media (min-width: 768px) {
-    table#MyRequestTable + .table_actions > .table_buttons {
+    table#MyRequestTable+.table_actions>.table_buttons {
         flex-direction: row;
         justify-content: center;
         align-items: center;
