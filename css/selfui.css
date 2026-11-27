@@ -59,6 +59,16 @@ a, a:visited {
     margin-bottom: 0px;
 }
 
+#main-content li {
+    font-size: 1.8rem;
+}
+
+@media (min-width: 768px){
+    #main-content li {
+    font-size: 2rem;
+}
+}
+
 #app-content>h1#hello-title {
     text-align: center !important;
     font-size: 4rem !important;
@@ -330,7 +340,6 @@ p.lead {
     margin: 2rem 0 4rem 0;
     padding: 2rem;
     height: auto;
-    font-size: 16px;
 }
 
 @media (min-width: 768px) {
